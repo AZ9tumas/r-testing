@@ -30,7 +30,7 @@ for (i in 1:n_iterations) {
 
 df <- do.call(rbind, history_list)
 
-series <- seq(a, b, length.out = 100)
+series <- seq(5, -5, length.out = 100)
 
 plotdf <- data.frame(
   x = series,
@@ -39,7 +39,22 @@ plotdf <- data.frame(
 
 plot <- ggplot() + 
   geom_path(mapping = aes(x = x, y = y), 
-             data = plotdf) 
+             data = plotdf) + 
+  # the axis
+  geom_hline(mapping = aes(yintercept = 0), data = df, linetype = "dashed", color = "grey") + 
+  geom_vline(mapping = aes(xintercept = 0), data = df, linetype = "dashed", color = "grey") +
+  
+  # the green
+  geom_vline(mapping = aes(xintercept = c), data = df, linewidth = 0.5, color = "green", showSelected = 'itr') +
+  geom_text(mapping = aes(x = c, y = 0, label = sprintf("c_%.2f", c)), data = df, fontface = "bold",
+            color = "blue", showSelected = 'itr') + 
+  
+  # the red lines
+  geom_vline(mapping = aes(xintercept = a), data = df, linetype = "dashed", color = "red", showSelected = 'itr') + 
+  geom_vline(mapping = aes(xintercept = b), data = df, linetype = "dashed", color = "red", showSelected = 'itr')
+  
 
-viz <- animint(plot)
+viz <- animint(plot, duration=list(itr = 250))
+viz$time <- list(variable="itr", ms=1000, loop = FALSE)
 viz
+
