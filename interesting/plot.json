@@ -1,0 +1,604 @@
+{
+ "geoms": {
+ "geom1_path_panel1": {
+ "geom": "path",
+"classed": "geom1_path_panel1",
+"aes": {
+ "x": "year",
+"y": "life.expectancy",
+"group": "country",
+"colour": "Region",
+"tooltip": "country",
+"showSelected1": "Region" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "Region",
+"help_showSelected": "Region" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "character",
+"tooltip": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_point_panel2": {
+ "geom": "point",
+"classed": "geom2_point_panel2",
+"aes": {
+ "x": "year",
+"y": "life.expectancy",
+"colour": "Region",
+"showSelected1": "Region" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": "Region",
+"help_showSelected": "Region" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_path_panel2": {
+ "geom": "path",
+"classed": "geom3_path_panel2",
+"aes": {
+ "x": "year",
+"y": "life.expectancy",
+"colour": "Region",
+"group": "Region",
+"tooltip": "country",
+"showSelected1": "Region" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "Region",
+"help_showSelected": "Region" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "character",
+"tooltip": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"selectors": {
+ "Region": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "Middle East & North Africa", "South Asia", "Latin America & Caribbean", "Europe & Central Asia", "Sub-Saharan Africa", "East Asia & Pacific", "North America" ],
+"levels": [ "Middle East & North Africa", "South Asia", "Latin America & Caribbean", "Europe & Central Asia", "Sub-Saharan Africa", "East Asia & Pacific", "North America" ],
+"update": [
+ "geom1_path_panel1",
+"geom2_point_panel2",
+"geom3_path_panel2" 
+] 
+} 
+},
+"plots": {
+ "panel1": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "Region": {
+ "guide": "legend",
+"geoms": "path",
+"title": "Region",
+"class": "Region",
+"selector": "Region",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#F8766D",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "East Asia & Pacific" 
+},
+{
+ "pathcolour": "#C49A00",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "Europe & Central Asia" 
+},
+{
+ "pathcolour": "#53B400",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "Latin America & Caribbean" 
+},
+{
+ "pathcolour": "#00C094",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "Middle East & North Africa" 
+},
+{
+ "pathcolour": "#00B6EB",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "North America" 
+},
+{
+ "pathcolour": "#A58AFF",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "South Asia" 
+},
+{
+ "pathcolour": "#FB61D7",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "Sub-Saharan Africa" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1960,
+    1970,
+    1980,
+    1990,
+    2000,
+    2010 
+] 
+],
+"y": [
+ [
+       40,
+      60,
+      80 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1960,
+    1965,
+    1970,
+    1975,
+    1980,
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010 
+] 
+],
+"y": [
+ [
+       30,
+      40,
+      50,
+      60,
+      70,
+      80 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     1960,
+    1970,
+    1980,
+    1990,
+    2000,
+    2010 
+],
+"xlab": [
+ "1960",
+"1970",
+"1980",
+"1990",
+"2000",
+"2010" 
+],
+"xrange": [  1957.45,  2013.55 ],
+"xline": true,
+"xticks": true,
+"y": [
+       40,
+      60,
+      80 
+],
+"ylab": [
+ "40",
+"60",
+"80" 
+],
+"yrange": [ 23.90147, 88.08065 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "year",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "life.expectancy",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1960",
+"1970",
+"1980",
+"1990",
+"2000",
+"2010" 
+],
+"ylabs": [
+ "40",
+"60",
+"80" 
+],
+"title": "History (Lines)",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_path_panel1" 
+] 
+},
+"panel2": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "Region": {
+ "guide": "legend",
+"geoms": [ "point", "path" ],
+"title": "Region",
+"class": "Region",
+"selector": "Region",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointcolour": "#F8766D",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "East Asia & Pacific",
+"pathcolour": "#F8766D",
+"pathsize":      0.5,
+"pathlinetype":        1 
+},
+{
+ "pointcolour": "#C49A00",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Europe & Central Asia",
+"pathcolour": "#C49A00",
+"pathsize":      0.5,
+"pathlinetype":        1 
+},
+{
+ "pointcolour": "#53B400",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Latin America & Caribbean",
+"pathcolour": "#53B400",
+"pathsize":      0.5,
+"pathlinetype":        1 
+},
+{
+ "pointcolour": "#00C094",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Middle East & North Africa",
+"pathcolour": "#00C094",
+"pathsize":      0.5,
+"pathlinetype":        1 
+},
+{
+ "pointcolour": "#00B6EB",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "North America",
+"pathcolour": "#00B6EB",
+"pathsize":      0.5,
+"pathlinetype":        1 
+},
+{
+ "pointcolour": "#A58AFF",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "South Asia",
+"pathcolour": "#A58AFF",
+"pathsize":      0.5,
+"pathlinetype":        1 
+},
+{
+ "pointcolour": "#FB61D7",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Sub-Saharan Africa",
+"pathcolour": "#FB61D7",
+"pathsize":      0.5,
+"pathlinetype":        1 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1960,
+    1965,
+    1970,
+    1975 
+] 
+],
+"y": [
+ [
+       30,
+      40,
+      50,
+      60,
+      70 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1960,
+  1962.5,
+    1965,
+  1967.5,
+    1970,
+  1972.5,
+    1975 
+] 
+],
+"y": [
+ [
+       30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     1960,
+    1965,
+    1970,
+    1975 
+],
+"xlab": [
+ "1960",
+"1965",
+"1970",
+"1975" 
+],
+"xrange": [  1959.25,  1975.75 ],
+"xline": true,
+"xticks": true,
+"y": [
+       30,
+      40,
+      50,
+      60,
+      70 
+],
+"ylab": [
+ "30",
+"40",
+"50",
+"60",
+"70" 
+],
+"yrange": [ 28.04741, 77.84218 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "year",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "life.expectancy",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1960",
+"1965",
+"1970",
+"1975" 
+],
+"ylabs": [
+ "30",
+"40",
+"50",
+"60",
+"70" 
+],
+"title": "Distribution (Points)",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom2_point_panel2",
+"geom3_path_panel2" 
+] 
+} 
+} 
+}
