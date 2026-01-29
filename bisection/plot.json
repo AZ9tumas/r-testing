@@ -1,0 +1,409 @@
+{
+ "geoms": {
+ "geom1_path_plot1": {
+ "geom": "path",
+"classed": "geom1_path_plot1",
+"aes": {
+ "x": "x",
+"y": "y" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_hline_plot1": {
+ "geom": "hline",
+"classed": "geom2_hline_plot1",
+"aes": {
+ "yintercept": "0" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"linetype": "dashed",
+"colour": "#BEBEBE" 
+},
+"types": {
+ "yintercept": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom3_vline_plot1": {
+ "geom": "vline",
+"classed": "geom3_vline_plot1",
+"aes": {
+ "xintercept": "0" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"linetype": "dashed",
+"colour": "#BEBEBE" 
+},
+"types": {
+ "xintercept": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_vline_plot1": {
+ "geom": "vline",
+"classed": "geom4_vline_plot1",
+"aes": {
+ "xintercept": "c",
+"showSelected1": "itr" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#00FF00",
+"linewidth":      0.5,
+"showSelected": "itr",
+"help_showSelected": "itr" 
+},
+"types": {
+ "xintercept": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_text_plot1": {
+ "geom": "text",
+"classed": "geom5_text_plot1",
+"aes": {
+ "x": "c",
+"y": "0",
+"label": "sprintf(\"c_%.2f\", c)",
+"showSelected1": "itr" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"fontface": "bold",
+"colour": "#0000FF",
+"showSelected": "itr",
+"help_showSelected": "itr" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_vline_plot1": {
+ "geom": "vline",
+"classed": "geom6_vline_plot1",
+"aes": {
+ "xintercept": "a",
+"showSelected1": "itr" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"linetype": "dashed",
+"colour": "#FF0000",
+"showSelected": "itr",
+"help_showSelected": "itr" 
+},
+"types": {
+ "xintercept": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_vline_plot1": {
+ "geom": "vline",
+"classed": "geom7_vline_plot1",
+"aes": {
+ "xintercept": "b",
+"showSelected1": "itr" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"linetype": "dashed",
+"colour": "#FF0000",
+"showSelected": "itr",
+"help_showSelected": "itr" 
+},
+"types": {
+ "xintercept": "numeric",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"time": {
+ "variable": "itr",
+"ms":     1000,
+"loop": false,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+},
+"duration": {
+ "itr":      250 
+},
+"selectors": {
+ "itr": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"update": [
+ "geom4_vline_plot1",
+"geom5_text_plot1",
+"geom6_vline_plot1",
+"geom7_vline_plot1" 
+],
+"duration":      250 
+} 
+},
+"plots": {
+ "plot1": {
+ "panel_margin_lines":     0.25,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+    -2.5,
+       0,
+     2.5,
+       5 
+] 
+],
+"y": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+   -3.75,
+    -2.5,
+   -1.25,
+       0,
+    1.25,
+     2.5,
+    3.75,
+       5 
+] 
+],
+"y": [
+ [
+     -2.5,
+       0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5,
+      20,
+    22.5 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -5,
+    -2.5,
+       0,
+     2.5,
+       5 
+],
+"xlab": [
+ "-5.0",
+"-2.5",
+"0.0",
+"2.5",
+"5.0" 
+],
+"xrange": [     -5.5,      5.5 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+       5,
+      10,
+      15,
+      20 
+],
+"ylab": [
+ "0",
+"5",
+"10",
+"15",
+"20" 
+],
+"yrange": [ -4.247322, 23.24987 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "x",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "y",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-5.0",
+"-2.5",
+"0.0",
+"2.5",
+"5.0" 
+],
+"ylabs": [
+ "0",
+"5",
+"10",
+"15",
+"20" 
+],
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_path_plot1",
+"geom2_hline_plot1",
+"geom3_vline_plot1",
+"geom4_vline_plot1",
+"geom5_text_plot1",
+"geom6_vline_plot1",
+"geom7_vline_plot1" 
+] 
+} 
+} 
+}
