@@ -12,7 +12,8 @@
 "linejoin": "round",
 "linemitre":        1,
 "na.rm": false,
-"na.rm": false 
+"na.rm": false,
+"colour": "#2E3440" 
 },
 "types": {
  "y": "numeric",
@@ -73,7 +74,7 @@
 "na.rm": false,
 "fontface": "bold",
 "size":       12,
-"colour": "#0000FF",
+"colour": "#2D5A27",
 "showSelected": "itr",
 "help_showSelected": "itr" 
 },
@@ -106,7 +107,7 @@
  "na.rm": false,
 "na.rm": false,
 "linetype": "dashed",
-"colour": "#FF0000",
+"colour": "#BF616A",
 "showSelected": "itr",
 "help_showSelected": "itr" 
 },
@@ -137,7 +138,7 @@
  "na.rm": false,
 "na.rm": false,
 "linetype": "dashed",
-"colour": "#FF0000",
+"colour": "#BF616A",
 "showSelected": "itr",
 "help_showSelected": "itr" 
 },
@@ -296,10 +297,15 @@
 "size":      0.5,
 "linetype":        1 
 },
-"panel_border": [],
+"panel_border": {
+ "fill": "transparent",
+"colour": "#000000",
+"size":      0.5,
+"linetype":        1 
+},
 "grid_major": {
  "colour": "#000000",
-"size":      0.5,
+"size":     0.05,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -325,7 +331,7 @@
 },
 "grid_minor": {
  "colour": "#000000",
-"size":      0.5,
+"size":     0.01,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -396,12 +402,12 @@
 },
 "xtitle": "x",
 "strip_text_xsize": "14pt",
-"xsize": "14pt",
+"xsize": "11.2pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "y",
 "strip_text_ysize": "14pt",
-"ysize": "14pt",
+"ysize": "11.2pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -469,10 +475,15 @@
 "size":      0.5,
 "linetype":        1 
 },
-"panel_border": [],
+"panel_border": {
+ "fill": "transparent",
+"colour": "#000000",
+"size":      0.5,
+"linetype":        1 
+},
 "grid_major": {
  "colour": "#000000",
-"size":      0.5,
+"size":     0.05,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -496,7 +507,7 @@
 },
 "grid_minor": {
  "colour": "#000000",
-"size":      0.5,
+"size":     0.01,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -561,12 +572,12 @@
 },
 "xtitle": "itr",
 "strip_text_xsize": "14pt",
-"xsize": "14pt",
+"xsize": "11.2pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "err",
 "strip_text_ysize": "14pt",
-"ysize": "14pt",
+"ysize": "11.2pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
