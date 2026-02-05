@@ -424,6 +424,7 @@
 "2",
 "4" 
 ],
+"title": "Bisection Root Finding method",
 "title_size": "16.8pt",
 "options": {
  "width":      400,
@@ -570,12 +571,12 @@
 "yline": false,
 "yticks": true 
 },
-"xtitle": "itr",
+"xtitle": "Iteration",
 "strip_text_xsize": "14pt",
 "xsize": "11.2pt",
 "xangle":        0,
 "xanchor": "middle",
-"ytitle": "err",
+"ytitle": "Error range",
 "strip_text_ysize": "14pt",
 "ysize": "11.2pt",
 "yangle":        0,
@@ -592,6 +593,7 @@
 "18",
 "20" 
 ],
+"title": "Error analysis",
 "title_size": "16.8pt",
 "options": {
  "width":      400,

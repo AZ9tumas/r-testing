@@ -55,24 +55,26 @@ plotdf <- data.frame(
 # The actual plotting
 plot <- ggplot() +
   geom_path(mapping = aes(x = x, y = y), 
-             data = plotdf) + 
+             data = plotdf, color = "#2e3440") + 
   
   # the green
   geom_vline(mapping = aes(xintercept = c), data = df, linewidth = 0.5, color = "green", showSelected = 'itr') +
-  geom_text(mapping = aes(x = c, y = 0, label = sprintf("c_%.2f", c)), 
-            data = df, fontface = "bold", size = 12, vjust = -1,
-            color = "blue", showSelected = 'itr') + 
+  
+  # text
+  geom_text(mapping = aes(x = c, y = 0, label = sprintf("c = %.2f", c)), 
+            data = df, fontface = "bold", size = 12,
+            color = "#2d5a27", showSelected = 'itr') + 
   
   # the red lines
-  geom_vline(mapping = aes(xintercept = a), data = df, linetype = "dashed", color = "red", showSelected = 'itr') + 
-  geom_vline(mapping = aes(xintercept = b), data = df, linetype = "dashed", color = "red", showSelected = 'itr') +
-  
-  #themes?
-  theme_classic(base_size = 14) + 
+  geom_vline(mapping = aes(xintercept = a), data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') + 
+  geom_vline(mapping = aes(xintercept = b), data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') +
   
   # limits
   scale_y_continuous(limits = c(-2, 5)) +
-  scale_x_continuous(limits = c(-3, 2))
+  scale_x_continuous(limits = c(-3, 2)) + 
+  
+  # themes
+  theme_linedraw(base_size = 14)
 
 
 err.plot <- ggplot() + 
@@ -80,7 +82,7 @@ err.plot <- ggplot() +
   geom_point(mapping = aes(x = itr, y = err), data = errdf) + 
   geom_vline(mapping = aes(xintercept = itr), data = errdf, showSelected = 'itr', alpha = 0.35) + 
   # theming
-  theme_classic(base_size = 14)
+  theme_linedraw(base_size = 14)
 
 # animint stuff
 viz <- animint(
