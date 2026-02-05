@@ -1,8 +1,8 @@
 {
  "geoms": {
- "geom1_path_plot1": {
+ "geom1_path_source": {
  "geom": "path",
-"classed": "geom1_path_plot1",
+"classed": "geom1_path_source",
 "aes": {
  "x": "x",
 "y": "y" 
@@ -15,8 +15,8 @@
 "na.rm": false 
 },
 "types": {
- "x": "numeric",
-"y": "numeric",
+ "y": "numeric",
+"x": "numeric",
 "PANEL": "integer",
 "group": "character" 
 },
@@ -26,9 +26,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom2_vline_plot1": {
+"geom2_vline_source": {
  "geom": "vline",
-"classed": "geom2_vline_plot1",
+"classed": "geom2_vline_source",
 "aes": {
  "xintercept": "c",
 "showSelected1": "itr" 
@@ -57,13 +57,13 @@
 "chunks": 1,
 "total": 1 
 },
-"geom3_text_plot1": {
+"geom3_text_source": {
  "geom": "text",
-"classed": "geom3_text_plot1",
+"classed": "geom3_text_source",
 "aes": {
  "x": "c",
 "y": "0",
-"label": "sprintf(\"c_%.2f\", c)",
+"label": "sprintf(\"c = %.2f\", c)",
 "showSelected1": "itr" 
 },
 "params": {
@@ -72,13 +72,14 @@
 "na.rm": false,
 "na.rm": false,
 "fontface": "bold",
+"size":       12,
 "colour": "#0000FF",
 "showSelected": "itr",
 "help_showSelected": "itr" 
 },
 "types": {
- "x": "numeric",
-"y": "numeric",
+ "y": "numeric",
+"x": "numeric",
 "label": "character",
 "showSelected1": "integer",
 "PANEL": "integer",
@@ -94,9 +95,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom4_vline_plot1": {
+"geom4_vline_source": {
  "geom": "vline",
-"classed": "geom4_vline_plot1",
+"classed": "geom4_vline_source",
 "aes": {
  "xintercept": "a",
 "showSelected1": "itr" 
@@ -125,9 +126,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom5_vline_plot1": {
+"geom5_vline_source": {
  "geom": "vline",
-"classed": "geom5_vline_plot1",
+"classed": "geom5_vline_source",
 "aes": {
  "xintercept": "b",
 "showSelected1": "itr" 
@@ -156,9 +157,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom6_path_err": {
+"geom6_path_errorplot": {
  "geom": "path",
-"classed": "geom6_path_err",
+"classed": "geom6_path_errorplot",
 "aes": {
  "x": "itr",
 "y": "err" 
@@ -168,8 +169,7 @@
 "linejoin": "round",
 "linemitre":        1,
 "na.rm": false,
-"na.rm": false,
-"linetype": "dashed" 
+"na.rm": false 
 },
 "types": {
  "x": "numeric",
@@ -183,9 +183,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_point_err": {
+"geom7_point_errorplot": {
  "geom": "point",
-"classed": "geom7_point_err",
+"classed": "geom7_point_errorplot",
 "aes": {
  "x": "itr",
 "y": "err" 
@@ -206,9 +206,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom8_vline_err": {
+"geom8_vline_errorplot": {
  "geom": "vline",
-"classed": "geom8_vline_err",
+"classed": "geom8_vline_errorplot",
 "aes": {
  "xintercept": "itr",
 "showSelected1": "itr" 
@@ -216,7 +216,6 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"linetype": "dashed",
 "alpha":     0.35,
 "showSelected": "itr",
 "help_showSelected": "itr" 
@@ -241,8 +240,7 @@
 "time": {
  "variable": "itr",
 "ms":     1000,
-"loop": false,
-"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ] 
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ] 
 },
 "duration": {
  "itr":      250 
@@ -253,20 +251,20 @@
 "type": "single",
 "showSelected": true,
 "selected": "1",
-"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ],
 "update": [
- "geom2_vline_plot1",
-"geom3_text_plot1",
-"geom4_vline_plot1",
-"geom5_vline_plot1",
-"geom8_vline_err" 
+ "geom2_vline_source",
+"geom3_text_source",
+"geom4_vline_source",
+"geom5_vline_source",
+"geom8_vline_errorplot" 
 ],
 "duration":      250 
 } 
 },
 "plots": {
- "plot1": {
- "panel_margin_lines":     0.25,
+ "source": {
+ "panel_margin_lines":     0.32,
 "legend": {},
 "strips": {
  "top": [
@@ -293,135 +291,134 @@
 "height_proportion": [        1 ] 
 },
 "panel_background": {
- "fill": "#EBEBEB",
+ "fill": "#FFFFFF",
 "colour": "transparent",
 "size":      0.5,
 "linetype":        1 
 },
 "panel_border": [],
 "grid_major": {
- "colour": "#FFFFFF",
+ "colour": "#000000",
 "size":      0.5,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
  "x": [
  [
-       -5,
-    -2.5,
+       -3,
+      -2,
+      -1,
        0,
-     2.5,
-       5 
+       1,
+       2 
 ] 
 ],
 "y": [
  [
-        0,
-       5,
-      10,
-      15,
-      20 
+       -2,
+       0,
+       2,
+       4 
 ] 
 ] 
 } 
 },
 "grid_minor": {
- "colour": "#FFFFFF",
-"size":     0.25,
+ "colour": "#000000",
+"size":      0.5,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
  "x": [
  [
-       -5,
-   -3.75,
+       -3,
     -2.5,
-   -1.25,
+      -2,
+    -1.5,
+      -1,
+    -0.5,
        0,
-    1.25,
-     2.5,
-    3.75,
-       5 
+     0.5,
+       1,
+     1.5,
+       2 
 ] 
 ],
 "y": [
  [
-     -2.5,
+       -2,
+      -1,
        0,
-     2.5,
-       5,
-     7.5,
-      10,
-    12.5,
-      15,
-    17.5,
-      20,
-    22.5 
+       1,
+       2,
+       3,
+       4,
+       5 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-       -5,
-    -2.5,
+       -3,
+      -2,
+      -1,
        0,
-     2.5,
-       5 
+       1,
+       2 
 ],
 "xlab": [
- "-5.0",
-"-2.5",
-"0.0",
-"2.5",
-"5.0" 
+ "-3",
+"-2",
+"-1",
+"0",
+"1",
+"2" 
 ],
-"xrange": [     -5.5,      5.5 ],
-"xline": true,
+"xrange": [    -3.25,     2.25 ],
+"xline": false,
 "xticks": true,
 "y": [
-        0,
-       5,
-      10,
-      15,
-      20 
+       -2,
+       0,
+       2,
+       4 
 ],
 "ylab": [
- "0",
-"5",
-"10",
-"15",
-"20" 
+ "-2",
+"0",
+"2",
+"4" 
 ],
-"yrange": [ -4.247322, 23.24987 ],
-"yline": true,
+"yrange": [    -2.35,     5.35 ],
+"yline": false,
 "yticks": true 
 },
 "xtitle": "x",
-"strip_text_xsize": "11pt",
-"xsize": "11pt",
+"strip_text_xsize": "14pt",
+"xsize": "14pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "y",
-"strip_text_ysize": "11pt",
-"ysize": "11pt",
+"strip_text_ysize": "14pt",
+"ysize": "14pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "-5.0",
-"-2.5",
-"0.0",
-"2.5",
-"5.0" 
+ "-3",
+"-2",
+"-1",
+"0",
+"1",
+"2" 
 ],
 "ylabs": [
- "0",
-"5",
-"10",
-"15",
-"20" 
+ "-2",
+"0",
+"2",
+"4" 
 ],
-"title_size": "13.2pt",
+"title_size": "16.8pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -432,15 +429,15 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom1_path_plot1",
-"geom2_vline_plot1",
-"geom3_text_plot1",
-"geom4_vline_plot1",
-"geom5_vline_plot1" 
+ "geom1_path_source",
+"geom2_vline_source",
+"geom3_text_source",
+"geom4_vline_source",
+"geom5_vline_source" 
 ] 
 },
-"err": {
- "panel_margin_lines":     0.25,
+"errorplot": {
+ "panel_margin_lines":     0.32,
 "legend": {},
 "strips": {
  "top": [
@@ -467,123 +464,124 @@
 "height_proportion": [        1 ] 
 },
 "panel_background": {
- "fill": "#EBEBEB",
+ "fill": "#FFFFFF",
 "colour": "transparent",
 "size":      0.5,
 "linetype":        1 
 },
 "panel_border": [],
 "grid_major": {
- "colour": "#FFFFFF",
+ "colour": "#000000",
 "size":      0.5,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
  "x": [
  [
-      2.5,
-       5,
-     7.5,
-      10 
+        4,
+       8,
+      12 
 ] 
 ],
 "y": [
  [
-        0,
-     0.2,
-     0.4,
-     0.6 
+       12,
+      14,
+      16,
+      18,
+      20 
 ] 
 ] 
 } 
 },
 "grid_minor": {
- "colour": "#FFFFFF",
-"size":     0.25,
+ "colour": "#000000",
+"size":      0.5,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
  "x": [
  [
-     1.25,
-     2.5,
-    3.75,
-       5,
-    6.25,
-     7.5,
-    8.75,
-      10 
+        2,
+       4,
+       6,
+       8,
+      10,
+      12,
+      14 
 ] 
 ],
 "y": [
  [
-        0,
-     0.1,
-     0.2,
-     0.3,
-     0.4,
-     0.5,
-     0.6,
-     0.7 
+       12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21 
 ] 
 ] 
 } 
 },
 "axis1": {
  "x": [
-      2.5,
-       5,
-     7.5,
-      10 
+        4,
+       8,
+      12 
 ],
 "xlab": [
- "2.5",
-"5.0",
-"7.5",
-"10.0" 
+ "4",
+"8",
+"12" 
 ],
-"xrange": [     0.55,    10.45 ],
-"xline": true,
+"xrange": [      0.3,     15.7 ],
+"xline": false,
 "xticks": true,
 "y": [
-        0,
-     0.2,
-     0.4,
-     0.6 
+       12,
+      14,
+      16,
+      18,
+      20 
 ],
 "ylab": [
- "0.0",
-"0.2",
-"0.4",
-"0.6" 
+ "12",
+"14",
+"16",
+"18",
+"20" 
 ],
-"yrange": [ -0.03672113, 0.7712626 ],
-"yline": true,
+"yrange": [ 11.79297, 21.84766 ],
+"yline": false,
 "yticks": true 
 },
 "xtitle": "itr",
-"strip_text_xsize": "11pt",
-"xsize": "11pt",
+"strip_text_xsize": "14pt",
+"xsize": "14pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "err",
-"strip_text_ysize": "11pt",
-"ysize": "11pt",
+"strip_text_ysize": "14pt",
+"ysize": "14pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
- "2.5",
-"5.0",
-"7.5",
-"10.0" 
+ "4",
+"8",
+"12" 
 ],
 "ylabs": [
- "0.0",
-"0.2",
-"0.4",
-"0.6" 
+ "12",
+"14",
+"16",
+"18",
+"20" 
 ],
-"title_size": "13.2pt",
+"title_size": "16.8pt",
 "options": {
  "width":      400,
 "height":      400 
@@ -594,10 +592,11 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom6_path_err",
-"geom7_point_err",
-"geom8_vline_err" 
+ "geom6_path_errorplot",
+"geom7_point_errorplot",
+"geom8_vline_errorplot" 
 ] 
 } 
-} 
+},
+"title": "Bisection Method Animation" 
 }

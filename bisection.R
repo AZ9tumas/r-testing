@@ -1,13 +1,20 @@
 
+library(ggplot2)
 library(animint2)
 
-f <- function(x) x ** 2 - 3
-a <- -5
-b <- 5
-n_iterations <- 10
+f <- function(x) x ** 3 + x ** 2 - 2 * x + 2
+errf <- function(x) (x - (2)) ** 2
+lowerlim <- -3
+upperlim <- 0
+n_iterations <- 15
 
 history_list <- list()
+error_list <- list()
 
+a <- lowerlim
+b <- upperlim
+
+# calculation
 for (i in 1:n_iterations) {
   c <- (a + b) / 2
   
@@ -21,6 +28,11 @@ for (i in 1:n_iterations) {
     f_c  = f(c)
   )
   
+  error_list[[i]] <- data.frame(
+    itr = i,
+    err = errf(c)
+  )
+  
   if (f(a) * f(c) < 0) {
     b <- c
   } else if (f(b) * f(c) < 0) {
@@ -28,33 +40,58 @@ for (i in 1:n_iterations) {
   }
 }
 
-df <- do.call(rbind, history_list)
+error_list
 
-series <- seq(5, -5, length.out = 100)
+df <- do.call(rbind, history_list)
+errdf <- do.call(rbind, error_list)
+
+series <- seq(-10, 10, length.out = 500)
 
 plotdf <- data.frame(
   x = series,
   y = f(series)
 )
 
-plot <- ggplot() + 
+# The actual plotting
+plot <- ggplot() +
   geom_path(mapping = aes(x = x, y = y), 
              data = plotdf) + 
-  # the axis
-  geom_hline(mapping = aes(yintercept = 0), data = df, linetype = "dashed", color = "grey") + 
-  geom_vline(mapping = aes(xintercept = 0), data = df, linetype = "dashed", color = "grey") +
   
   # the green
   geom_vline(mapping = aes(xintercept = c), data = df, linewidth = 0.5, color = "green", showSelected = 'itr') +
-  geom_text(mapping = aes(x = c, y = 0, label = sprintf("c_%.2f", c)), data = df, fontface = "bold",
+  geom_text(mapping = aes(x = c, y = 0, label = sprintf("c_%.2f", c)), 
+            data = df, fontface = "bold", size = 12, vjust = -1,
             color = "blue", showSelected = 'itr') + 
   
   # the red lines
   geom_vline(mapping = aes(xintercept = a), data = df, linetype = "dashed", color = "red", showSelected = 'itr') + 
-  geom_vline(mapping = aes(xintercept = b), data = df, linetype = "dashed", color = "red", showSelected = 'itr')
+  geom_vline(mapping = aes(xintercept = b), data = df, linetype = "dashed", color = "red", showSelected = 'itr') +
   
+  #themes?
+  theme_classic(base_size = 14) + 
+  
+  # limits
+  scale_y_continuous(limits = c(-2, 5)) +
+  scale_x_continuous(limits = c(-3, 2))
 
-viz <- animint(plot, duration=list(itr = 250))
-viz$time <- list(variable="itr", ms=1000, loop = FALSE)
-viz
+
+err.plot <- ggplot() + 
+  geom_path(mapping = aes(x = itr, y = err), data = errdf) + 
+  geom_point(mapping = aes(x = itr, y = err), data = errdf) + 
+  geom_vline(mapping = aes(xintercept = itr), data = errdf, showSelected = 'itr', alpha = 0.35) + 
+  # theming
+  theme_classic(base_size = 14)
+
+# animint stuff
+viz <- animint(
+  title = "Bisection Method Animation",
+  source = plot,
+  errorplot = err.plot,
+  duration = list(itr = 250),
+  time = list(variable="itr", ms=1000)
+)
+
+animint2dir(viz, out.dir = "bisection_test", open.browser = TRUE)
+
+#animint2pages(viz, out.dir = "bisection_test", github_repo = "bisection_test")
 
