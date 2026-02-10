@@ -193,8 +193,8 @@
 "legend": true,
 "is.variable.value": false,
 "showSelected": true,
-"selected": [ "miss", "hit" ],
-"levels": [ "miss", "hit" ],
+"selected": [ "hit", "miss" ],
+"levels": [ "hit", "miss" ],
 "update": [
  "geom2_segment_source",
 "geom5_point_errplot" 
