@@ -17,7 +17,6 @@ check_cross <- function (ystart, yend){
 }
 
 cross_count <- 0
-
 for (i in 1:ITERATION_COUNT) {
   x <- runif(1, min = 0, max = ymax)[[1]]
   y <- runif(1, min = 0, max = ymax)[[1]]
@@ -86,7 +85,7 @@ err_plot <- ggplot() +
     labels = c("Miss", "Hit"),              
     name = "Result"
   ) +
-  theme_classic(base_size = 14)
+  theme_light(base_size = 14)
 
 # animint stuff
 viz <- animint(
@@ -94,9 +93,9 @@ viz <- animint(
   source = plot,
   errplot = err_plot,
   #duration = list(frame = 250),
-  time = list(variable="frame", ms=1000)
+  time = list(variable="frame", ms=100)
 )
 
 
-animint2dir(viz, out.dir = "buffons_test", open.browser = TRUE)
+animint2dir(viz, out.dir = "buffons", open.browser = TRUE)
 
