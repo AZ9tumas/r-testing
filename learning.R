@@ -79,7 +79,7 @@ plot <- ggplot() +
 err_plot <- ggplot() +
     ylim(2, 5) +
 
-    labs(title = "Pi Estimate", x = "Iteration Count", y = "Error (Normalized)") +
+    labs(title = "Pi Estimate", x = "Iteration Count", y = "Estimated Pi") +
 
     geom_vline(mapping = aes(xintercept = itr), color = "#70a4db", alpha = 0.6, showSelected = "itr", data = dt, linewidth = 0.1) +
     

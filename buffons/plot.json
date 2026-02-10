@@ -576,7 +576,7 @@
 "xsize": "14pt",
 "xangle":        0,
 "xanchor": "middle",
-"ytitle": "Error (Normalized)",
+"ytitle": "Estimated Pi",
 "strip_text_ysize": "14pt",
 "ysize": "14pt",
 "yangle":        0,
