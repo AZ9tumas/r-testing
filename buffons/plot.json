@@ -1,0 +1,558 @@
+{
+ "geoms": {
+ "geom1_hline_source": {
+ "geom": "hline",
+"classed": "geom1_hline_source",
+"aes": {
+ "yintercept": "yintercept" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#C1DAF5",
+"linewidth":      0.1 
+},
+"types": {
+ "yintercept": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_segment_source": {
+ "geom": "segment",
+"classed": "geom2_segment_source",
+"aes": {
+ "x": "xstart",
+"y": "ystart",
+"xend": "xend",
+"yend": "yend",
+"colour": "cross",
+"showSelected1": "frame",
+"showSelected2": "cross" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"showSelected": [ "frame", "cross" ],
+"help_showSelected": [ "frame", "cross" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_line_errplot": {
+ "geom": "line",
+"classed": "geom3_line_errplot",
+"aes": {
+ "x": "itr",
+"y": "err" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#70A4DB" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_errplot": {
+ "geom": "point",
+"classed": "geom4_point_errplot",
+"aes": {
+ "x": "itr",
+"y": "err",
+"colour": "cross",
+"showSelected1": "frame",
+"showSelected2": "cross" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "frame", "cross" ],
+"help_showSelected": [ "frame", "cross" ] 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"time": {
+ "variable": "frame",
+"ms":     1000,
+"sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105" ] 
+},
+"selectors": {
+ "cross": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "miss", "hit" ],
+"levels": [ "miss", "hit" ],
+"update": [
+ "geom2_segment_source",
+"geom4_point_errplot" 
+] 
+},
+"frame": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105" ],
+"update": [
+ "geom2_segment_source",
+"geom4_point_errplot" 
+] 
+} 
+},
+"plots": {
+ "source": {
+ "panel_margin_lines":     0.32,
+"legend": {
+ "Result": {
+ "guide": "legend",
+"geoms": "path",
+"title": "Result",
+"class": "cross",
+"selector": "cross",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "11.2pt",
+"title_size": "14pt",
+"entries": [
+ {
+ "pathcolour": "#4283C9",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "Miss" 
+},
+{
+ "pathcolour": "#0D3A6B",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"label": "Hit" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#000000",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#000000",
+"size":     0.05,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     2.5,
+       5,
+     7.5,
+      10 
+] 
+],
+"y": [
+ [
+        0,
+     2.5,
+       5,
+     7.5,
+      10 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#000000",
+"size":     0.01,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+    1.25,
+     2.5,
+    3.75,
+       5,
+    6.25,
+     7.5,
+    8.75,
+      10 
+] 
+],
+"y": [
+ [
+        0,
+    1.25,
+     2.5,
+    3.75,
+       5,
+    6.25,
+     7.5,
+    8.75,
+      10 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+     2.5,
+       5,
+     7.5,
+      10 
+],
+"xlab": [
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
+],
+"xrange": [ -0.9804046, 10.98223 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+     2.5,
+       5,
+     7.5,
+      10 
+],
+"ylab": [
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
+],
+"yrange": [ -0.9074195, 10.57493 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "",
+"strip_text_xsize": "14pt",
+"xsize": "11.2pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "14pt",
+"ysize": "11.2pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
+],
+"ylabs": [
+ "0.0",
+"2.5",
+"5.0",
+"7.5",
+"10.0" 
+],
+"title": "Buffon's Needle Simulation",
+"title_size": "16.8pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_hline_source",
+"geom2_segment_source" 
+] 
+},
+"errplot": {
+ "panel_margin_lines":     0.32,
+"legend": {
+ "Result": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Result",
+"class": "cross",
+"selector": "cross",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "11.2pt",
+"title_size": "14pt",
+"entries": [
+ {
+ "pointcolour": "#4283C9",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Miss" 
+},
+{
+ "pointcolour": "#0D3A6B",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "Hit" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#000000",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#000000",
+"size":     0.05,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+      25,
+      50,
+      75,
+     100 
+] 
+],
+"y": [
+ [
+     0.25,
+     0.5,
+    0.75 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#000000",
+"size":     0.01,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+    12.5,
+      25,
+    37.5,
+      50,
+    62.5,
+      75,
+    87.5,
+     100 
+] 
+],
+"y": [
+ [
+    0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+      25,
+      50,
+      75,
+     100 
+],
+"xlab": [
+ "0",
+"25",
+"50",
+"75",
+"100" 
+],
+"xrange": [     -3.2,    111.2 ],
+"xline": false,
+"xticks": true,
+"y": [
+     0.25,
+     0.5,
+    0.75 
+],
+"ylab": [
+ "0.25",
+"0.50",
+"0.75" 
+],
+"yrange": [ 0.01352761, 0.9525418 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Iteration Count",
+"strip_text_xsize": "14pt",
+"xsize": "11.2pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Error (Normalized)",
+"strip_text_ysize": "14pt",
+"ysize": "11.2pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"25",
+"50",
+"75",
+"100" 
+],
+"ylabs": [
+ "0.25",
+"0.50",
+"0.75" 
+],
+"title": "Error analysis",
+"title_size": "16.8pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom3_line_errplot",
+"geom4_point_errplot" 
+] 
+} 
+},
+"title": "Buffon's Needle" 
+}

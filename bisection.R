@@ -54,11 +54,13 @@ plotdf <- data.frame(
 
 # The actual plotting
 plot <- ggplot() +
+  labs(title = "Bisection Root Finding method", x = "x", y = "y") + 
   geom_path(mapping = aes(x = x, y = y), 
              data = plotdf, color = "#2e3440") + 
   
   # the green
-  geom_vline(mapping = aes(xintercept = c), data = df, linewidth = 0.5, color = "green", showSelected = 'itr') +
+  geom_vline(mapping = aes(xintercept = c), 
+             data = df, linewidth = 0.5, color = "green", showSelected = 'itr') +
   
   # text
   geom_text(mapping = aes(x = c, y = 0, label = sprintf("c = %.2f", c)), 
@@ -66,8 +68,10 @@ plot <- ggplot() +
             color = "#2d5a27", showSelected = 'itr') + 
   
   # the red lines
-  geom_vline(mapping = aes(xintercept = a), data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') + 
-  geom_vline(mapping = aes(xintercept = b), data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') +
+  geom_vline(mapping = aes(xintercept = a), 
+             data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') + 
+  geom_vline(mapping = aes(xintercept = b), 
+             data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') +
   
   # limits
   scale_y_continuous(limits = c(-2, 5)) +
@@ -78,6 +82,7 @@ plot <- ggplot() +
 
 
 err.plot <- ggplot() + 
+  labs(title = "Error analysis", y = "Error range", x = "Iteration") +
   geom_path(mapping = aes(x = itr, y = err), data = errdf) + 
   geom_point(mapping = aes(x = itr, y = err), data = errdf) + 
   geom_vline(mapping = aes(xintercept = itr), data = errdf, showSelected = 'itr', alpha = 0.35) + 
