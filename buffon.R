@@ -74,19 +74,19 @@ plot <- ggplot() +
     name = "Result"
   ) +
   labs(title = "Buffon's Needle Simulation", subtitle = paste("Total Drops:", ITERATION_COUNT), x = "", y = "") +
-  theme_linedraw(base_size = 14)
+  theme_light(base_size = 14)
 
 err_plot <- ggplot() + 
   labs(title = "Error analysis", x = "Iteration Count", y = "Error (Normalized)") +
-  geom_vline(mapping = aes(xintercept = itr), color = "#70a4db", alpha = 0.6, showSelected = "frame", data = cumulative_dt)
+  #geom_vline(mapping = aes(xintercept = itr), color = "#70a4db", alpha = 0.6, showSelected = "frame", data = cumulative_dt, linewidth = 0.1) +
   geom_line(mapping = aes(y = err, x = itr), color = "#70a4db", data = cumulative_dt) +
-  geom_point(mapping = aes(y = err, x = itr, color = cross), data = cumulative_dt) +
+  geom_point(mapping = aes(y = err, x = itr, color = cross), data = cumulative_dt, showSelected = "frame") +
   scale_color_manual(
     values = c("miss" = "#0d3a6b", "hit" = "#4283c9"), 
     labels = c("Miss", "Hit"),              
     name = "Result"
   ) +
-  theme_linedraw(base_size = 14)
+  theme_classic(base_size = 14)
 
 # animint stuff
 viz <- animint(

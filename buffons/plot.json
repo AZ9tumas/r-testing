@@ -220,13 +220,13 @@
 },
 "panel_border": {
  "fill": "transparent",
-"colour": "#000000",
+"colour": "#B3B3B3",
 "size":      0.5,
 "linetype":        1 
 },
 "grid_major": {
- "colour": "#000000",
-"size":     0.05,
+ "colour": "#D9D9D9",
+"size":     0.25,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -251,8 +251,8 @@
 } 
 },
 "grid_minor": {
- "colour": "#000000",
-"size":     0.01,
+ "colour": "#EDEDED",
+"size":    0.125,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -299,7 +299,7 @@
 "7.5",
 "10.0" 
 ],
-"xrange": [ -0.9804046, 10.98223 ],
+"xrange": [ -0.4595137, 10.44955 ],
 "xline": false,
 "xticks": true,
 "y": [
@@ -316,18 +316,18 @@
 "7.5",
 "10.0" 
 ],
-"yrange": [ -0.9074195, 10.57493 ],
+"yrange": [ -1.022755, 10.98028 ],
 "yline": false,
 "yticks": true 
 },
 "xtitle": "",
 "strip_text_xsize": "14pt",
-"xsize": "11.2pt",
+"xsize": "14pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "",
 "strip_text_ysize": "14pt",
-"ysize": "11.2pt",
+"ysize": "14pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -423,13 +423,13 @@
 },
 "panel_border": {
  "fill": "transparent",
-"colour": "#000000",
+"colour": "#B3B3B3",
 "size":      0.5,
 "linetype":        1 
 },
 "grid_major": {
- "colour": "#000000",
-"size":     0.05,
+ "colour": "#D9D9D9",
+"size":     0.25,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -444,16 +444,17 @@
 ],
 "y": [
  [
-     0.25,
+        0,
      0.5,
-    0.75 
+       1,
+     1.5 
 ] 
 ] 
 } 
 },
 "grid_minor": {
- "colour": "#000000",
-"size":     0.01,
+ "colour": "#EDEDED",
+"size":    0.125,
 "linetype":        1,
 "lineend": "butt",
 "loc": {
@@ -472,13 +473,13 @@
 ],
 "y": [
  [
-    0.125,
+        0,
     0.25,
-   0.375,
      0.5,
-   0.625,
     0.75,
-   0.875 
+       1,
+    1.25,
+     1.5 
 ] 
 ] 
 } 
@@ -502,27 +503,29 @@
 "xline": false,
 "xticks": true,
 "y": [
-     0.25,
+        0,
      0.5,
-    0.75 
+       1,
+     1.5 
 ],
 "ylab": [
- "0.25",
-"0.50",
-"0.75" 
+ "0.0",
+"0.5",
+"1.0",
+"1.5" 
 ],
-"yrange": [ 0.01352761, 0.9525418 ],
+"yrange": [ -0.02915485, 1.621509 ],
 "yline": false,
 "yticks": true 
 },
 "xtitle": "Iteration Count",
 "strip_text_xsize": "14pt",
-"xsize": "11.2pt",
+"xsize": "14pt",
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "Error (Normalized)",
 "strip_text_ysize": "14pt",
-"ysize": "11.2pt",
+"ysize": "14pt",
 "yangle":        0,
 "yanchor": "end",
 "xlabs": [
@@ -533,9 +536,10 @@
 "100" 
 ],
 "ylabs": [
- "0.25",
-"0.50",
-"0.75" 
+ "0.0",
+"0.5",
+"1.0",
+"1.5" 
 ],
 "title": "Error analysis",
 "title_size": "16.8pt",
