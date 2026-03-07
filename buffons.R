@@ -87,6 +87,8 @@ err_plot <- ggplot() +
     
     geom_point(mapping = aes(y = pi_est, x = itr, color = cross), data = dt) +
 
+    geom_text(mapping = aes(x = itr, y = pi_est, label = pi_est), data = dt, showSelected = "itr", size = 15) +
+
     geom_hline(yintercept = pi, color = "#174271", linewidth = 0.35) +
 
     scale_color_manual(

@@ -33,8 +33,15 @@ fertilityplot <- ggplot() +
             data = getDataRange(1970, 10), showSelected = "country") +
   ggtitle("Life Expectancy vs Fertility Rate with Labels")
 
-viz <- animint(fertilityplot, duration=list(year = 250))
-#viz$time <- list(variable="year", ms=1000)
-viz
+# animint stuff
+viz <- animint(
+  title = "Life Expectancy vs Fertility Rate",
+  source = fertilityplot,
+  duration = list(frame = 250),
+  time = list(variable="year", ms=1000)
+)
+
+
+animint2dir(viz, out.dir = "test", open.browser = TRUE)
 
 # Add geoms that show the selected year: a geom_text() on the scatterplot
