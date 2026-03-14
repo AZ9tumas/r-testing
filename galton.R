@@ -1,5 +1,6 @@
 library(ggplot2)
 library(animint2)
+library(data.table)
 
 n <- 15
 ball.count <- 350
@@ -9,7 +10,6 @@ peg_coordinates <- list()
 count <- 1
 for (y in seq(n, 0, by = -1)) {
   for (x in seq(y, 2 * n - y, by = 2)){
-    print(c(x, y))
     peg_coordinates[[count]] <- data.frame(x = x, y = y)
     count <- count + 1
   }
@@ -67,18 +67,15 @@ for (i in 2:(n + ball.count)){
   )
 }
 
-simulation.df <- do.call(rbind, simulation.list)
-slot.df <- do.call(rbind, slot.history)
-
-print("Slot count:")
-print(slot.count)
+simulation.dt <- rbindlist(simulation.list)
+slot.dt <- rbindlist(slot.history)
 
 pegviz1 <- ggplot() +
 
   labs(title = "Galton board") +
   
-  geom_point(data = peg.df, aes(x = x, y = y), size = 5, shape = 21, color = "green") + 
-  geom_point(data = simulation.df, aes(x = x, y = y), showSelected = "itr", size = 5, color = "black") +
+  geom_point(data = peg.df, aes(x = x, y = y), size = 5.5, shape = 21, color = "green") + 
+  geom_point(data = simulation.dt, aes(x = x, y = y), showSelected = "itr", size = 4.5, alpha = 0.75, color = "black") +
   
   geom_text(data = text.df, aes(x = x, y = y, label = label)) +
 
@@ -95,10 +92,10 @@ pegviz1 <- ggplot() +
 slotviz1 <- ggplot() +
   labs(title = "Slots bar chart", x = "Slots", y = "Ball count") + 
 
-  geom_bar(data = slot.df, aes(x = factor(slot), y = count), showSelected = "itr", 
+  geom_bar(data = slot.dt, aes(x = factor(slot), y = count), showSelected = "itr", 
     fill = "steelblue", color = "black", stat = "identity", position = "identity") +
 
-  geom_line(data = slot.df, aes(x = slot, y = count, group = itr), showSelected = "itr", 
+  geom_line(data = slot.dt, aes(x = slot, y = count, group = itr), showSelected = "itr", 
     color = "darkblue", fill = "steelblue", alpha = 0.85, size = 1) +
   
   theme_light(base_size = 14)
