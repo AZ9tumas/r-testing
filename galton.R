@@ -1,8 +1,8 @@
 library(ggplot2)
 library(animint2)
 
-n <- 12
-ball.count <- 150
+n <- 15
+ball.count <- 350
 
 peg_coordinates <- list()
 
@@ -21,7 +21,8 @@ text.df <- data.frame(y = rep(0, n), x = seq(1, 2 * n - 1, by = 2), label = 1:n)
 # get the balls simulated
 ball.state <- list(list(x = n, y = n - 1))
 simulation.list <- list(data.frame(x = n, y = n - 1, itr = 1))
-slot.count <- list()
+slot.count <- integer(n)
+slot.history <- list(data.frame(itr = 1, slot = seq_len(n), count = slot.count))
 
 # in the (n + ball.count)th iteration we see all balls go in
 # last ball reaches the last level at (n + ball.count - 1)th iteration
@@ -34,7 +35,8 @@ for (i in 2:(n + ball.count)){
     # decide
     if (ball$y == 0){
       # remove the ball from the state
-      slot.count[[ball$x]] <- ifelse(is.null(slot.count[[ball$x]]), 1, slot.count[[ball$x]] + 1)
+      slot.index <- (ball$x + 1) %/% 2
+      slot.count[slot.index] <- slot.count[slot.index] + 1
     } else {
       # random chance
       if (runif(1) < 0.5){
@@ -57,14 +59,23 @@ for (i in 2:(n + ball.count)){
     ball.state[[length(ball.state) + 1]] <- list(x = n, y = n - 1)
     simulation.list[[length(simulation.list) + 1]] <- data.frame(x = n, y = n - 1, itr = i)
   }
+
+  slot.history[[length(slot.history) + 1]] <- data.frame(
+    itr = i,
+    slot = seq_len(n),
+    count = slot.count
+  )
 }
 
 simulation.df <- do.call(rbind, simulation.list)
+slot.df <- do.call(rbind, slot.history)
 
 print("Slot count:")
 print(slot.count)
 
 pegviz1 <- ggplot() +
+
+  labs(title = "Galton board") +
   
   geom_point(data = peg.df, aes(x = x, y = y), size = 5, shape = 21, color = "green") + 
   geom_point(data = simulation.df, aes(x = x, y = y), showSelected = "itr", size = 5, color = "black") +
@@ -81,8 +92,20 @@ pegviz1 <- ggplot() +
     plot.background = element_rect(fill = "transparent", colour = NA)
   )
 
+slotviz1 <- ggplot() +
+  labs(title = "Slots bar chart", x = "Slots", y = "Ball count") + 
+
+  geom_bar(data = slot.df, aes(x = factor(slot), y = count), showSelected = "itr", 
+    fill = "steelblue", color = "black", stat = "identity", position = "identity") +
+
+  geom_line(data = slot.df, aes(x = slot, y = count, group = itr), showSelected = "itr", 
+    color = "darkblue", fill = "steelblue", alpha = 0.85, size = 1) +
+  
+  theme_light(base_size = 14)
+
 animint2dir(list(
   pegs = pegviz1,
-  duration = list(frame = 150),
-  time = list(variable="itr", ms=150)
+  slots = slotviz1,
+  duration = list(frame = 100),
+  time = list(variable="itr", ms=100)
 ), out.dir = "galton-animint")
