@@ -2,7 +2,7 @@ library(ggplot2)
 library(animint2)
 library(data.table)
 
-n <- 3
+n <- 4
 ball.count <- 10
 
 peg_coordinates <- list()
@@ -26,7 +26,28 @@ for (y in seq(n - 1, 0, by = -1)) {
 }
 
 peg.df <- do.call(rbind, peg_coordinates)
-text.df <- data.frame(y = rep(0, n + 1), x = seq(n, 3 * n, by = 2), label = 1:(n + 1))
+text.df <- data.frame(y = rep(0, n + (n%%2)), x = seq(n + (!(n%%2)), 3 * n, by = 2), label = 1:(n + (n%%2)))
+
+ball.state <- list(list(x = 2 * n, y = 2 * n - 1))
+simulation.list <- list(data.frame(x = 2 * n, y = 2 * n - 1, itr = 1))
+slot.count <- integer(n + (n%%2))
+slot.history <- list(data.frame(itr = 1, slot = seq_len(n + (n%%2)), count = slot.count))
+
+for (i in 2:(2 * n + ball.count)){
+  next_ball_state <- list()
+
+  for (j in seq_along(ball.state)){
+    ball <- ball.state[[j]]
+
+    if (ball$y == 0){
+      slot.index <- (ball$x - n) %% 2 + (n %% 2)
+      slot.count[slot.index] <- slot.count[slot.index] + 1
+    } else {
+      # range
+      
+    }
+  }
+}
 
 pegviz <- ggplot() + 
     labs(title = "Galton Board Example 2") + 
@@ -35,6 +56,7 @@ pegviz <- ggplot() +
     geom_text(data = text.df, aes(x = x, y = y, label = label)) +
 
     geom_hline(aes(yintercept = (n - 0.5)), color = "steelblue") +
+    geom_hline(aes(yintercept = (-0.5)), color = "orange") +
 
     
     theme(
