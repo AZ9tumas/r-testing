@@ -90,7 +90,7 @@ pegviz1 <- ggplot() +
   )
 
 slotviz1 <- ggplot() +
-  labs(title = "Slots bar chart", x = "Slots", y = "Ball count") + 
+  labs(title = "Slots bar chart", x = "Slots", y = "Ball count") +
 
   geom_bar(data = slot.dt, aes(x = factor(slot), y = count), showSelected = "itr", 
     fill = "steelblue", color = "black", stat = "identity", position = "identity") +
