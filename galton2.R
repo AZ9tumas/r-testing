@@ -90,7 +90,7 @@ slot.dt1 <- rbindlist(slot.history1)
 slot.dt2 <- rbindlist(slot.history2)
 
 pegviz <- ggplot() + 
-    labs(title = "Demonstration of the Galton Box, example 2") + 
+    labs(title = "Galton Box, Example 2") + 
     
     geom_point(data = peg.df, aes(x = x, y = y), size = 4, fill = "#7a7a7a", color = "#5a5a5a") +
 

@@ -72,7 +72,7 @@ slot.dt <- rbindlist(slot.history)
 
 pegviz1 <- ggplot() +
 
-  labs(title = "Demonstration of the Galton Box, example 1") +
+  labs(title = "Galton Box, Example 1") +
   
   geom_point(data = peg.df, aes(x = x, y = y), size = 4, shape = 21, fill = "#7a7a7a", color = "#5a5a5a") + 
   geom_point(data = simulation.dt, aes(x = x, y = y), showSelected = "itr",
