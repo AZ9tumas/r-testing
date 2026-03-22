@@ -237,7 +237,7 @@
  {
  "pointcolour": "#F8766D",
 "pointfill": "#F8766D",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "East Asia & Pacific",
@@ -248,7 +248,7 @@
 {
  "pointcolour": "#C49A00",
 "pointfill": "#C49A00",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "Europe & Central Asia",
@@ -259,7 +259,7 @@
 {
  "pointcolour": "#53B400",
 "pointfill": "#53B400",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "Latin America & Caribbean",
@@ -270,7 +270,7 @@
 {
  "pointcolour": "#00C094",
 "pointfill": "#00C094",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "Middle East & North Africa",
@@ -281,7 +281,7 @@
 {
  "pointcolour": "#00B6EB",
 "pointfill": "#00B6EB",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "North America",
@@ -292,7 +292,7 @@
 {
  "pointcolour": "#A58AFF",
 "pointfill": "#A58AFF",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "South Asia",
@@ -303,7 +303,7 @@
 {
  "pointcolour": "#FB61D7",
 "pointfill": "#FB61D7",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "Sub-Saharan Africa",

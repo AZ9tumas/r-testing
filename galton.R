@@ -2,8 +2,8 @@ library(ggplot2)
 library(animint2)
 library(data.table)
 
-n <- 15
-ball.count <- 350
+n <- 12
+ball.count <- 300
 
 peg_coordinates <- list()
 
@@ -72,37 +72,42 @@ slot.dt <- rbindlist(slot.history)
 
 pegviz1 <- ggplot() +
 
-  labs(title = "Galton board") +
+  labs(title = "Demonstration of the Galton Box, example 1") +
   
-  geom_point(data = peg.df, aes(x = x, y = y), size = 5.5, shape = 21, color = "green") + 
-  geom_point(data = simulation.dt, aes(x = x, y = y), showSelected = "itr", size = 4.5, alpha = 0.75, color = "black") +
+  geom_point(data = peg.df, aes(x = x, y = y), size = 4, shape = 21, fill = "#7a7a7a", color = "#5a5a5a") + 
+  geom_point(data = simulation.dt, aes(x = x, y = y), showSelected = "itr",
+    size = 5, alpha = 0.85, color = "#e63946") +
   
-  geom_text(data = text.df, aes(x = x, y = y, label = label)) +
+  geom_text(data = text.df, aes(x = x, y = y, label = label),
+    size = 4, fontface = "bold", color = "#333333") +
 
   theme(
     axis.line = element_blank(),
     axis.text = element_blank(),
     axis.ticks = element_blank(),
     axis.title = element_blank(),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
     
-    panel.background = element_rect(fill = "transparent", colour = NA),
-    plot.background = element_rect(fill = "transparent", colour = NA)
+    panel.background = element_rect(fill = "#fafafa", colour = NA),
+    plot.background = element_rect(fill = "#fafafa", colour = NA)
   )
 
 slotviz1 <- ggplot() +
-  labs(title = "Slots bar chart", x = "Slots", y = "Ball count") +
+  labs(title = "Ball Distribution", x = "Slot Number", y = "Number of Balls") +
 
   geom_bar(data = slot.dt, aes(x = factor(slot), y = count), showSelected = "itr", 
-    fill = "steelblue", color = "black", stat = "identity", position = "identity") +
+    fill = "#457b9d", color = "#1d3557", stat = "identity", position = "identity") +
 
   geom_line(data = slot.dt, aes(x = slot, y = count, group = itr), showSelected = "itr", 
-    color = "darkblue", fill = "steelblue", alpha = 0.85, size = 1) +
+    color = "#e63946", alpha = 0.85, size = 1.2) +
   
-  theme_light(base_size = 14)
+  theme_light(base_size = 14) +
+  theme(plot.title = element_text(size = 14, face = "bold", hjust = 0.5))
 
 animint2dir(list(
-  pegs = pegviz1,
-  slots = slotviz1,
+  pegviz = pegviz1,
+  slotviz = slotviz1,
   duration = list(frame = 100),
-  time = list(variable="itr", ms=100)
+  time = list(variable="itr", ms=100),
+  title = "Galton Board Simulation"
 ), out.dir = "galton-animint")
