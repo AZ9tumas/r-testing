@@ -1,0 +1,1433 @@
+THE NIQ-DATASET (V1.3.5) - Changelog
+____________________________________________________________________________________________________
+
+Corresponding author: David Becker
+Department of Psychology, Chemnitz University of Technology
+Wilhelm-Raabe-Str. 43, D-09107 Chemnitz, Germany
+E-mail: david.becker@s2009.tu-chemnitz.de
+____________________________________________________________________________________________________
+
+Last update: August 22, 2023
+____________________________________________________________________________________________________
+
+V0.1	to	V0.2	(improvement, enhancement, and correction of Raven's test data)
+- 5.1.2:	new record added: Rindermann et al. (2014a)
+		-> 101.20;97.60;97.40
+- 5:		new nation added: Austria
+		-> 101.20;97.60;97.40
+- 15.1.10:	splittet into sub-samples 
+		-> no changes in results
+- 20.1.1:	new record added: Raven, Raven, & Court (1999)
+		-> 95.11;95.11;95.11
+		-> changes at level nation: 90.55;91.06;91.06 to 92.83;93.08;93.09
+- 29.1.1:	mean now N-weighted 
+		-> changes at levels record and nation: 95.32;92.19;92.03 to 95.71;92.72;92.56
+- 42.1.1:	Error eliminated: year of standardization from 2007 to 1979
+		-> changes at levels record and nation: 104.21;110.62;111.10 to 102.58;103.21;103.22
+- 91.1.2:	Error eliminated: year of standardization from 2008 to 2007
+		-> changes at level record: 89.65;95.09;95.21 to 89.52;94.71;94.91
+		-> changes at level nation: 96.13;98.14;97.92 to 96.06;97.95;97.77
+- 115.1.9:	new record added: Bakhiet et al. (2014)
+		-> 72.08;70.63;70.54
+		-> changes at level nation: 81.64;77.13;76.56 to 80.27;76.20;75.70
+- 147.1.2:	Source corrected from "CPM" to SPM (raw scores more likely from SPM)
+		-> changes at level record: 85.10;90.47;90.76 to 96.03;95.62;95.43
+		-> changes at level record: 84.90;90.42;90.79 to 95.98;95.73;95.63
+		-> changes at level nation: 89.99;93.62;93.84 to 97.32;97.11;97.01
+____________________________________________________________________________________________________
+
+V0.2	to	V1.0
+- General:	L&V2 and 3PD-estimations EXCed (only P&V remained but to "DB")
+- General:	column "Country of standardization" added
+		<- means country of test used for reestimation or country of test used in source in case of direct IQ
+- General:	column renamed: "ori-IQ" to "Record IQ (L&V)"
+- General:	column "Recalculated?" added
+- General:	Column renamed: "Calc.?" to "Special calculation?"
+- General:	original L&V-IQs included at the cross-national level if no records for a nation are available right now
+- General:	national correction for USA set to -2.5 according to Lynn and Vanhanen (2012)
+- General:	national correction for DEU set to -1.2 according to Lynn and Vanhanen (2012)
+- General:	national correction for CAN set to +0.4 according to Lynn and Vanhanen (2012)
+- General:	national correction for CHL set to -10.2 according to Lynn and Vanhanen (2012)
+- General:	national correction for FIN set to +0.9 according to Lynn and Vanhanen (2012)
+- General:	FLynn-Effect corrections made by GBR-model 
+		-> replacement by models for other countries necessary in future steps
+- 1		L&V-IQ 71.00 for Angola included in LEVEL(N)
+- 2.1.2:	record EXCed: Flynn & Rossi-Casé (2012)
+		-> already integrated in 2.1.1
+- 3		L&V-IQ 93.20 for Armenia included in LEVEL(N)
+- 6		L&V-IQ 84.00 for Bahamas included in LEVEL(N)
+- 7.1.1:	new record added: Bakhiet & Lynn (2015e)
+		-> N-weighted reestimation
+		-> 91.88
+- 7:		new nation added: Bahrain
+		-> 91.88
+- 8:		L&V-IQ 81.00 for Bangladesh included in LEVEL(N)
+- 9.1.1:	new record added: Galler et al. (1987)
+		-> 90.04
+- 9.1.2:	new record added: Waber er al. (2014)
+		-> 98.55
+- 9:		new nation added: Barbados
+		-> 94.29
+- 10:		L&V-IQ 99.30 for Belgium included in LEVEL(N)
+- 11.1.2:	new record added: Sandoval et al. (1983)
+		-> 85.97
+- 11:		new nation added: Bermuda
+		-> 85.97
+- 12.1.1:	new record added: Virues-Ortega et al. (2011)
+		-> 92.62;
+- 12:		new nation added: Bolivia
+		-> 92.62
+- 16:		L&V-IQ 92.50 for Bulgaria included in LEVEL(N)
+- 19:		L&V-IQ 64.00 for Cameroon included in LEVEL(N)
+- 20.1.5:	new record added: Georgas et al. (2003)
+		-> 99.40
+		-> changes at level nation: missing data
+- 20.1.6:	new record added: Lange et al. (2005)
+		-> 92.62
+		-> 103.20
+		-> changes at level nation: 92.83 to 98.28
+- 20.1.8:	new record added: Bouchard et al. (2011)
+		-> 103.15
+		-> changes at level nation: 96.29 to 98.00
+- 21:		L&V-IQ 74.00 for Cayman Islands included in LEVEL(N)
+- 21:		L&V-IQ 64.00 for Central African Rep. included in LEVEL(N)
+- 23.1.3:	new record added: Rosas Diaz & Lynn (2016)
+		-> 90.13
+		-> changes at level nation: 88.93 to 89.53	
+- 25.1.1:	new record added: Ortega (2011)
+		-> 88.38
+- 25.1.2:	new record added: Leon et al. (1975)
+		-> 69.79
+- 25:		new nation added: Colombia
+		-> 79.09
+- 26:		L&V-IQ 73.00 for Congo - Braz included in LEVEL(N)
+- 28:		L&V-IQ 89.00 for Cook Isl. included in LEVEL(N)
+- 30:		L&V-IQ 97.80 for Croatia included in LEVEL(N)
+- 32:		L&V-IQ 98.90 for Czech Rep included in LEVEL(N)
+- 35:		L&V-IQ 82.00 for Dominican Republic included in LEVEL(N)
+- 37.1.7:	new record added: Wachs al. (1995)
+		-> 57.08
+		-> changes at level nation: 82.17 to 75.89
+- 41:		L&V-IQ 85.00 for Fiji included in LEVEL(N)
+- 42.1.2:	new record added: Roivainen (2010)
+		-> 97.29
+		-> changes at level nation: 102.58 to 99.94
+- 42.1.3:	new record added: Dutton et al. (2014)
+		-> changes at level nation: 99.94 to 100.08
+- 43.1.5:	new record added: Roivainen (2010)
+		-> 102.90
+		-> changes at level nation: 98.61 to 100.75
+- 43.1.6:	new record added: Georgas et al. (2003)
+		-> 100.40
+		-> changes at level nation: 100.75 to 100.63
+- 45.1.11:	new record added: Georgas et al. (2003)
+		-> 99.40
+		-> changes at level nation: 103.28 to 102.31
+- 47.1.1:	new record added: Fatouros (1972)
+		-> 83.56
+- 47.1.2:	new record added: Georgas et al. (2003)
+		-> 91.90
+- 47:		new nation added: Greece
+		-> 87.73
+- 48:		L&V-IQ 91.00 for Greenland included in LEVEL(N)
+- 50:		L&V-IQ 66.50 for Guinea included in LEVEL(N)
+- 51:		L&V-IQ 67.00 for Haiti included in LEVEL(N)
+- 55.1.25:	new record added: Afzal (1988)
+		-> 79.96
+		-> changes at level nation: 66.99 to 69.16
+- 58.1.3:	new record added: Kira et al. (2014)
+		-> 84.38
+		-> changes at level nation: 88.42 to 86.40
+- 62:		L&V-IQ 71.00 for Ivory Coast included in LEVEL(N)
+- 63.1.6:	new record added: Walker et al. (2000)
+		-> 63.62
+		-> changes at level nation: 73.32 to 71.38
+- 64.1.2:	new record adden: Lynn & Hampson (1986)
+		-> 103.74
+		-> changes at level nation: 110.76 to 107.25
+- 64.1.3:	new record adden: Georgas et al. (2003)
+		-> 94.90
+		-> changes at level nation: 107.25 to 103.13
+- 68.1.3:	new record added: Lynn et al. (2016)
+		-> 98.51
+		-> changes at level nation: 113.85 to 106.18
+- 68.1.2:	new record added: Georgas et al. (2003)
+		-> 100.40
+		-> changes at level nation: 106.18 to 104.25
+- 71:		L&V-IQ 89.00 for Laos included in LEVEL(N)
+- 72:		L&V-IQ 84.60 for Lebanon included in LEVEL(N)
+- 73.1.8:	new record added: Lynn et al. (2008b)
+		-> 76.11
+		-> changes at level nation: 80.64 to 79.89
+- 74.1.3:	new record added: Georgas et al. (2003)
+		-> 93.40
+		-> changes at level nation: 90.83 to 91.69
+- 75:		L&V-IQ 82.00 for Madagascar included in LEVEL(N)
+- 76:		L&V-IQ 60.10 for Malawi included in LEVEL(N)
+- 78:		L&V-IQ 59.60 for Mali included in LEVEL(N)
+- 80:		L&V-IQ 81.00 for Mariana Islands included in LEVEL(N)
+- 81:		L&V-IQ 84.00 for Marshall Islands included in LEVEL(N)
+- 82:		L&V-IQ 74.00 for Mauretanien included in LEVEL(N)
+- 83.1.1:	new record added: Liu et al. (2003)
+		-> 88.88
+- 83:		new nation added: Mauritius
+		-> 88.88
+- 85:		L&V-IQ 92.00 for Moldowa included in LEVEL(N)
+- 88:		L&V-IQ 69.50 for Mozambique included in LEVEL(N)
+- 90:		L&V-IQ 78.00 for Nepal included in LEVEL(N)
+- 93:		L&V-IQ 85.00 for New Caledonia included in LEVEL(N)
+- 83.1.1:	new record added: Belsky et al. (2013)
+		-> 97.46
+		-> changes at level nation: 100.80 to 99.13
+- 91.1.3:	new record added: Georgas et al. (2003)
+		-> 99.40
+		-> changes at level nation: 96.06 to 97.18
+- 94.1.3:	new record added: Fergusson & Horwood (1997)
+		-> 99.86
+		-> changes at level nation: 99.13;98.97;98.87 to 99.37;98.26;97.92
+- 95:		L&V-IQ 84.00 for Nicaragua included in LEVEL(N)
+- 96.1.12:	new record added: Rindermann et al. (2014b)
+		-> 95.11
+		-> changes at levels record and nation: 69.65 to 72.86
+- 98:		L&V-IQ 97.20 for Norway included in LEVEL(N)
+- 101.1.3:	new record added: Lieblich & Kugelmas (1981)
+		-> 81.96
+		-> changes at level nation: 79.87 to 80.57
+- 102:		L&V-IQ 80.00 for Panama included in LEVEL(N)
+- 103:		L&V-IQ 83.40 for Papua N. G. included in LEVEL(N)
+- 104.1.1:	new record added: Segura (2010)
+		-> 90.23
+- 104:		new nation added: Paraguay
+		-> 90.23
+- 113:		L&V-IQ 76.00 for Rwanda included in LEVEL(N)
+- 117:		L&V-IQ 70.50 for Senegal included in LEVEL(N)
+- 118.1.8:	new record added: Wasserman et al. (1997)
+		-> 72.81
+		-> changes at level nation: 94.16 to 89.89
+- 119.1.1:	new record added: Myers et al. (2003)
+		-> 79.10
+- 119:		new nation added: Seychelles
+		-> 79.10
+- 120:		L&V-IQ 64.00 for Sierra Leone included in LEVEL(N)
+- 123.1.4:	new record added: Georgas et al. (2003)
+		-> 95.40
+		-> changes at level nation: 96.33 to 96.02
+- 124.1.2:	new record added: Osman et al. (2017a)
+		-> 61.26
+- 124:		new nation added: South Sudan
+		-> 61.26
+- 125.1.6:	new record added: Roivainen (2010)
+		-> 94.10
+		-> changes at level nation: 86.36 to 90.23
+- 127:		L&V-IQ 62.00 for St.Lucua included in LEVEL(N)
+- 128:		L&V-IQ 71.00 for St.Vincent included in LEVEL(N)
+- 129.1.11:	new record added: Bakhiet & Lynn (2015h)
+		-> 76.85;71.67;71.70
+		-> changes at level nation: 78.03;73.79;73.23 to 77.88;73.53;73.04
+- 130:		L&V1-IQ 89.00 for Suriname included in LEVEL(N)
+- 131.1.1:	new record added: Georgas et al. (2003)
+		-> 99.40
+- 131:		new nation added: Sweden
+		-> 99.40
+- 131:		L&V-IQ 98.60 for Sweden included in LEVEL(N)
+- 139:		L&V-IQ 86.00 for Tonga included in LEVEL(N)
+- 140:		L&V-IQ 86.40 for Trinidad included in LEVEL(N)
+- 141:		L&V-IQ 85.40 for Tunisia included in LEVEL(N)
+- 143:		L&V-IQ 82.00 for Turks & Caicis Is. included in LEVEL(N)
+- 148.1.3:	new record added: Georgas et al. (2003)
+		-> 95.40
+		-> changes at level nation: 90.28 to 91.99
+- 149:		L&V-IQ 90.60 for Uruguay included in LEVEL(N)
+- 151.1.1:	new record added: Montiel-Naval (2008)
+		-> 81.07
+- 151.1.2:	new record added: Montiel-Naval et al. (2003)
+		-> 85.40
+- 151.1.3	new record added: Montiel-Naval et al. (2005)
+		-> 81.03
+- 151:		new nation added: Venezuela
+		-> 82.50
+- 152.1.2:	record EXCed: Watanabe et al. (2005)
+		-> unclear data
+- 152.1.3:	record EXCed: Nga et al. (2011)
+		-> unclear data
+- 152:		problem: unclear data in all records
+		-> L&V1-IQ 94.00 for Vietnam included in LEVEL(N)
+- 153:		L&V-IQ 77.00 for Virgin Islands included in LEVEL(N)
+- 154:		L&V-IQ 88.00 for Western Samoa included in LEVEL(N)
+- 156:		L&V-IQ 74.00 for Zambia included in LEVEL(N)
+- 157:		L&V-IQ 72.10 for Zimbabwe included in LEVEL(N)
+
+- Special planned steps:
+	- adjusting FLynn-effect correction to country of test standardization (if possible)7
+	- make complete Variables "Sample orig.", "Sample comp." and "Sample char."
+	- estimating "data quality"
+____________________________________________________________________________________________________
+
+V1.0	to	V1.1
+- Completet:	October 22, 2017
+- General:	new table added: "FLYNN-EFFECT(BASE)"
+		-> contains basic data for FE from Pietschnig and Voracek (2015) and calculations
+- General:	FE-corections revisited
+		-> now FE-correction according by country of test standardization
+		-> missing country FEs replaced by FE of GBR (affect: CHL)
+		-> Slight changes in FE for GBR
+		-> slight changes in all IQ-scores based on FE-corrections (r between old and new data ~1.00)
+- General:	column renamed: "Flynn-Effect" to "Time adjust. (test stand.)"
+- General:	column added: "Contemp. adapt." (in progress)
+- General:	column added: "N (Part. in rec.)" (in progress)
+- General:	national means weighted by number of participants per record
+		-> slight changes in all national IQ-scores
+- General:	notes for data quality improved		 
+- 4.1.1:	new record added: Raven, Raven, & Court (1999)
+- 4.1.4:	estimation improved: Cotton et al. (2005)
+- 5.1.3:	new record added: Buj (1981)
+- 6.1.2:	new record added: Johnson (1988)
+- 6:		IQ(DB) added to nation: Bahamas
+- 8.1.1:	new record added: Hamadani et al. (2011)
+- 8.1.2:	new record added: Lynn (2007a)
+- 8.1.3:	new record added: Wasserman et al. (2007)
+- 8:		IQ(DB) added to nation: Bangladesh
+- 10.1.2:	new record added: Buj (1981)
+- 10.1.3:	new record added: van der Sluis et al. (2008)
+- 10:		IQ(DB) added to nation: Belgium
+- 11.1.1:	new record added: Scarr & McCartney (1988)
+- 11.1.4:	new record added: Scarr et al. (1994)
+- 14.1.1:	record EXCed: Lynn (2010)
+		-> identical with: Maqsud (1997)
+- 15.1.15:	new record added: Tellegen & Laros (2004)
+- 16.1.1:	new record added: Buj (1981)
+- 16.1.2:	new record added: Lynn et al. (1998)
+- 16:		IQ(DB) added to nation: Bulgaria
+- 17.1.3:	sample added to: Bagby (2011)
+- 23.1.2:	new record added: Paz et al. (2012)
+- 23.1.4:	new record added: Galván et al. (2013)
+- 24.1.4:	sample added to: Raven, Raven & Court (1999)
+- 24.1.6:	new record added: Lynn et al. (2016b)
+- 24.1.7:	new record added: Liu et al. (2016)
+- 25.1.3:	new record added: McKay et al. (1978)
+- 26.1.2:	new record added: Nkaya et al. (1994)
+- 26:		IQ(DB) added to nation: Congo Brazz.
+- 27.1.6:	new record added: Boivin & Giordani (1993)
+- 27.1.8:	new record added: Boivin et al. (1993)
+- 27.1.9:	new record added: Boivin et al. (1995)
+- 27.1.10:	new record added: Boivin et al. (2013)
+- 29.1.1:	sample EXCed: Rindermann et al. (2014a)
+		-> numbers require special investigation
+- 30.1.3:	new record added: Žebec et al. (2015)
+- 30.1.4:	new record added: Buj (1981)
+- 30:		IQ(DB) added to nation: Croatia
+- 32.1.3:	new record added: Buj (1981)
+- 32:		IQ(DB) added to nation: Czech Rep
+- 33.1.2:	new record added: Buj (1981)
+- 34.1.1:	new sample added: Meisenberg et al. (2005)
+- 35.1.1:	new sample added: Imperato-McGinley et al. (1991)
+- 35:		IQ(DB) added to nation: Dominican Republic
+- 37.1.1:	new record added: Abdel-Khalek et al. (2014)
+- 37.1.2:	new record added: Abdel-Khalek (1988)
+- 37.1.3:	new sample added: Bakhiet & Lynn (2015b)
+- 37.1.7:	new sample added: Wachs al. (1995)
+- 39.1.2:	sample EXCed: Lynn et al. (2002)
+		-> duplication: Pullmann, Allik & Lynn (2004)
+- 39.1.3:	sample EXCed: Lynn et al. (2003)
+		-> duplication: Pullmann, Allik & Lynn (2004)
+- 39.1.4:	new record added: Pullmann, Allik & Lynn (2004)
+- 40.1.4:	record EXCed: Aboud et al. (1991)
+		-> raw-scores out of norm-range
+- 41.1.1:	new sample added: Raven, Raven & Court (1999)
+- 42.1.4:	new record added: Buj (1981)
+- 43.1.7:	new record added: Nkaya et al. (1994)
+- 43.1.8:	new record added: Buj (1981)
+- 44.1.1:	new record added: Alderman et al. (2014)
+- 44.1.2:	estimation improved: Jukes & Grigorenko (2010)
+- 44.1.3:	estimation improved: Jukes et al. (2006)
+- 45.1.1:	estimation improved: Kratzmeier & Horn (1988)
+- 45.1.2:	estimation improved: Raven, Raven, & Court (1999)
+- 45.1.3:	new record added: Buj (1981)
+- 45.1.12:	new record added: Bethge et al. (1982)
+- 46.1.1:	new record added: Aslam & Lehrer (2012)
+- 46.1.7:	new record added: Buj (1981)
+- 47.1.3:	new record added: Buj (1981)
+- 49.1.1:	new record added: Choudhury & Gorman (1999)
+- 49.1.2:	new record added: Martorell et al. (2005)
+- 49.1.3:	new sample added: Calderon & Hoddinott (2010)
+- 52.1.6:	new record added: Lynn et al. (1988)
+- 53.1.2:	new record added: Buj (1981)
+- 54.1.1:	new sample added: Pind et al. (2003)
+- 55.1.6:	new sample added: Singh & Ray (1980)
+- 55.1.8:	new record added: Chiplonkar & Kawade (2014)
+- 55.1.9:	new record added: Raven, Raven, & Court (1999)
+- 55.1.10:	new record added: Tooley et al. (2010)
+- 55.1.22:	new record added: Gandhi-Kingdon (1996)
+- 55.1.25:	new record added: Afzal (1988)
+- 55.1.26:	new record added: Uppu et al. (2015)
+- 56.1.1:	new sample added: Rindermann & te Nijenhuis (2012)
+- 56.1.2:	new sample added: Bleichrodt, Drenth & Querido (1980)
+- 56.1.3:	new record added: Hadidjaja et al. (1996)
+- 56.1.5:	new record added: Suwartono, Amiseso & Handoyo (2017)
+- 57.1.1:	new sample added: Baraheni (1974)
+- 58.1.1:	new sample added: Abul-Hubb (1972)
+- 59.1.6:	new record added: Buj (1981)
+- 59.1.7:	new record added: Lynn (2015)
+- 60.1.3:	new record added: Kozulin (1998)
+- 61.1.6:	new record added: Pruneti et al. (1996)
+- 61.1.7:	new record added: Belacchi et al. (2010)
+- 61.1.8:	new record added: Buj (1981)
+- 64.1.2:	record EXCed: Lynn & Hampson (1986)
+		-> unknown participants
+- 64.1.3:	record EXCed: Georgas et al. (2003)
+		-> unknown numbers
+- 64.1.7:	new record added: Kaufman et al. (1989)
+- 64.1.8:	new record added: Lynn & Hampson (1987)
+- 65.1.3:	new sample added: Lynn & Abdel-Khalek (2009)
+- 66.1.1:	error eliminated: wrong assignment of results from table CALCULATIONS (Russian <-> Kazakh)
+- 67.1.3:	new record added: Boissiere et al. (1985)
+- 67.1.7:	new record added: Sternberg et al. (2001)
+- 68.1.3:	new record added: Lynn et al. (2016)
+- 69.1.1:	new sample added: Abdel-Khalek & Raven (2008)
+- 69.1.3:	new record added: Bakhiet et al. (2015a)
+- 70.1.2:	new record added: Zakharov et al. (2016)
+- 71.1.1:	new record added: Boivin et al. (1996)
+- 71:		IQ(DB) added to nation: Laos
+- 72.1.1:	new record added: Saddik et al. (2005)
+- 72:		IQ(DB) added to nation: Lebanon
+- 73.1.2:	new record added: Al-Shahomee & Lynn (2012)
+- 73.1.4:	record EXCed: Al-Shahomee (2012)
+		-> duplication
+- 73.1.5:	new record added: Al-Shahomee & Lynn (2010b)
+- 73.1.6:	new sample added: Bakhiet & Lynn (2015a)
+- 73.1.8:	record EXCed: Lynn et al. (2008b)
+		-> numbers require special investigation
+- 73.1.9:	new record added: Al-Shahomee, Furnham, & Lynn (2017)
+- 73.1.6:	error eliminated: Year of measurement from 2007 to 2006
+- 76.1.1:	new record added: Van der Vijver & Brouwers (2009)
+- 76:		IQ(DB) added to nation: Malawi
+- 79.1.1:	new sample added: Martinelli & Schembri (2014)
+- 81.1.1:	new record added: Jordheim & Olsen (1963)
+- 81:		IQ(DB) added to nation: Marshall Isands
+- 86.1.2:	new sample added: Odgerel & Maekawa (2003)
+- 87.1.3:	new record added: Díaz et al. (2012)
+- 87.1.7:	new record added: Sellami et al. (2010)
+- 90.1.1:	new record added: Buckley et al. (2013)
+- 90.1.2:	new record added: Christian et al. (2010)
+- 90.1.3:	new record added: Jamison & Lockheed (1985)
+- 90:		IQ(DB) added to nation: Nepal
+- 91.1.4:	new record added: van der Sluis et al. (2008)
+- 91.1.5:	new record added: Buj (1981)
+- 95.1.1:	new record added: Sandiford et al. (1997)
+- 95.1.2:	new record added: Rodríguez (2012)
+- 95:		IQ(DB) added to nation: Nicaragua
+- 96.1.1:	new sample added: Ijarotimi & Ijadunola (2007)
+- 96.1.3:	new sample added: Maqsud (1980a)
+- 96.1.4:	new record added: Iloh, Ubesie, & Iloh (2017)
+- 96.1.13:	new record added: Ani & Grantham-McGregor. (1998)
+- 96.1.14:	new record added: Iloh, Ubesie, & Iloh (2017)
+- 98.1.1:	new record added: Høie et al. (2005)
+- 98.1.2	new record added: Buj (1981)
+- 98.1.3:	new record added: Helland et al. (2008)
+- 98:		IQ(DB) added to nation: Norway
+- 99.1.1:	new sample added: Abdel-Khalek & Lynn (2010)
+- 99.1.2:	estimation improved: Al Said (2014)
+- 100.1.1:	new sample added: Ahmad et al. (2009)
+- 100.1.5:	new record added: Rahman et al. (2002)
+- 100.1.6:	new record added: Jamil & Khalid (2016)
+- 101.1.1:	new sample added: Bakhiet & Lynn (2015c)
+- 101.1.2:	new sample added: Bakhiet & Lynn (2014e)
+- 101.1.3:	estimation improved: Lieblich & Kugelmas (1981)
+- 104.1.1:	record EXCed: Segura (2010)
+		-> all samples with disabilities
+- 105.1.3:	new sample added: Escobal et al. (2003)
+- 107.1.1:	new record added: Witkowska (2014)
+- 107.1.5:	new record added: Raven, Raven & Court (1998)
+- 107.1.6:	new record added: Orylska et al. (2016)
+- 107.1.7:	new record added: Gruszka & Owen (2015)
+- 107.1.8:	new record added: Buj (1981)
+- 108.1.1:	new record added: Garcia (2016)
+- 108.1.5:	new record added: Buj (1981)
+- 111.1.1:	new sample added: Dobrean et al. (2008)
+- 111.1.2:	new sample added: Iliescu et al. (2016)
+- 112.1.1:	sample replaced: Lynn (2001)
+		-> by original source: Raven, Raven & Court (1999)
+- 112.1.2:	new record added: Shibaev & Lynn (2017)
+- 114.1.2:	new record added: Malda, van der Vijver & Temaine (2010)
+- 114.1.3:	new record added: Bass (2000)
+- 114.1.4:	new record added: Jinabhai et al. (2004)
+- 114.1.5:	new record added: Skuy et al. (2001)
+- 115.1.2:	new sample added: Abdel-Khalek & Lynn (2009)
+- 115.1.3:	new record added: Abu-Hatab et al. (1977)
+- 115.1.6:	new sample added: Batterjee (2011)
+- 115.1.7:	estimation improved: Bella et al. (2005)
+- 118.1.1:	new record added: Cvorovic & Lynn (2014)
+- 118.1.3:	new record added: Rushton & Cvorovic (2009) 
+- 120.1.1:	new record added: Berry (1966)
+- 120:		IQ(DB) added to nation: Sierra Leone
+- 123.1.2:	new sample added: Raven, Raven, & Court (2006)
+- 124.1.2:	reestimation based on actualized publication: Osman et al. (2017)
+- 125.1.1:	new record added: Diaz et al. (2010)
+- 125.1.2:	new record added: Díaz et al. (2012)
+- 125.1.7:	new record added: Buj (1981)
+- 128.1.1:	new record added: Durbrow et al. (2002)
+- 128:		IQ(DB) added to nation: St. Vincent
+- 129.1.2:	new sample added: Bakhiet (2008)
+- 129.1.3:	new record added: Batterjee & Ashria (2015)
+- 129.1.5:	new sample added: Khaleefa et al. (2008b)
+- 129.1.8:	new record added: Khaleefa et al. (2014)
+- 129.1.9:	new record added: Bakhiet et al. (2017)
+- 129.1.14:	new record added: Dutton et al. (2017)
+- 131.1.2:	new record added: Buj (1981)
+- 132.1.2:	new sample added: Raven, Raven, & Court (2006)
+- 132.1.3:	new record added: Heiz & Barisnikov (2016)
+- 132.1.4:	new record added: Buj (1981)
+- 133.1.1:	new sample added: Khaleefa & Lynn (2008b)
+- 134.1.4:	new sample added: Lai et al. (2001)
+- 134.1.7:	new record added: Rabinowitz et al. (1991)
+- 136.1.3:	new record added: Boissiere et al. (1985)
+- 137.1.7:	record replaced: Pongcharoen et al. (2011)
+		-> former record: Pongcharoen et al. (2012)
+- 137.1.8:	new record added: Sukhatunga et al. (2006a)
+- 137.1.15:	new record added: Phatthrayuttawat et al. (2000)
+- 137.1.16:	new record added: Thai department of Mental Health (2011)
+- 137.1.17:	new record added: Thavornsuwanchai (2008)
+- 137.1.18:	new record added: Sukhatunga et al. (2006b)
+- 144.1.2:	new record added: Nankabirwa et al. (2013)
+- 147.1.2:	record EXCed: Raven, Raven, & Court (2006)
+		-> unclear data
+- 147.1.3:	new record added: Al Said (2014)
+- 147.1.4:	new record added: Buj (1981)
+- 148.1.1:	new sample added: Raven, Raven & Court (1999)
+- 148.1.2:	record EXCed: Raven, Raven, & Court (2006)
+		-> numbers require special investigation
+- 157.1.2:	new record added: Irvine (1969)
+- 157:		IQ(DB) added to nation: Zimbabwe
+- 158.1.1:	new sample added: Spanoudis et al. (2016)
+- 158:		error eliminated: Record IQ (L&V) deleted
+- 159.1.1:	new record added: Saks (2013)
+- 159.1.2:	new record added: Mackevics & Masyk (2015)
+- 159:		new country added: Latvia
+- 160.1.1:	new record added: Lynn et al. (2017)
+- 160:		IQ(DB) added to nation: Belarus
+____________________________________________________________________________________________________
+
+V1.1	to	V1.2
+- Completet:	November 27, 2017
+- General:	Restructuring of RECted data
+		- Lowest data-level now based on samples instead of sources (references)
+		- Some samples splitted in more homogeneous sub-samples
+		- Addition of many new variables (e.g. lowest age, highest age, sample rating, uncorrected raw-scores etc.)
+- General:	Estimations of FLynn-Effect now differentiating between test-types
+- General:	Remove of all L&Vo-variables for the sake of simplification
+- General:	Remove of norm-tables for the sake of simplification (numbers now in the table: CONV-FORMULAS)
+- AGO7765:	new sample added to REC: Peixoto & Kalei (2013)
+- AUT6231:	new sample added to REC: Neubauer, Bauer & Huller (1992)
+- BEL2726:	new sample added to REC: Charlemaine & Pons (1998)
+- BEL4233:	new sample added to EXC: Facon et al. (2011)
+- BEL1938:	new sample added to EXC: Facon et al. (2011)
+- CAN3009:	new sample added to REC: Dutton & Lynn (2014)
+- ESP5392:	new sample added to REC: Estrada et al. (2015)
+- EST4281:	new sample added to REC: Lynn, Pullmann & Allik (2003)
+- KHM9181:	new sample added to REC: Janssen & Geiser (2012)
+- KHM2931:	new sample added to EXC: Clarke et al. (1993)
+- DEU3018:	new sample added to REC: Janssen & Geiser (2012)
+- DEU3866:	new sample added to REC: Goldbeck et al. (2010)
+- DEU6390:	new sample added to REC: Kalisch et al. (2012)
+- DEU1378:	new sample added to REC: Korsch et al. (2013)
+- DEU4523:	new sample added to REC: Lepach et al. (2015)
+- GBR5811:	sample moved from REC to EXC: Raven, Raven, & Court (2006)
+- GBR2836:	sample moved from REC to EXC: Raven, Raven, & Court (2006)
+- IRQ8231:	sample moved from REC to EXC: Kira et al. (2014)
+- KHM2888:	new sample added to REC: Fergusson, Bonshek & Le Masson (1995)
+- POL6614:	new sample added to REC: Chuderski (2015)
+- ROU9201:	sample EXCed: Dobrean et al. (2008)
+		-> duplication of Iliescu et al. (2016)
+- ROU9824:	sample EXCed: Dobrean et al. (2008)
+		-> duplication of Iliescu et al. (2016)
+- SSD8991:	new sample added to REC: Ahmed (2012)
+- SSD3712:	new sample added to REC: Ahmed (2012)
+- SSD1077:	sample moved from REC to EXC: Osman et al. (2017a)
+- SSD2648:	sample moved from REC to EXC: Osman et al. (2017a)
+- USA5677:	new sample added to REC: Nichols & Anderson (1973)
+- USA1451:	new sample added to REC: Nichols & Anderson (1973)
+- USA7344:	new sample added to REC: Nichols & Anderson (1973)
+- USA2277:	new sample added to REC: Nichols & Anderson (1973)
+- USA4922:	new sample added to REC: Christiansen & Livermore (1970)
+- USA5612:	new sample added to REC: Christiansen & Livermore (1970)
+- USA6430:	new sample added to REC: Valencia, Rankin & Livingston (1995)
+- USA1919:	new sample added to REC: Valencia, Rankin & Livingston (1995)
+- USA3485:	new sample added to REC: Hambleton, Merenda & Spielberger (2005)
+- USA6712:	new sample added to REC: Beam et al. (2015)
+- USA2938:	new sample added to REC: Beam et al. (2015)
+- USA8445:	new sample added to REC: Beaver et al. (2013)
+- USA8815:	new sample added to REC: Beaver et al. (2013)
+- USA8711:	new sample added to REC: Bishop et al. (2003)
+- USA1726:	new sample added to REC: Bishop et al. (2003)
+- USA5433:	new sample added to REC: Bishop et al. (2003)
+- USA3100:	new sample added to REC: Bishop et al. (2003)
+- USA6185:	new sample added to REC: Canfield et al. (2003)
+- USA3444:	new sample added to REC: Canfield et al. (2003)
+- USA6185:	new sample added to REC: Canfield et al. (2003)
+- USA8156:	new sample added to REC: Canfield et al. (2003)
+- USA3377:	new sample added to REC: Raven, Raven, & Court (2006)
+- USA2488:	new sample added to REC: Connelly (1983)
+____________________________________________________________________________________________________
+
+V1.2	to	V1.3
+- Completet:	July 27, 2018
+- General:	completely new developed norm-formulas
+- BHS4254:	new sample added to REC: Tynes-Jones (2005)
+- BLR4679:	new sample added to REC: Kramer et al. (2008)
+- BLR3775:	new sample added to REC: Kramer et al. (2008)
+- BOL4654:	new sample added to REC: Bautista et al. (1982)
+- BRA2545:	new sample added to REC: Sisto et al. (2008)
+- BRA:		error eliminated: Not all samples were included in calculation of national mean
+- BWA5984:	Sample excluded: Lynn (2010)
+		listed twice: Maqsud (1997)
+- CAN7766:	new sample added to REC: John, Krichev & Bauman (1976)
+- CAN8547:	new sample added to REC: John, Krichev & Bauman (1976)
+- CAN9881:	new sample added to REC: Boucher et al. (2009)
+- CHL5835:	new sample added to REC: Marincovich et al. (2000)
+- CHL8449:	sample moved from REC to EXC: Rosas Diaz & Lynn (2016)
+- CHN1744:	new sample added to REC: Raven, Raven & Court (1998)
+- CHN3239:	new sample added to REC: Raven, Raven & Court (1998)
+- CRI4922:	new sample added to REC: Rindermann et al. (2014a)
+- CUB6365:	new sample added to REC: Alonso Garcia (1973)
+- CUB8945:	new sample added to REC: Alonso Garcia (1973)
+- DEU1978:	new sample added to REC: Raven, Raven & Court (1998)
+- DEU1383: 	Sample excluded: Bethge et al. (1982)
+		Unclear norming
+- DEU3969: 	Sample excluded: Bethge et al. (1982)
+		Unclear norming
+- DEU8776: 	Sample excluded: Bethge et al. (1982)
+		Unclear norming
+- EGY7781:	new sample added to REC: Ziada et al. (2017)
+- ETH2461:	Sample excluded: Kozulin (1998)
+		training effect
+- FIN3446:	Sample excluded: Roivainen (2010)
+		significant sampling error reported by the author
+- GHA7539:	new sample added to REC: Anum (2014)
+- GTM7637:	new sample added to REC: Stein et al. (2005)
+- GTM8224:	new sample added to REC: Stein et al. (2005)
+- HTI7223:	new sample added to REC: de Ronceray & Petit-Frere (1975)
+- HTI5439:	new sample added to REC: Cotten (1985)
+- HTI8233:	new sample added to REC: Douyon (1982)
+
+- IND1221:	Sample excluded: Agrawal et al. (1984)
+		Negative effect of inbreed depression
+- IND5561:	new sample added to REC: Raven, Raven & Court (1999)
+- IDN4551:	new sample added to REC: Soemantri (1989)
+- IDN3746:	new sample added to REC: Heilmann (2013)
+- IDN4834:	new sample added to REC: de Neubourg & de Neubourg (2011)
+- IDN6790:	Sample excluded: Bleichrodt, Drenth & Querido (1980)
+		Negative effect of iodine deficiency
+- IRQ3749:	new sample added to REC: Ghazi et al. (2012)
+- JAM8347:	new sample added to REC: Ward (2012)
+- JAM6237:	new sample added to REC: Walker et al. (2010)
+- JAM3821:	new sample added to REC: Samms-Vaughan (2005)
+- JAM9124:	new sample added to REC: Grantham-McGregor et al. (1997)
+- JAM2526:	new sample added to REC: Knight et al. (1995)
+- JAM4584:	new sample added to REC: Knight et al. (1995)
+- JAM3334:	new sample added to REC: Grantham-McGregor et al. (1994)
+- JAM4649:	new sample added to REC: Persaud (1989)
+- JAM1121:	new sample added to REC: Persaud (1982)
+- JAM6732:	new sample added to REC: Richardson (1976)
+- JPN1123:	new sample added to REC: Uno et al. (2005)
+- JPN1231:	new sample added to REC: Uno et al. (2005)
+- KHM1631:	Sample excluded: Lynn (2014)
+		listed twice: Janssen & Geiser (2012)
+- KHM4764:	new sample added to REC: Bakhiet et al. (2018)
+- KOR7288:	new sample added to REC: Frydman & Lynn (1989)
+- LAO3856:	new sample added to REC: Preston (1999)
+- LAO4554:	new sample added to REC: Smith, Wessels & Riebel (1997)
+- LAO7383:	new sample added to EXC: Mulder (1991)
+- LAO2546:	new sample added to EXC: Nasseh (1988)
+- LAO7967:	new sample added to EXC: Utairatanakit (1987)
+- LAO4467:	new sample added to EXC: Utairatanakit (1987)
+- LAO4658:	new sample added to EXC: Irwin & Madden (1986)
+- LAO5687:	new sample added to EXC: Irwin & Madden (1986)
+- LAO6865:	new sample added to EXC: Irwin & Madden (1986)
+- LBN5718: 	new sample added to REC: Saddik et al. (2005)
+- LBY5613:	new sample added to REC: Bakhiet, Abdelrasheed & Lynn (2017)
+- LBY5131:	Sample excluded: Bakhiet & Lynn (2015a)
+		integrated into: LBY9633
+- LVA2458:	Sample excluded: Mackevics & Masyk (2015)
+		Unsufficiant data
+- MLI8345:	new sample added to REC: Dramé & Ferguson (2017)
+- MNG1035:	Sample excluded: Odgerel & Maekawa (2003)
+		integrated into: MNG3257
+- NLD3429:	new sample added to REC: Hoekstra, Bartels & Boomsma (2007)
+- NLD3851:	new sample added to REC: Hoekstra, Bartels & Boomsma (2007)
+- NLD8537:	new sample added to REC: Polderman et al. (2006)
+- NLD4778:	new sample added to REC: Rijsdijk, Boomsma & Vernon (1995)
+- NLD5823:	new sample added to REC: Rijsdijk, Vernon & Boomsma (2002)
+- NLD8765:	new sample added to REC: Rijsdijk, Vernon & Boomsma (2002)
+- NPL1673:	new sample added to REC: Jamison & Moock (1984)
+- NPL3454:	new sample added to REC: Jamison & Moock (1984)
+- NPL9132:	new sample added to REC: Jamison & Moock (1984)
+- PAK6352:	new sample added to REC: Aziz & Farooqi (1991)
+- PER1217:	new sample added to REC: Berkman et al. (2002)
+- PER6351:	Sample excluded: Blumen (2000)
+		Highly able
+- PHL4494:	new sample added to REC: Vista & Grantham (2010)
+- PHL5318:	new sample added to REC: Solon et al. (2007)
+- PRI8725:	new sample added to REC: Roca (1955)
+- PRI7562:	new sample added to REC: Roca (1955)
+- PRI6308:	new sample added to REC: Kahn, Spears & Rivera (1977)
+- PRI5582:	new sample added to REC: Kahn, Spears & Rivera (1977)
+- PRI2865:	new sample added to REC: Torres Díaz et al. (2009)
+- PRI3593:	new sample added to REC: Torres Díaz et al. (2009)
+- PRI4893:	new sample added to REC: San Miguel Montes et al. (2010)
+- PRI7361:	new sample added to EXC: Loyola & BcBride (1991)
+- PRI3645:	new sample added to EXC: de Jesus (1990)
+- PRI4835:	new sample added to EXC: Alvarez, Santos & Lebrón (1994)
+- PRI7898:	new sample added to REC: Vazquez (1989)
+- PRI5476:	new sample added to EXC: Alvarez, Santos & Lebrón (1994)
+- PRI6375:	new sample added to EXC: Pons et al. (2008)
+- PRI5432:	new sample added to REC: Pons et al. (2008)
+- PRI4573:	new sample added to EXC: Colón-Papazoglou (1998)
+- PRI4765:	new sample added to EXC: Busigo et al. (1998)
+- PRI8546:	new sample added to REC: Ortiz Colón et al. (1993)
+- PRI4987:	new sample added to REC: Andreu, Alvarez & Veray (1991)
+- PRI8866:	new sample added to REC: Andreu, Alvarez & Veray (1991)
+- PRI4785:	new sample added to REC: Andreu, Alvarez & Veray (1991)
+- PRI1875:	new sample added to REC: Matias Carrelo & Zaidspiner (1990)
+- PRI6835:	new sample added to REC: Matias Carrelo & Zaidspiner (1990)
+- PRI8463:	new sample added to EXC: Prewitt Diaz & Rivera (1989)
+- PRI1936:	new sample added to REC: Roselló et al. (1988)
+- PRI3744:	new sample added to EXC: Glutting (1986)
+- PRI5447:	new sample added to EXC: Hakuta (1987)
+- PRI4346:	new sample added to EXC: Oplesch & Genshaft (1981)
+- PRI4346:	new sample added to EXC: Oplesch & Genshaft (1981)
+- PRI4538:	new sample added to EXC: Marmorale & Brown (1981)
+- PRI7833:	new sample added to REC: Prewitt Diaz & Munoz (1980)
+- PRI8743:	new sample added to REC: Fuertes de la haba, Santiago & Bangdiwala (1976)
+- PRI9343:	new sample added to REC: Fuertes de la haba, Santiago & Bangdiwala (1976)
+- PRI1545:	new sample added to EXC: Marmorale & Brown (1975)
+- PRI1685:	new sample added to EXC: Orsini (1974)
+- PRI4192:	new sample added to REC: Green (1972)
+- PRI1956:	new sample added to EXC: Thomas et al. (1971)
+- PRI4742:	new sample added to EXC: Hertzig et al. (1968)
+- PRI5755:	new sample added to REC: Vazquez (1989)
+- ROU5824:	new sample added to REC: Dobrean et al. (2008)
+- ROU4821:	new sample added to REC: Dobrean et al. (2008)
+- ROU1823:	new sample added to REC: Dobrean et al. (2008)
+- SGP2784:	new sample added to REC: Chong et al. (2005)
+- SGP6778:	new sample added to REC: Chong et al. (2005)
+- SOM7155:	new sample added to REC: Bakhiet et al. (2017a)
+		-> refugee samples normally into EXC but it is the only sample for SOM
+- ZAF4366:	new sample added to REC: Knowles (2008)
+- ZAF5245:	new sample added to REC: Knowles (2008)
+- LKA6243:	new sample added to REC: Omanbayev, Tosheva & Lynn (2018)
+- ZAF4568:	new sample added to REC: Skuy et al. (2001)
+- ZAF1314:	new sample added to REC: Skuy et al. (2001)
+- SAU9380:	Sample excluded: Bakheit et al. (2016)
+		learning disabilities
+- SAU4448:	Sample excluded: Bakheit et al. (2014)
+		deaf
+- SRB3087:	Sample excluded: Bala & Kati (2009)
+		included into SRB1862
+- SSD8991:	reference replaced by: Ahmed et al. (2017)
+- SSD3712:	reference replaced by: Ahmed et al. (2017)
+- SSD1077:	sample moved from EXC to REC: Osman et al. (2017a)
+- SSD2648:	sample moved from EXC to REC: Osman et al. (2017a)
+- SSD8765:	new sample added to REC: Osman et al. (2018)
+- SDN6589:	Sample excluded: Batterjee & Ashria (2015)
+		included into SDN1463
+- SYR4283:	new sample added to REC: Dutton et al. (2018)
+- SYR9116:	new sample added to REC: Dutton et al. (2018)
+- SYR4825:	new sample added to REC: Dutton et al. (2018)
+- SYR4919:	new sample added to REC: Dutton et al. (2018)
+- TZA8412:	new sample added to REC: Klingelhofer (1967)
+- TZA4572:	new sample added to REC: Klingelhofer (1967)
+- TZA3582:	new sample added to REC: Klingelhofer (1967)
+- TZA4567:	new sample added to REC: Klingelhofer (1967)
+- THA3812:	new sample added to REC: Pongcharoen (2012)
+- THA5629:	new sample added to REC: Sroythong (2008)
+- THA2256:	new sample added to REC: Phatthrayuttawat et al. (2003)
+- THA6473:	new sample added to REC: Siripitayakunkit et al. (1999)
+- THA7341:	new sample added to REC: Pollitt et al. (1989a)
+- THA4219:	new sample added to REC: Chou & Lau (1987)
+- THA2356:	new sample added to REC: Panek & Stoner (1980)
+- THA3678:	new sample added to REC: Rajatasilpin, Suepsaman & Yamarat (1970)
+- THA3965:	new sample added to REC: Talapat & Suwannalert (1966)
+- THA8471:	new sample added to REC: Talapat & Suwannalert (1966)
+- THA9367:	new sample added to REC: Malakul (1957)
+- THA8955:	Sample excluded: Thai Department of Mental Health (2011)
+		no suitable standardization
+- GBR6442:	new sample added to REC: Raven (2000)
+- GBR4760:	new sample added to REC: Raven, Raven, & Court (2006)
+- GBR5782:	new sample added to REC: Raven (2008a)
+- USA5834:	new sample added to REC: Raven (2000)
+- USA5925:	new sample added to REC: Raven (2000)
+- USA8527:	new sample added to REC: Raven (2000)
+- USA9912:	new sample added to REC: Raven (2000)
+- USA7234:	new sample added to REC: Raven (2000)
+- USA3377:	sample moved from REC to EXC: Raven, Raven, & Court (2006)
+		-> dubious N
+- USA7811:	new sample added to REC: Darcy (1946)
+- USA1556:	new sample added to REC: Darcy (1946)
+- USA4338:	new sample added to REC: Engelhardt (2016)
+- USA2743:	new sample added to REC: Brooks-Gunn, Klebanov & Duncan (1996)
+- USA8646:	new sample added to REC: Brooks-Gunn, Klebanov & Duncan (1996)
+- USA4191:	new sample added to REC: Brooks-Gunn, Klebanov & Duncan (1996)
+- USA4752:	new sample added to REC: Brooks-Gunn, Klebanov & Duncan (1996)
+- USA2354:	new sample added to REC: Friedman et al. (2008)
+- USA5467:	new sample added to REC: Horn, Loehlin & Willerman (1979)
+- USA7230:	new sample added to REC: Horn, Loehlin & Willerman (1979)
+- USA3025:	new sample added to REC: Horn, Loehlin & Willerman (1979)
+- USA7007:	new sample added to REC: Horn, Loehlin & Willerman (1979)
+- USA8893:	new sample added to REC: Horn, Loehlin & Willerman (1979)
+- USA5836:	new sample added to REC: Nakano & Watkins (2013)
+- USA8711:	reference replaced by: Petrill et al. (2004)
+- USA1726:	reference replaced by: Petrill et al. (2004)
+- USA9752:	new sample added to REC: Petrill et al. (2004)
+- USA8437:	new sample added to REC: Ratner et al. (2006)
+- USA6627:	new sample added to REC: Ratner et al. (2006)
+- USA5683:	new sample added to REC: Scarr & Weinberg (1976)	
+- USA5347:	new sample added to REC: Scarr & Weinberg (1976)
+- USA4671:	new sample added to REC: Scarr & Weinberg (1976)
+- USA2463:	new sample added to REC: Scarr & Weinberg (1976)
+- USA1124:	new sample added to REC: Teeter, Moore & Petersen (1982)
+- USA8565:	new sample added to REC: Marmorale & Brown (1981)
+- USA7656:	new sample added to REC: Marmorale & Brown (1981)
+- USA8435:	new sample added to REC: Marmorale & Brown (1975)
+- USA4574:	new sample added to REC: Marmorale & Brown (1975)
+- USA5375:	new sample added to REC: Orsini (1974)
+- USA9146:	new sample added to REC: Hertzig et al. (1968)
+- VNM3474:	new sample added to REC: Nga et al. (2011)
+- VNM5375:	new sample added to EXC: Nguyen-Hoan (2008)
+- VNM5858:	new sample added to REC: Watanabe et al. (2005)
+- VNM8413:	new sample added to REC: Tuan et al. (2003)
+
+____________________________________________________________________________________________________
+
+V1.3	to	V1.3.1
+- Completet:	August 23, 2018
+- [NAT]:	Var. [Combi] changed to [IQ(L&V12)-NIQ]
+- [NAT]:	Var. [Combi N(spl.)] changed to [|IQ(L&V12)-NIQ|]
+- For 6 samples in Table REC number formats of var [Mean age] were faulty and had to be corrected
+- BLR7512:	Sample excluded: Lynn et al. (2017)
+		Errors reported by authors
+- KGZ2909:	Sample excluded: Salahodjaev et al. (2017a)
+		Errors reported by authors
+- UZB4429:	Sample excluded: Salahodjaev et al. (2016)
+		Errors reported by authors
+- GMB5362:	faulty raw-score conversion detected and corrected 
+- GMB6388:	faulty raw-score conversion detected and corrected 
+- GMB4394:	faulty raw-score conversion detected and corrected  
+- GMB6696:	faulty raw-score conversion detected and corrected 
+- NGA6402:	[IQ (uncor.)] corrected from '80.00' to '87.50'
+
+____________________________________________________________________________________________________
+
+V1.3.1	to		V1.3.2
+- Completet:		March 26, 2019
+- Manual:		
+	- Errors eliminated:	PISA2012SCI: M=514.13 (not 414.13)
+				CPM-Standardization GBR(1938) with source Raven (1941) corrected to GBR(1947) with source Raven (1965)
+- File (structure):
+	- [FAV]:		descriptive statistics corrected
+	- [REC]:		connected to [SEL]
+				connected to [CAL]
+				connected to [STAT(REC)]
+				connected to [FEC]
+	- [SEL]:		Table included
+				primary function: filter
+				connected to [REC]
+				connected to [NAT]
+	- [ALT]:		Table excluded
+	- [NAT]:		connected to [INF]
+				connected to [FAV]
+				connected to [FEC]
+				connected to [STAT(NAT)]
+	- [ADDVAR]:		Table excluded
+				integrated into [NAT]
+	- [STATCOR(REC)]:	Table excluded
+	- [STATCOR(NAT)]:	Table excluded
+	- [STATCOR(SEL)]:	Table splitted into [STAT(REC)] and [STAT(NAT)] 
+	- [STAT(REC)]:		connected to [REC]
+	- [STAT(NAT)]:		connected to [NAT]
+	- Errors eliminated:	[GEO] -> formula error in 'Korea, North' (K;97)
+- File (countries):	added Benin
+			added Djibouti
+- File (samples):
+	- BEN3861:	added 'Bakhiet, Becker & Lynn (2019)'
+	- HTI5439:	corrected [N (ind.)] from '162.00' to '54.00"
+			corrected [Year (std.)] from '2007' to '1947'
+			corrected [Raw-score (uncor.)] from '18.15' to '55.00'	
+			corrected [Raw-score (cor.)] from '18.15' to '15.48'
+	- IDN4551:	corrected [Year (std.)] from '1938' to '1947'
+	- JPN7482:	added 'Takeuchi et al. (2015, Table 1)'
+	- SDN1289:	corrected [N (ind.)] from '6722' to '4011.58'
+	- SDN5704:	corrected [N (ind.)] from '6722' to '2865.42'
+	- SDN1007:	excluded 'Dutton et al. (2017)' 
+			listed twice: 'SDN1352' in 'Khaleefa et al. (2008b)'
+	- SDN1298:	excluded 'Dutton et al. (2017)'
+			listed twice: 'SDN7769' in 'Khaleefa et al. (2008b)'
+	- SDN4915:	added 'Husain et al. (2019)'
+	- THA7341:	corrected [Year (std.)] from '1938' to '1947'
+- File (variables):	added [Christians (%)]
+			added [Catholic Christians (%)]
+			added [Protestant/Reformed Christians (%)]
+			added [Orthodox Christians (%)	Muslims (%)]
+			added [Sunni Muslims (%)]
+			added [Shiite Muslims (%)]
+			added [Median age (2003)] - [Median age (2017)]
+			added [Birth rate (Births/1,0000 pop.) (2000)] - [Birth rate (Births/1,0000 pop.) (2016)]
+			excluded [DEATH RATE(DEATHS/1,000 POPULATION)]
+			added [Total Fertility Rate (2000)] - [Total Fertility Rate (2017)]
+			added [Child labor - children ages 5 - 14 (2013)] - [Child labor - children ages 5 - 14 (2017)]
+			added [y-HG-Freq. HGSP]
+			added [y-HG-Freq. HGSN]
+			added [Mother's mean age at first birth (2013)] - [Mother's mean age at first birth (2017)]
+			added [Consanguinity (%)]
+			added [HDI (1990)] - [HDI (2017)]
+			added [Inequality-adjusted HDI (2010)] - [Inequality-adjusted HDI (2017)]
+			added [Children under the age of 5 years underweighted (2011)] - [Children under the age of 5 years underweighted (2017)]
+
+____________________________________________________________________________________________________
+
+V1.3.2	to		V1.3.3
+- Completet:		May 11, 2019
+- File (structure):
+	- [INF]:	- 'GLOBAL IQ' now uses [QNW+SAS] as reference and not [QNW]
+	- [FAV]:	- new variable [QNW+SAS] integrated
+	- [SET]:	- new table [SET] added
+				-> allows determining a lower threshold -> scores in [IQ (cor.)] in [REC] and [IQ (SAS)] in [NAT] which are below the determined threshold were replaced by the determined score
+				-> allows the containment of used samples by administered test type or test
+				-> allows the containment of used samples by determining lower and upper thresholds for all metric variables
+	- [REC]/[SEL]:	- recoded [Origin (type)]
+			- recoded [SES]
+			- recoded [Sample char.]
+			- recoded [Domain]
+			- recoded [Procedure]
+			- recoded [Country of std.]
+			- recoded [Recalc.?]
+			- recoded [Special calc.?]
+			- recoded [Test-conv.? ]
+			- replaced [Greenwich cor.] by [Below threshold?]
+			- added [Test (type)] 
+	- [SEL]:	- added [Filter]
+	- [NAT]:	- replaced [Reest.?] by [PMT]
+	- [CNC]:	- new table [CNC] (cross-national correlates) added
+- File (data):
+	- [NAT]:	- Error eliminated in line 212 [S-Product (Total pop.)]
+				-> Faulty formula replaced
+			- Error eliminated in line 119 [[Country name]
+				-> 'Marshall Isands' -> 'Marshall Islands'
+			- Error eliminated in line 212 [Christians (%)]
+				-> '76.00' -> '9.00'
+			- Error eliminated in line 212 [Muslims (%)]
+				-> '9.00' -> '76.00'
+			- Error eliminated in line 212 [Sunni Muslims (%)]
+				-> '0.00' -> '76.00'
+			- Error eliminated in line 212 [Mean longitude]
+				-> '433.00' -> '43.30'	
+			- Error eliminated in line 177 [Catholic Christians (%)]
+				-> '63.50' -> '00.00'
+			- Error eliminated in line 177 [Protestant/Reformed Christians (%)]
+				-> '00.00' -> '63.50'
+	- [REC]:	- AGO7765:	corrected [Raw-score (cor.)]
+					-> '71.00' -> '23.24'
+			- ARG2485:	corrected [Mean age]
+					-> '14.00' -> '13.00'
+			- BGD3896:	corrected [Mean age]
+					-> '-' -> '5.00'
+			- DEU2018:	corrected [multiple variables]
+					-> sample now extended to 13.00 to 18.00 years olds
+					-> [IQ (cor.)] changed from 107.09 to 102.90
+			- MHL9839:	corrected [Country name]
+					-> 'Marshall Isands' -> 'Marshall Islands'
+			- NIC3786:	corrected [N (ind.)]
+					-> '976' -> '488'
+			- NIC6309:	corrected [N (ind.)]
+					-> '976' -> '488'
+			- SAU9747:	corrected [Test (meas.)] 
+					-> '2017.00' -> '2016.00'
+			- EST4281:	excluded 'Lynn, Pullmann & Allik (2003)'
+					-> already included in 'Pullmann, Allik & Lynn (2004)'
+			- NZL7400:	excluded 'Belsky et al. (2013)'
+					-> Individuals several obese with significant lower IQs 
+			- NZL8376:	excluded 'Belsky et al. (2013)'
+					-> Individuals obese with significant lower IQs
+			- BRA1328:	included 'Menezes-Filho et al. (2011)'
+			- CHN4119:	included 'Li et al. (1990)'
+			- CHN7424:	included 'Li et al. (1990)'
+			- FIN4144:	included 'Haapala et al. (2015)'
+			- GBR1967:	included 'Lynn & Holmshaw (1990)'
+			- GRL6745:	included 'Weihe et al. (2002)'
+			- IND7193:	included 'Chowdhury & Ghosh (2010)'
+			- JPN6293:	included 'Lynn & Hampson (1986a)'
+			- PRI1166:	included 'Loyola & McBride (1991)'
+			- PRI2118:	included 'de Jesus (1990)'
+			- PRI2317:	included 'Glutting (1986)'
+			- PRI6387:	included 'Prewitt Diaz & Rivera (1989)'
+			- TUR5199:	included 'Güler, M. & Basim, N. (2016)'
+			- TUR5288:	included 'Yakmaci-Guzel, B., & Akarsu, F. (2006)'
+			- USA5281:	included 'Engelhardt et al. (2016)'
+			- ZAF1821:	included 'Vass (1992)'
+			- ZAF1935:	included 'Lynn & Holmshaw (1990)'
+			- ZAF8432:	included 'Vass (1992)'
+			- ANT1636:	renamed 'Vedder et al. (2000)' -> 'Vedder, Van de Vijfeijken & Kook (2000)'
+			- AUT2215:	renamed 'Rindermann et al. (2014a)' -> 'Rindermann, Stiegmaier & Meisenberg (2014)'
+			- AUT4153:	renamed 'Rindermann et al. (2014a)' -> 'Rindermann, Stiegmaier & Meisenberg (2014)'
+			- BMU6957:	renamed 'Sandoval et al. (1983)' -> 'Sandoval, Zimmerman & Woo-Sam (1983)'
+			- BRA6746:	renamed 'Bandeira et al. (2012)' -> 'Bandeira, Costa & Arteche (2012)'
+			- BRA9512:	renamed 'Bandeira et al. (2012)' -> 'Bandeira, Costa & Arteche (2012)'
+			- CHN3229:	renamed 'Lynn et al. (2016b)' -> 'Lynn et al. (2016a)'
+			- COD1719:	renamed 'Boivin et al. (1995)' -> 'Boivin, Giordani & Bornfeld (1995)'
+			- COD3826:	renamed 'Boivin et al. (1995)' -> 'Boivin, Giordani & Bornfeld (1995)'
+			- COG6635:	renamed 'Nkaya et al. (1994)' -> 'Nkaya, Huteau & Bonnet (1994)'
+			- CRI3498:	renamed 'Rindermann et al. (2014a)' -> 'Rindermann, Stiegmaier & Meisenberg (2014)'
+			- CRI3498:	renamed 'Rindermann et al. (2014b)' -> 'Rindermann, Falkenhayn & Baumeister (2014)'
+			- CRI7021:	renamed 'Rindermann et al. (2014a)' -> 'Rindermann, Stiegmaier & Meisenberg (2014)'
+			- CYP1414:	renamed 'Spanoudis et al. (2016)' -> 'Spanoudis, Natsopoulos & Lynn (2016)'
+			- CYP6250:	renamed 'Spanoudis et al. (2016)' -> 'Spanoudis, Natsopoulos & Lynn (2016)'
+			- EGY2680:	renamed 'Wachs et. al. (1995)' -> 'Wachs et al. (1995)'
+			- EGY4241:	renamed 'Wachs et. al. (1995)' -> 'Wachs et al. (1995)'
+			- EGY9075:	renamed 'Bakhiet & Lynn (2015g)' -> 'Bakhiet & Lynn (2015d)'
+			- FIN5106:	renamed 'Dutton et al. (2014)' -> 'Dutton, te Nijenhuis & Roivainen (2014)'
+			- FRA9910:	renamed 'Nkaya et al. (1994)' -> 'Nkaya, Huteau & Bonnet (1994)'
+			- GRC2595:	renamed 'Fatouros (1972)' -> 'Cronbach & Drenth (1972)'
+			- HKG1292:	renamed 'Lynn et al. (1988)' -> 'Lynn, Hampson & Lee (1988)'
+			- HKG2012:	renamed 'Chan et al. (1991)' -> 'Chan, Eysenck & Lynn (1991)'
+			- HKG8204:	renamed 'Poon et al. (1986)' -> 'Poon, Yu & Chan (1986)'
+			- HRV2479:	renamed 'Žebec et al. (2015)' -> 'Žebec, Demetriou & Kotrla-Topic (2015)'
+			- HRV4727:	renamed 'Žebec et al. (2015)' -> 'Žebec, Demetriou & Kotrla-Topic (2015)'
+			- HUN9083:	renamed 'Dobrean et al. (2008)' -> 'Raven & Raven (2008)'
+			- IND2222:	renamed 'Hackett et al. (1998)' -> 'Hackett, Hackett & Bhakakta (1998)'
+			- IND6146:	renamed 'Bhakta et al. (2002)' -> 'Bhakta, Hackett & Hackett (2002)'
+			- IND7913:	renamed 'Hackett et al. (1998)' -> 'Hackett, Hackett & Bhakakta (1998)'
+			- IRQ1258:	renamed 'Abul-Hubb (1972)' -> 'Cronbach & Drenth (1972)'
+			- IRQ5233:	renamed 'Abul-Hubb (1972)' -> 'Cronbach & Drenth (1972)'
+			- ISL1249:	renamed 'Pind et al. (2003)' -> 'Pind, Gunnarsdóttir & Jóhannesson (2003)'
+			- ISL2755:	renamed 'Pind et al. (2003)' -> 'Pind, Gunnarsdóttir & Jóhannesson (2003)'
+			- ITA4819:	renamed 'Belacchi et al. (2010)' -> 'Belacchi, Carretti & Cornoldi (2010)'
+			- ITA7980:	renamed 'Pruneti et al. (1985)' -> 'Pruneti (1985)'
+			- JOR2837:	renamed 'Bakhiet & Lynn (2014b)' -> 'Bakhiet & Lynn (2014a)'
+			- JOR7249:	renamed 'Bakhiet & Lynn (2014c)' -> 'Bakhiet & Lynn (2014b)'
+			- JPN7482:	renamed 'Takeuchi et al. (2015, Table 1)' -> 'Takeuchi et al. (2015)'
+			- KEN4693:	renamed 'Boissiere et al. (1985)' -> 'Boissiere, Knight & Sabot (1985)'
+			- KOR7235:	renamed 'Lynn et al. (2016)' -> 'Lynn et al. (2016a)'
+			- KWT5643:	renamed 'Abdel-Khalek & Raven (2008)' -> 'Raven & Raven (2008)'
+			- KWT9377:	renamed 'Abdel-Khalek & Raven (2008)' -> 'Raven & Raven (2008)'
+			- LKA8652:	renamed 'Haraldsson et al. (2000)' -> 'Haraldsson, Fowler & Periyannanpillai (2000)'
+			- LKA9591:	renamed 'Haraldsson et al. (2000)' -> 'Haraldsson, Fowler & Periyannanpillai (2000)'
+			- MAR4071:	renamed 'Sbaibi et al. (2014)' -> 'Sbaibi, Aboussaleh & Ahamim (2014)'
+			- MEX2202:	renamed 'Soto et al. (2014)' -> 'Soto, Ramírez & Tomasini (2014)'
+			- MYS8050:	renamed 'Hamid et al. (2002)' -> 'Hamid et al. (2011)'
+			- NGA4945:	renamed 'Maqsud (1980a)' -> 'Maqsud (1980)'
+			- NGA6202:	renamed 'Maqsud (1980a)' -> 'Maqsud (1980)'
+			- PAK1756:	renamed 'Shamama-tus-Sabah et al. (2011)' -> 'Shamama-tus-Sabah, Gilani & Wachs (2011)'
+			- PAK3502:	renamed 'Rahman et al. (2002)' -> 'Rahman, Macbool & Zuberi (2002)'
+			- PER5808:	renamed 'Millones et al. (2015)' -> 'Millones, Flores-Mendoza & Millones Rivalles (2015)'
+			- POL4894:	renamed 'Dobrean et al. (2008)' -> 'Raven & Raven (2008)'
+			- POL5086:	renamed 'Dobrean et al. (2008)' -> 'Raven & Raven (2008)'
+			- PSE2854:	renamed 'Bakhiet & Lynn (2014e)' -> 'Bakhiet & Lynn (2014c)'
+			- PSE5248:	renamed 'Bakhiet & Lynn (2014e)' -> 'Bakhiet & Lynn (2014c)'
+			- ROU1823:	renamed 'Dobrean et al. (2008)' -> 'Raven & Raven (2008)'
+			- ROU4821:	renamed 'Dobrean et al. (2008)' -> 'Raven & Raven (2008)'
+			- ROU5824:	renamed 'Dobrean et al. (2008)' -> 'Raven & Raven (2008)'
+			- SAU9747:	renamed 'Bakheit et al. (2016)' -> 'Bakhiet et al. (2016b)'
+			- SDN1352:	renamed 'Khaleefa et al. (2008b)' -> 'Khaleefa et al. (2008a)'
+			- SDN1601:	renamed 'Bakhiet & Lynn (2015h)' -> 'Bakhiet & Lynn (2015g)'
+			- SDN3916:	renamed 'Khaleefa et al. (2014)' -> 'Khaleefa et al. (2008a)'
+			- SDN5195:	renamed 'Bakhiet et al. (2017)' -> 'Bakhiet et al. (2017b)'
+			- SDN7769:	renamed 'Khaleefa et al. (2008b)' -> 'Khaleefa et al. (2008a)'
+			- SGP5605:	renamed 'Lynn (1977b)' -> 'Lynn (1977)'
+			- SRB5821:	renamed 'Bala et al. (2013)' -> 'Bala, Krneta & Drid (2013)'
+			- SRB6215:	renamed 'Fajgeli et al. (2010)' -> 'Fajgelj, Bala & Kati (2010)'
+			- SVN2723:	renamed 'Boben (2007)' -> 'Raven & Raven (2008)'
+			- SVN2984:	renamed 'Boben (2007)' -> 'Raven & Raven (2008)'
+			- SVN3452:	renamed 'Boben (2007)' -> 'Raven & Raven (2008)'
+			- SVN9451:	renamed 'Boben (2007)' -> 'Raven & Raven (2008)'
+			- TUR4222:	renamed 'Duzen et al. (2008)' -> 'Raven & Raven (2008)'
+			- TWN3816:	renamed 'Lynn et al. (2011)' -> 'Lynn, Chen & Chen (2011)'
+			- TZA1468:	renamed 'Rindermann (2013SM2)' -> 'Rindermann (2013)'
+			- TZA6050:	renamed 'Boissiere et al. (1985)' -> 'Boissiere, Knight & Sabot (1985)'
+			- UKR9711:	renamed 'Prozorovskaya et al. (2010)' -> 'Prozorovskaya, Grigoriev & Lynn (2010)'
+			- VCT6406:	renamed 'Durbrow et al. (2002)' -> 'Durbrow, Schaefer & Jimerson (2002)'
+			- VEN4627:	renamed 'Montiel-Naval et al. (2003)' -> 'Montiel-Naval, Peña & Montiel-Barbero (2003)'
+			- VEN6429:	renamed 'Montiel-Naval et al. (2005)' -> 'Montiel-Naval, Montiel-Barbero & Peña (2005)'
+			- YEM7411:	renamed 'Bakhiet et al. (2015d)' -> 'Bakhiet, Al-Khadher & Lynn (2015)'
+			- LBY3196:	replaced source: 'Al-Shahomee, Furnham, & Lynn (2017)' by 'Al-Shahomee, Abdalla & Lynn (2017)'
+			- GHA9826:	replaced source: 'Aslam & Lehrer (2012)' by 'Aslam & Lehrer (2014)'
+	- [REF]:	- Completely revised
+____________________________________________________________________________________________________
+
+V1.3.3	to		V1.3.4
+- Completet:		July 14, 2023
+	- [REC]:
+		- RUS1768:	corrected [Test (meas.)] from 'SPM' to 'SPM+'
+				corrected [Test (calc.)] from 'SPM' to 'SPM+'
+				corrected [Year (std.)] from '1979' to '2007'
+				corrected [Test time adjust.] from '-6.09' to '0.00'
+				corrected [IQ (cor.)] from '90.26' to '96.14'
+		- RUS5506:	corrected [Test (meas.)] from 'SPM' to 'SPM+'
+				corrected [Test (calc.)] from 'SPM' to 'SPM+'
+				corrected [Year (std.)] from '1979' to '2007'
+				corrected [Test time adjust.] from '-6.09' to '0.00'
+				corrected [IQ (cor.)] from '91.24' to '97.12'
+		- IRQ3749:	corrected [Lowest age] from '6.00' to '7.00'
+				corrected [Highest age] from '12.00' to '8.00'
+				corrected [Mean age] from '9.00' to '7.41'
+				corrected [IQ (cor.)] from '92.67' to '101.25'
+	- [NAT]:
+		- RUS		corrected (i.a.) [QNW] from '93.18' to '96.15'
+		- IRQ		corrected (i.a.) [QNW] from '89.45' to '94.50'
+		- added:
+			- Var: [Percent Above Math Benchmark (400 on TIMSS Scale)]
+				- Source:	Patel & Sandefur (2020)
+				- Def.:		Percent above math benchmark
+				- Standard:	Rosetta score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.75
+			- Var: [Percent Above Reading Benchmark (400 on PIRLS Scale)]
+				- Source:	Patel & Sandefur (2020)
+				- Def.:		Percent above reading benchmark
+				- Standard:	Rosetta score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.73
+			- Var: [Median Math Score (TIMSS Scale, 4th Grade)]
+				- Source:	Patel & Sandefur (2020)
+				- Def.:		Median math score
+				- Standard:	Rosetta score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.77
+			- Var: [Median Reading Score (PIRLS Scale, 4th Grade]
+				- Source:	Patel & Sandefur (2020)
+				- Def.:		Median reading score
+				- Standard:	Rosetta score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.61
+			- Var: [Educational attainment (0-18 years) (1990)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Educational attainment
+				- Standard:	years
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.62
+			- Var: [Educational attainment (0-18 years) (2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Educational attainment
+				- Standard:	years
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.53
+			- Var: [Educational attainment (0-18 years) (1990 & 2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Educational attainment
+				- Standard:	years
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.62
+			- Var: [Learning (0-100) (1990)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Prevalence of seven health conditions
+				- Standard:	Learing score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.76
+			- Var: [Learning (0-100) (2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Prevalence of seven health conditions
+				- Standard:	Learing score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.76
+			- Var: [Learning (0-100) (1990 & 2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Prevalence of seven health conditions
+				- Standard:	Learing score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.77
+			- Var: [Harmonized Learning Outcomes]	
+				- Source:	Angrist et al. (2021)												
+				- Def.:		Harmonized learning outcomes
+				- Standard:	HLO-scores
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.80
+			- Var: [Expected years lived (0-45 years) (1990)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Expected years lived (0-45 years)
+				- Standard:	years
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.59
+			- Var: [Expected years lived (0-45 years) (2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Expected years lived (0-45 years)
+				- Standard:	years
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.61
+			- Var: [Expected years lived (0-45 years) (1990 & 2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Expected years lived (0-45 years)
+				- Standard:	years
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.62
+			- Var: [Functional health status (0-100) (1990)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Prevalence of seven health conditions
+				- Standard:	%
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.64
+			- Var: [Functional health status (0-100) (2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Prevalence of seven health conditions
+				- Standard:	%
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.68
+			- Var: [Functional health status (0-100) (1990 & 2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Prevalence of seven health conditions
+				- Standard:	%
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.69
+			- Var: [Human Capital (1990)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Level of education and health in a population
+				- Standard:	HC-score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.72
+			- Var: [Human Capital (2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Level of education and health in a population
+				- Standard:	HC-score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.75
+			- Var: [Human Capital (1990 & 2016)]
+				- Source:	Lim et al. (2018, Fig. 2)
+				- Def.:		Level of education and health in a population
+				- Standard:	HC-score
+				- Method: 	Taken unaltered
+				r (xNIQ QNW):	.76
+____________________________________________________________________________________________________
+
+V1.3.4	to		V1.3.5
+- Completet:		October 24, 2023
+	- [FAV]:
+		- new variables (see manual)
+			- NIQ (QNW) older versions
+			- Alternative NIQs								
+	- [REC]:
+		- corrections that do not produce sample-level changes in IQ (alphabetic order):
+			- AGO7765:	corrected [Highest age] from '31.00' to '32.00'
+			- ARE2499:	corrected [N (ind.)] from '5159.00' to '5397.00'
+			- BGD7140:	corrected [Sample comp.] from 'literated' to 'literate'
+			- BGD7433:	corrected [Sample comp.] from 'illiterated' to 'illiterate'
+			- BLR3775:	corrected [Sample comp.] from 'exclusively breastfeeded' to 'exclusive breastfed'
+			- BLR4679:	corrected [Sample comp.] from 'breastfeeded' to 'breastfed'
+			- BMU2475: 	corrected [Lowest age] from '17.00' to '2.00'
+					corrected [Highest age] from '51.00' to '4.00'
+			- BMU6957:	corrected [N (ind.)] from '92.00' to '89.00'
+			- BRA1328:	corrected [Origin (specif.)] from 'Cotegipevillage' to 'Cotegipe village'
+			- BRA2002:	corrected [Origin (specif.)] from 'Sao Paolo' to 'São Paulo'
+			- BRA2511:	corrected [Origin (specif.)] from 'Sao Paolo' to 'São Paulo'
+			- BRA8353:	corrected [Origin (specif.)] from 'Sao Paolo' to 'São Paulo'
+			- BRA9745:	corrected [Origin (specif.)] from 'Sao Paolo' to 'São Paulo'
+			- CHN1744:	corrected [Origin (specif.)] from '' to 'Tianjin'
+					corrected [Sample comp.] from 'normal' to 'high school students'
+			- CHN3239:	corrected [Origin (specif.)] from '' to 'Tianjin'
+					corrected [Sample comp.] from 'normal' to 'high school students'
+			- COL9733: 	corrected [Sample comp.] from 'underweighted' to 'underweight'
+			- DEU3866:	corrected [Highest age] from '17.00' to '16.00'
+			- EGY9075:	corrected [Test (part)] from '-1.50' to 'full'
+			- EGY9492:	corrected [Highest age] from '15.00' to '16.00'
+			- FIN4144:	corrected [Lowest age] from '7.00' to '6.00'
+			- GBR1967:	corrected [Country name] from 'South Africa' to 'United Kingdom'
+			- GTM4094:	corrected [Sample comp.] from 'partly malnutrished' to 'partly malnourished'
+			- HRV2479:	corrected [Sample comp.] from 'right handed' to 'right-handed'
+			- HRV4727:	corrected [Sample comp.] from 'right handed' to 'right-handed'
+			- IDN5597:	corrected [Highest age] from '49.00' to '46.00'
+			- IND1520:	corrected [Sample comp.] from 'outbreed' to 'outbred'
+			- IND2894:	corrected [Sample comp.] from 'outbreed' to 'outbred'
+			- IND3106: 	corrected [Lowest age] from '35.00' to '25.00'
+			- IND6600:	corrected [Lowest age] from '1.00' to '10.00'
+			- IND6609:	corrected [Lowest age] from '1.00' to '10.00'
+			- IND7068:	corrected [Origin (specif.)] from 'Pune, Mumbay' to 'Pune, Mumbay, Dekhi'
+					corrected [N (ind.)] from '8546.00' to '8609.00'
+			- IND7491:	corrected [Lowest age] from '1.00' to '10.00'
+			- IND7900:	corrected [Sample comp.] from 'muslim non-inbreed' to 'Muslim non-inbred'
+			- IND7911:	corrected [Lowest age] from '1.00' to '10.00'
+			- IRQ3749:	corrected [Sample comp.] from 'normal' to 'normal+malnourished'
+					corrected [N (ind.)] from '1587.00' to '529.00'
+			- JAM4211:	corrected [N (ind.)] from '31.00' to '80.00'
+			- JAM7220:	corrected [N (ind.)] from '31.00' to '80.00'
+			- JAM9124:	corrected [N (ind.)] from '35.00' to '25.00'
+			- KAZ5019:	corrected [Mean age] from '12.00' to '11.63'
+					corrected [N (ind.)] from '164.00' to '402.00'
+			- KAZ5466:	corrected [Sample comp.] from 'Uzbeck' to 'Uzbek'
+					corrected [Highest age] from '16.00' to '15.00'
+			- KAZ9017:	corrected [Highest age] from '16.00' to '15.00'
+					corrected [Mean age] from '11.63' to '12.00'
+					corrected [N (ind.)] from '402.00' to '164.00'
+			- KWT1478:	corrected [Lowest age] from '5.50' to '6.50'
+			- KWT9995:	corrected [Lowest age] from '6.00' to '8.00'
+					corrected [N (ind.)] from '6592.00' to '6529.00'
+			- LBY7870:	corrected [Highest age] from '17.00' to '16.00'
+					corrected [N (ind.)] from '600.00' to '1620.00'
+			- MUS7083:	corrected [Lowest age] from '1.00' to '11.00'
+			- NGA1525:	corrected [N (ind.)] from '753.00' to '755.00'
+			- NGA6402:	corrected [Lowest age] from '1.00' to '10.00'
+			- NPL3454:	corrected [N (ind.)] from '287.00' to '284.00'
+			- OMN2482:	corrected [N (ind.)] from '5139.00' to '1868.73'
+			- OMN4512:	corrected [N (ind.)] from '468.00' to '465.00'
+			- OMN7680:	corrected [N (ind.)] from '5139.00' to '3270.27'
+			- PAK3502:	corrected [N (ind.)] from '33.00' to '30.00'
+			- PSE1534:	corrected [N (ind.)] from '33.00' to '30.00'
+					corrected [Procedure] from '1.00' to '2.00'
+			- POL4894:	corrected [Sample comp.] from 'army recruites' to 'army recruits'
+			- SAU6541:	corrected [Lowest age] from '6.00' to '8.00'
+			- SAU8865:	corrected [N (ind.)] from '2631.00' to '2661.00'
+			- SDN1352:	corrected [N (ind.)] from '2581.00' to '4377.00'
+			- SVN2537	corrected [N (ind.)] from '1079.00' to '1080.00'
+			- SYR4919:	corrected [N (ind.)] from '554.00' to '569.00'
+			- THA3678:	corrected [Origin (specif.)] from 'Bangkog' to 'Bangkok'
+			- THA3965:	corrected [Origin (specif.)] from 'Bangkog' to 'Bangkok'
+			- THA5629:	corrected [Origin (specif.)] from 'Bangkog' to 'Bangkok'
+			- THA7341:	corrected [Sample comp.] from 'controle' to 'control'
+			- THA8471:	corrected [Origin (specif.)] from 'Bangkog' to 'Bangkok'
+			- TWN7259:	corrected [N (ind.)] from '401.00' to '118.00'
+			- TWN9110:	corrected [N (ind.)] from '401.00' to '118.00'
+			- TZA3801:	corrected [Lowest age] from '1.00' to '10.00'
+			- USA1451:	corrected [Lowest age] from '7.00' to '4.00'
+					corrected [Highest age] from '8.00' to '5.00'
+					corrected [Mean age] from '7.00' to '4.00'
+			- USA1919:	corrected [Sample comp.] from 'Mexican Americana' to 'Mexican Americans'
+			- USA5375:	corrected [Origin (specif.)] from 'New York (USA)' to 'New York'
+			- USA5677:	corrected [Lowest age] from '7.00' to '4.00'
+					corrected [Highest age] from '8.00' to '5.00'
+					corrected [Mean age] from '7.00' to '4.00'
+			- ZAF4568:	corrected [N (ind.)] from '158.00' to '152.00'
+		- corrected years od measurement for all samples from Georgas et al. (2003) with changes in IQ at the sample-level (alphabetic order):
+			- CAN7598:	corrected [Year (meas.)] from '2003.00' to '1994.00'
+					Change: IQ (cor.): '94.74' -> '97.80'
+			- FRA 9734:	corrected [Year (meas.)] from '2003.00' to '1995.00'
+					Change: IQ (cor.): '95.24' -> '97.96'
+			- DEU4339:	corrected [Year (meas.)] from '2003.00' to '1997.00'
+					Change: IQ (cor.): '94.74' -> '96.78'
+			- GRC3724:	corrected [Year (meas.)] from '2003.00' to '1995.00'
+					Change: IQ (cor.): '87.24' -> '89.96'
+			- KOR9519:	corrected [Year (meas.)] from '2003.00' to '1999.50'
+					Change: IQ (cor.): '95.74' -> '96.76'
+			- LTU6933:	corrected [Year (meas.)] from '2003.00' to '2000.00'
+					Change: IQ (cor.): '88.74' -> '89.76'
+			- NLD4020:	corrected [Year (meas.)] from '2003.00' to '2002.00'
+					Change: IQ (cor.): '94.74' -> '95.08'
+			- SVN2537:	corrected [Year (meas.)] from '2003.00' to '1998.00'
+					Change: IQ (cor.): '90.74' -> '96.44'
+			- SWE2425:	corrected [Year (meas.)] from '2003.00' to '1999.00'
+					Change: IQ (cor.): '94.74' -> '92.10'
+			- USA3142:	corrected [Year (meas.)] from '2003.00' to '1989.00'
+					Change: IQ (cor.): '90.74' -> '95.50'
+		- further corrections that do produce sample-level changes in IQ (alphabetic order):
+			- BRA2545:	corrected [Raw-score (cor.)] from '26.35' to '22.35'
+					Change: IQ (cor.): '96.53' -> '83.97
+			- EGY7858:	corrected [Lowest age] from '16.00' to '17.00'
+					corrected [N (ind.)] from '4733.00' to '5215.00'
+					corrected [Raw-score (uncor.)] from '28.70' to '30.55'
+					Change: IQ (cor.): '87.43' -> '87.43'
+			- EGY8648:	corrected [Raw-score (uncor.)] from '44.00' to '44.56'
+					Change: IQ (cor.): '77.07' -> '77.95'	
+			- LBY3498:	corrected [Raw-score (uncor.)] from '40.45' to '38.15'
+					Change: IQ (cor.): '70.27' -> '65.33'
+			- LBY4310:	corrected [Raw-score (uncor.)] from '37.14' to '35.87'
+					Change: IQ (cor.): '66.24' -> '64.86'
+			- LBY5553:	corrected [Raw-score (uncor.)] from '40.13' to '39.46'
+					Change: IQ (cor.): '81.84' -> '80.55'
+			- MAR5929:	corrected [Raw-score (uncor.)] from '29.22' to '28.22'
+					Change: IQ (cor.): '13.60' -> '84.00'
+			- NZL6659:	Source combined for better information (with Fergusson & Horwood (1991))
+					corrected [N (ind.)] from '554.00' to '881.00'
+					corrected [Origin (type)] from '1.00' to '3.00'
+					corrected [Origin (specif.)] from 'Christchurch' to 'Christchurch urban region'
+					corrected [Sample comp.] from 'Whites' to 'normal'
+					corrected [Year (meas.)] from '1996.00' to '1985.50'
+					Change: IQ (cor.): '92.66' -> '96.40'
+			- PSE1534:	corrected [Raw-score (uncor.)] from '29.72' to '23.12'
+					Change: IQ (cor.): '78.53' -> '69.97'
+			- SAU6541:	age group 6.5 added from the source -> multiple changes
+					Change: IQ (cor.): '78.99' -> '79.48'
+		- deleted samples (alphabetic order):
+			- AUT1850:	Sample deleted (bad data quality)
+			- BEL2834:	Sample deleted (bad data quality)
+			- BGR9279:	Sample deleted (bad data quality)
+			- CHE4717:	Sample deleted (bad data quality)
+			- CHN3229:	Sample deleted (inappropriate norms)
+			- CZE3161:	Sample deleted (bad data quality)
+			- DEU8990:	Sample deleted (bad data quality)
+			- DNK9175:	Sample deleted (bad data quality)
+			- ESP3305:	Sample deleted (bad data quality)
+			- FIN2520:	Sample deleted (bad data quality)
+			- FRA6242:	Sample deleted (bad data quality)
+			- GBR3327:	Sample deleted (bad data quality)
+			- GHA3479:	Sample deleted (bad data quality)
+			- GRC7414:	Sample deleted (bad data quality)
+			- HRV9679:	Sample deleted (bad data quality)
+			- HUN6012:	Sample deleted (bad data quality)
+			- IND5561:	Sample deleted (included in IND7068)
+			- IRL4315:	Sample deleted (bad data quality)
+			- ITA4898:	Sample deleted (bad data quality)
+			- JAM3587:	Sample deleted (duplication of JAM3111)
+			- KOR7288:	Sample deleted (adopted Korean children from Belgium)
+			- NLD2751:	Sample deleted (bad data quality)
+			- NOR7181:	Sample deleted (bad data quality)
+			- NPL9477:	Sample deleted because duplicated (NPL1673, NPL3454, NPL9132)
+			- POL8178:	Sample deleted (bad data quality)
+			- PRT2352:	Sample deleted (bad data quality)
+			- SWE5370:	Sample deleted (bad data quality)
+			- USA3142:	Sample deleted (used as international standard)
+		- newly included samples (alphabetic order):
+			- MYS7731:	included 'Raven & Raven (2008)'
+	- [NAT]:
+		- changes (at least to the second decimal place) at the country level due to correction in [REC] in reference to V.1.3.4 (r = .9976, N = 130)		
+			- AUT:	 98.37	->	-2.41	->	100.79
+			- BEL:	 97.30	->	-1.36	->	 98.66
+			- BGR:	 87.10	->	-0.05	->	 87.16
+			- BMU:	 93.15	->	-0.04	->	 93.19
+			- BRA:	 85.30	->	 0.23	->	 85.07
+			- CAN:	 97.86	->	-0.51	->	 98.37
+			- CHE:	 97.27	->	-0.29	->	 97.57
+			- CHN:	104.66	->	 4.33	->	100.33
+			- DEU:	101.66	->	-0.4	->	102.06
+			- DNK:	 96.84	->	-0.65	->	 97.49
+			- EGY:	 86.41	->	-0.02	->	 86.43
+			- ESP:	 92.26	->	-0.3	->	 92.56
+			- FIN:	 98.00	->	-0.35	->	 98.36
+			- FRA:	 98.02	->	-3.91	->	101.93
+			- GBR:	 98.44	->	-0.88	->	 99.32
+			- GHA:	 61.95	->	 0.28	->	 61.67
+			- GRC:	 86.38	->	-1.6	->	 87.98
+			- HRV:	 93.72	->	 1.55	->	 92.17
+			- HUN:	 99.22	->	-0.15	->	 99.37
+			- IND:	 78.76	->	 0.05	->	 78.71
+			- IRL:	 90.01	->	-0.09	->	 90.10
+			- IRQ:	 94.50	->	 4.69	->	 89.81
+			- ITA:	 91.51	->	 0.38	->	 91.13
+			- JAM:	 75.31	->	 0.14	->	 75.17
+			- KOR:	 97.59	->	-0.51	->	 98.10
+			- LBY:	 81.00	->	 1.17	->	 79.83
+			- LTU:	 94.73	->	-0.14	->	 94.87
+			- MAR:	 68.70	->	 0.09	->	 68.62
+			- MYS:	 86.05	->	-2.27	->	 88.32
+			- NLD:	100.32	->	-0.04	->	100.36
+			- NOR:	 99.66	->	-2.59	->	102.25
+			- NZL:	 99.58	->	-1.02	->	100.60
+			- OMN:	 83.32	->	-0.46	->	 83.78
+			- POL:	 94.74	-> 	 0.21	->	 94.53
+			- PRT:	 89.65	->	 0.23	->	 89.42
+			- PSE:	 79.80	->	 2.97	->	 76.83
+			- SAU:	 78.73	->	-0.05	->	 78.78
+			- SDN:	 77.83	->	-0.13	->	 77.95
+			- SVN:	 98.74	->	-0.09	->	 98.83
+			- SWE:	 94.92	->	-1.52	->	 96.44
+			- TWN:	108.71	->	-0.33	->	109.04
+			- USA:	 95.91	->	-0.02	->	 95.94
+		- countries no longer available
+			- CZE: 		no longer available
+	- [NAT]:
+		- added PISA (2018) data:
+			- Var: [PISA (2018)-Total M]
+			- Var: [PISA (2018)-Total 5th]
+			- Var: [PISA (2018)-Total 95th]
+			- Var: [PISA (2018)-Science M]
+			- Var: [PISA (2018)-Science 5th]
+			- Var: [PISA (2018)-Science 95th]
+			- Var: [PISA (2018)-Reading M]
+			- Var: [PISA (2018)-Reading 5th]
+			- Var: [PISA (2018)-Reading 95th]
+			- Var: [PISA (2018)-Math M]
+			- Var: [PISA (2018)-Math 5th]
+			- Var: [PISA (2018)-Math 95th]

@@ -1,0 +1,2033 @@
+THE NIQ-DATASET (V1.3.5) - Manual
+____________________________________________________________________________________________________
+
+Corresponding author: David Becker
+Department of Psychology, Chemnitz University of Technology
+Wilhelm-Raabe-Str. 43, D-09107 Chemnitz, Germany
+E-mail: david.becker@s2009.tu-chemnitz.de
+____________________________________________________________________________________________________
+
+Last update: October 25, 2023
+____________________________________________________________________________________________________
+
+PREFACE
+
+This dataset "THE NIQ-DATASET (V1.3.5)" based on a revision of working notes from Prof. em. Richard Lynn used for IQs of nations in Lynn and Vanhanen (2002, 2012). 
+The main objectives of this revision are to verify the original data, achieve greater transparency, make methods and calculations more comprehensible and standardized.
+It is also intended to continue the collection of data and keep methods and calculations up to date according to the latest state of research.
+Tables were constructed in order to offer users the widest possible variety of variables for their individual purposes and trust in the collected data.
+____________________________________________________________________________________________________
+
+RECOMMENDATIONS FOR USE
+
+For users who want quick access to IQ lists the table "FAV" (favorites) is recommended. 
+It contains the final estimated national IQ-scores (NIQ) and descriptive statistics at the bottom but without additional information.
+Ten variables for mean national IQ-scores are given here:
+
+NIQ-UW (col. C):		Simple mean NIQs calculated from all samples for each nation included in THE NIQ-DATASET (V1.3)
+
+NIQ-NW (col. D):		Mean NIQs calculated from all samples for each nation included in THE NIQ-DATASET (V1.3) weighted by N of individuals of each sample
+
+NIQ-QNW (col. E):		Mean NIQs calculated from all samples for each nation included in THE NIQ-DATASET (V1.3) weighted by dataquality and N of individuals of each sample
+
+NIQ-SAS (col. F):		Mean NIQs calculated from school assessment studies (PISA; TIMSS; PIRLS) included in THE NIQ-DATASET (V1.3)
+
+NIQ-QNF+SAS (col. G):		Means of NIQ-QNW (col. E) and NIQ-SAS (col. F)
+
+NIQ-QNF+SAS+GEO (col. H):	Means of NIQ-QNW (col. E) and NIQ-SAS (col. F), and supplemented for missing nations by geographic means of neighboring countries
+
+NIQ-L&V02 (col. I):		National IQ-scores from Lynn & Vanhanen (2002) estimated from psychometric tests only
+
+NIQ-L&V02+GEO (col. J):		National IQ-scores from Lynn & Vanhanen (2002) supplemented for missing nations by geographic means of neighboring countries
+
+NIQ-L&V12 (col. K):		National IQ-scores from Lynn & Vanhanen (2012) estimated from psychometric tests only
+
+NIQ-L&V12+GEO (col. L):		National IQ-scores from Lynn & Vanhanen (2012) supplemented for missing nations by geographic means of neighboring countries
+
+IQ(L&V12)-NIQ:			Differences between NIQ-QNF+SAS+GEO (col. H) and NIQ-L&V12+GEO (col. L)
+
+NIQ-R (col. N):			National IQ-scores from Prof. Dr. Heiner Rindermann, calculated from L&V02 and school assessment studies (PISA; TIMSS; PIRLS)
+				- See "Appendix I Data" in Becker & Rindermann (2016).
+
+NIQ (QNW) older versions:	Mean NIQs calculated from all samples for each nation included in the earlier versions of the THE NIQ-DATASET weighted by dataquality and N of individuals of each sample
+
+The table "NAT" (national) contains a more differenciated view on national IQ-scores including separated IQ-scores by type of test.
+
+The table "REC" (records) contains data and background material at the sample-level used to calculate numbers in "NAT".
+
+For all questions, uncertainties, comments, criticism, recommendations etc., please contact the corresponding author.
+
+Chemnitz the 14th of April, 2018.
+____________________________________________________________________________________________________
+
+AKNOWLEDGEMENT
+
+The author gives special thanks to Prof. em. Richard Lynn for his advice, trust and contribution of working material; to Prof. Dr. Heiner Rindermann for professional 
+advice; to Prof. Dr. James Thompson for organizational work; and to the Ulster Institute for Social Research for financial support.
+____________________________________________________________________________________________________
+
+EXPLANAITIONS OF TABLES
+
+- General explanations
+	- NIQ		= National IQs
+	- L&V		= Data taken from working notes of Lynn (sources/record/samples) or Lynn and Vanhanen (2002, 2012) (national level)
+	- FE		= FLynn-Effect: Increase of IQs during the 20th century in advanced developing and developed nations (Flynn, 1984; Lynn, 1982; Pietschnig & Voracek, 2015)
+	- M		= Arithmetic mean
+	- N		= Number (count)
+	- SD		= Standard deviation
+	- [...]		= Variable or table names
+	- '...'		= Values of variables 
+
+- Table: [INF]
+	- Basic information and citation
+	 - Connected tables: [NAT]
+- Table: [FAV]
+	- General
+		- Summarizes main results
+		- Level is nations
+		- Descriptive statistics at bottom of table
+	- Connected tables:
+		- Downward:	[NAT]	
+		- Upward:	none
+	- Macro-Var: National IQ									
+		- Var: [NIQ-UW] (col. C):		
+			-Simple mean NIQs calculated from all samples for each nation included in the THE NIQ-DATASET (V1.3.2)
+		- Var: [NIQ-NW] (col. D):
+			- Mean NIQs calculated from all samples for each nation included in the THE NIQ-DATASET (V1.3.2) weighted by N of individuals of each sample
+		- Var: [NIQ-QNW] (col. E):
+			- Mean NIQs calculated from all samples for each nation included in the THE NIQ-DATASET (V1.3.2) weighted by dataquality and N of individuals of each sample
+		- Var: [NIQ-SAS] (col. F):
+			- Mean NIQs calculated from international school assessment studies
+		- Var: [NIQ-QNF+SAS] (col. G):
+			Means of NIQ-QNW (col. E) and [NIQ-SAS] (col. F)
+		- Var: [NIQ-QNF+SAS+GEO] (col. H):
+			Means of NIQ-QNW (col. E) and [NIQ-SAS] (col. F), supplemented for missing nations by geographic means of neighboring countries
+		- Var: [NIQ-L&V02] (col. I):
+			- National IQ-scores from Lynn & Vanhanen (2002) estimated from psychometric tests only
+		- Var: [NIQ-L&V02+GEO] (col. J):
+			- National IQ-scores from Lynn & Vanhanen (2002) supplemented for missing nations by geographic means of neighboring countries
+		- Var: [NIQ-L&V12] (col. K):
+			- National IQ-scores from Lynn & Vanhanen (2012) estimated from psychometric tests only
+		- Var: [NIQ-L&V12+GEO] (col. L):
+			- National IQ-scores from Lynn & Vanhanen (2012) supplemented for missing nations by geographic means of neighboring countries
+		- Var: [IQ(L&V12)-NIQ] (col. M)]:
+			- Differece between variables [NIQ-QNF+SAS+GEO] (col. H) and [NIQ-L&V12+GEO] (col. L)
+		- Var: [NIQ-R (col. N)]:
+			- National IQ-scores from Prof. Dr. Heiner Rindermann, calculated from L&V02 and school assessment studies (PISA; TIMSS; PIRLS)
+				- See "Appendix I Data" in Becker & Rindermann (2016).
+	- Macro-Var: [NIQ (QNW) older versions]
+		- Var: [V1.3];[V1.3.1];[NIQ (V1.3.2];[V1.3.3];[V1.3.4]
+			- Def.:		NIQ(QNW) from older versuons of this dataset
+	- Macro-Var: [Alternative NIQs]
+		- Var: [Educational attainment (0-18 years) (1990)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Educational attainment
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Educational attainment (0-18 years) (2016)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Educational attainment
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Educational attainment (0-18 years) (1990 & 2016)]										Lim et al. (2018, Fig. 2)
+			- Def.:		Educational attainment
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Learning (0-100) (1990)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	Learing score
+			- Method: 	Taken unaltered
+		- Var: [Learning (0-100) (2016)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	Learing score
+			- Method: 	Taken unaltered
+		- Var: [Learning (0-100) (1990 & 2016)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	Learing score
+			- Method: 	Taken unaltered
+		- Var: [Harmonized Learning Outcomes]													Angrist et al. (2021)
+			- Def.:		Harmonized learning outcomes
+			- Standard:	HLO-scores
+			- Method: 	Taken unaltered
+		- Var: [Human Capital (1990)]														Lim et al. (2018, Fig. 2)
+			- Def.:		Level of education and health in a population
+			- Standard:	HC-score
+			- Method: 	Taken unaltered
+		- Var: [Human Capital (2016)]														Lim et al. (2018, Fig. 2)
+			- Def.:		Level of education and health in a population
+			- Standard:	HC-score
+			- Method: 	Taken unaltered
+		- Var: [Human Capital (1990 & 2016)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Level of education and health in a population
+			- Standard:	HC-score
+			- Method: 	Taken unaltered
+- Table: [SET]
+	- General:
+		- Options to set conditions for corrections of IQ-scores and in- or exclusions of samples
+	- Connected tables:
+		- Downward:	none
+		- Upward:	[REC]; [SEL]; [NAT]
+	- Settings:
+		- Threshold settings: 
+			- allows determining a lower threshold for scores in [IQ (cor.)] in [REC] and [IQ (SAS)] in [NAT]
+			- scores below the determined threshold were replaced by the determined score
+			- default score is '60.00'
+		- Test selection:
+			- allows to in- or exclude samples to wich specific test types or tests were administered
+			- no combinations of more than one specified test type or test possible
+		- Filter settings:
+			- allows to in- or exclude ith specific properties
+			- metric variables only
+			- combination of multiple conditions possible
+- Table: [REC]
+	- General:
+		- Primary working table for data collection and calculation
+		- Level is records
+		- Descriptive statistics at bottom of table
+	- Connected tables:
+		- Downward:	[SET]; [CAL]; [FEC]
+		- Upward:	[SEL]; [STAT(REC)]
+	- Macro-Var: [Identification]
+		- Var: [ID]
+			- Record-ID, combined from [ISO 3166-1 ALPHA-3] and [NO.]
+		- Var: [No.]
+			- A random number (four characters) unique to every record
+		- Var: [ISO 3166-1 ALPHA-3]
+			- Official country-code (three characters) according to ISO 3166-1 ALPHA-3
+		- Var: [Country name]
+			- Name of country/nation within the NIQ-DATASET
+		- Var: [Former ID]
+			- ID of the sample in earlier versions (<V1.3)
+	- Macro-Var: [Sample]
+		- Var: [Origin (type)]
+			- Type of the geographic origin of individuals of a sample
+				- '1'	= national	= from all over the country
+				- '2'	= regional	= from one or a small number of regions
+				- '3'	= urban		= from one or more urban areas, specific name in parentheses if available
+				- '4'	= rural		= from one or more rural areas, specific name in parentheses if available
+				- '5'	= foreign	= from a national group within a foreign country
+		- Var: [Origin (specif.)]
+			- Proper noun of the geographic origin of individuals of a sample (if given)
+		- Var: [SES]
+			- Mean socioeconomic class of a sample
+				- '1'	= low		= below national average
+				- '2'	= normal	= base value
+				- '3'	= high		= above national average
+		- Var: [Sample comp.]
+			- Type of people included in sample
+				- 'random'	= base value
+				- More exact name of the group of individuals of a sample (if given)		
+		- Var: [Sample char.]
+			- Type of data collection (refers to the information in both previous columns)
+				- '1'	= represent	= representative for the population the sample describes
+				- '2'	= normative	= sample for IQ-test standardization
+				- '3'	= random	= base value; no factors of selection stated
+				- '4'	= control	= a sample, representative for a non-treated sub-population
+				- '5'	= selective	= selection influenced by further factors not given in table
+
+		- Var: [Lowest age]
+			- Age of the youngest individual or mean age of the youngest sub-sample in a sample
+		- Var: [Highest age]
+			- Age of the oldest individual or mean age of the oldest sub-sample in a sample
+		- Var: [Mean age]
+			- Mean age of all individuals or sub-samples in a sample
+		- Var: [Age deviation]
+			- Absolute difference between mean age of sample and median age of nation in years
+			- Formula: [Age deviation] = |[Mean age] - [Median age (CIA)]|
+			- Quality indicator
+		- Var: [N (ind.)]
+			- Sum of individuals in a sample
+		- Var: [Sample rating]
+			- Quality rating of a sample
+				- Base value: 	0.00
+				- Range:	0.00 to 5.00
+				- Range (adj.):	0.00 to 1.00
+				- Formula: 	Sum of components / 5.00
+					- If [Origin (type)] is '1'		-> +1.00
+					- If [Origin (type)] is '2'		-> +0.50
+					- If [Origin (type)] is '3'		-> +0.50
+					- If [Origin (type)] is '4'		-> +0.50
+					- If [SES] is '2'			-> +1.00
+					- If [Sample comp.] is 'normal'		-> +1.00
+					- If [Sample comp.] is 'twins'		-> +1.00
+					- If [Sample char.] is '1'		-> +1.00
+					- If [Sample char.] is '2'		-> +1.00
+					- If [Sample char.] is '3'		-> +0.50
+					- If [Age deviation] is <10.00		-> +1.00
+					- If [Age deviation] is 10.00 - 20.00	-> +0.50
+	- Macro-Var: [Testing]
+		- Var: [Test type]
+			- Name of the test type used in IQ/raw-score measurement
+			- For test type names see: "TEST-LIST (DETAILED)"
+		- Var: [Test (meas.)]
+			- Name of the test used in IQ/raw-score measurement
+			- For test names see: "TEST-LIST (DETAILED)"
+		- Var: [Test (calc.)]
+			- Name of the test used for NIQ-calculation
+			- Different to [Test (meas.)] if test-conversions were necessary
+		- Var: [Test (part)]
+			- 'full'		= if a score represents results from all subtests of a test
+			- 'sub-test name' 	= if a score represents for only a share of subtests or domains (named) of a test
+		- Var: [Domain]
+			- '1' 	= Fluide IQ (necessary information for FE-correction) -> for test types RPM, CFT and NNAT)
+			- '2'	= Full-Scale IQ (necessary information for FE-correction) -> for test types WIS, SBIS, KABC, MSE, OLSAT and SON-R
+		- Var: [Procedure]
+			- '1'	= individual	= base value; test was administered separately to every individual in the sample
+			- '2'	= group		= test was administered to one or more groups of individuals from sample in parallel
+		- Var: [Year (meas.)]
+			- The year in which data was collected
+			- If not given, the year of publication was used
+		- Var: [Year (std.)]
+			- Year of the standardization of the test named in [Test (calc.)]
+		- Var: [Time deviation]
+			- Absolute difference between year of measzrement and year of standardization of used test
+			- Formula: [Time deviation] = |[Year (measure.)] - [Year (standard.)]|
+		- Var: [Country of std.]
+			- nation/country in which the test named in [Test (calc.)] was standardized 
+					- '1'	= GBR
+					- '2'	= USA
+					- '3'	= DEU
+					- '4'	= NLD
+					- '5'	= CAN
+					- '6'	= FRA
+					- '7'	= ESP
+					- '8'	= FIN
+					- '9'	= ISR
+					- '10'	= CHN
+					- '11'	= PRI
+		- Var: [Testing rating]
+			- Quality rating of testing
+				- Base value:	 0.00
+				- Range:	 0.00 to 3.00
+				- Range (adj.):	 0.00 to 1.00 
+				- Formula: 	Sum of components / 3.00
+					- If [Test (part)] is 'full'		-> +1.00
+					- If [Time deviation] is <10.00		-> +1.00
+					- If [Time deviation] is 10.00 - 20.00	-> +0.50
+					- If [Country of std.] is 'GBR'		-> +1.00
+			
+	- Macro-Var: [Method]
+		- Var: [Recalc.?]
+			- '0'	= IQ-scores were taken directly from source (or by simple calculation)
+			- '1'	= IQ-scores were calculated from given raw-scores via norms
+		- Var: [Special calc.?]
+			- '0'	= raw- and/or IQ-scores were taken directly from source (or by simple calculations)
+			- '1'	= raw- and/or IQ-scores were taken from additional and more complex calculations (in Table: [CAL])
+		- Var: [Test-conv.?]
+			- '0'	= Raw-scores converted to IQ-scores by same test as given for
+			- '1'	= Raw-scores first converted to other raw-scores, afterwards converted to IQ-scores
+				- If given raw-scores are not full-scale
+				- If given raw-scores from age-groups outside (older, younger) of available test-norms
+		- Var: [Raw-score (uncor.)]
+			- Mean uncorrected raw-score of a record in one test
+			- Numbers taken from source in a unmodified form or as results from simple calculations like means, sums etc.
+		- Var: [Raw-score (cor.)]
+			- Mean corrected raw-score of a sample in one test
+			- Uncorrected raw-scores modified to fit to information in macro variable "Testing"
+			- Necessary if raw-scores not represent full test performace
+			- Necessary if raw-scores on a scale of a test have to be converted to raw-scores on a scale of another test
+			- Necessary if indivisuals in samle were tested in groups (RPM only; see: Bakhiet & Lynn, 2014)
+				-> If [Test (calc.)] = 'SPM' and [Procedure] = '2' -> [Raw-score (cor.)] + 6.00
+				-> If [Test (calc.)] = 'CPM' and [Procedure] = '2' -> [Raw-score (cor.)] + 4.00
+				-> If [Test (calc.)] = 'APM' and [Procedure] = '2' -> [Raw-score (cor.)] + 4.00
+			- Necessary if indivisuals in samle were tested with time restriction (Raven, Raven & Court, 1998, APM16)
+				-> If [Test (calc.)] = 'APM' and testtime was restricted -> [Raw-score (cor.)] * 1.13
+		- Var: [IQ (uncor.)]
+			- If [Recalc.?] = '1' -> IQ-score equivalent to raw-score according to test-norms
+				- Formulas in table [NORM]
+			- If [Recalc.?] = '2' -> IQ-scores taken directly from source
+		- Var: [Test time adjust.]
+			- Compensation value to neutralize the effect of IQ-inflation/deflation generated by the FLynn-Effect
+			- IQ scores which have to be added or reduct from [IQ (uncor.)] according to FLynn-Effect
+				- Value depents on [Test (meas.)], [Year (meas.)], [Year (std.)], [Domain]
+				- FLynn-Effects calculated in table FE
+				- Base value:	0.00
+		- Var: [Country cor.]   
+			- IQ scores which have to be added or reduct from [IQ (uncor.)] according to country of test standardization (Lynn & Vanhanen; 2012)
+				- Necessary if country of test standardization is not United Kingdom 
+					- If IQ of country of test standardization < IQ of United Kingdom -> Differences in mean national IQs have to be reduced
+					- If IQ of country of test standardization > IQ of United Kingdom -> Differences in mean national IQs have to be added
+				- Base value:	0.00
+					- If [Country of std.] = '1'	= GBR -> 100.00 - 100.00 =   0.00
+					- If [Country of std.] = '2'	= USA ->  97.50 - 100.00 =  -2.50
+					- If [Country of std.] = '3'	= DEU ->  98.80 - 100.00 =  -1.20
+					- If [Country of std.] = '4'	= NLD -> 100.40 - 100.00 =   0.40
+					- If [Country of std.] = '5'	= CAN -> 100.40 - 100.00 =   0.40
+					- If [Country of std.] = '6'	= FRA ->  98.10 - 100.00 =  -1.90
+					- If [Country of std.] = '7'	= ESP ->  96.60 - 100.00 =  -3.40
+					- If [Country of std.] = '8'	= FIN -> 100.90 - 100.00 =   0.90
+					- If [Country of std.] = '9'	= ISR ->  94.60 - 100.00 =  -5.40
+					- If [Country of std.] = '10'	= CHN -> 105.80 - 100.00 =   5.80
+					- If [Country of std.] = '11'	= PRI ->  77.20 - 100.00 = -22.80 (see: TEST-LIST for details)
+		- Var: [Below threshold?]
+			- '1'	= if an [IQ (cor.)] would be above the threshold, set in table [SET] 
+		- Var: [Add. cor.]
+			- Other necessary corrections not related to country or tests (see [Notes])
+			- Base value:	0.00
+		- Var: [Method rating]
+			- Quality rating of testing
+				- Base value: 	0.00
+				- Range: 	0.00 to 3.00
+				- Range (adj.):	0.00 to 1.00
+				- Formula: 	Sum of components / 3.00
+					- If [Raw-score (uncor.)]	= 'value'		= +1.00
+					- If [Raw-score (uncorrc.)]	= [Raw-score (corrc.)]	= +1.00
+					- If [Add. correc.] 		= '0.00'		= +1.00
+	- Macro-Var: [IQ means]
+		- Var: [IQ (cor.)]
+			- IQ-scores for each record after all calculations and corrections
+			- Used für NIQ in [NAT]
+		- Var: [IQ (L&V)]
+			- IQ-score for a record/source according to the working notes of Lynn and Vanhanen
+		- Var: [IQ(cor.)-IQ(L&V)]
+			- Formula: [IQ(cor.)-IQ(L&V)] = [IQ (L&V)] - [IQ (cor.)]
+		- Var: [|IQ(cor.)-IQ(L&V)|]
+			- Formula: [|IQ(cor.)-IQ(L&V)|] = |[IQ (L&V)] - [IQ (cor.)]|
+		- Var: [Full rating]
+			- Summary of sample, test and method rating
+			- Range: 	0.00 to 1.00
+			- Formula: 	([Sample rating] + [Testing rating] + [Method rating] + 1) / 13
+				- +1 because scale minimum is -1
+				- /13 because scale maximum +1 is 13
+		- Var: [QN-Factor]
+			- Formula: [Full rating] * [N (ind.)]
+	- Macro-Var: [IQ standard deviations]
+		- Var: [Available?]
+			- '0'	= Data sufficiant for SD (raw-scores, scaled scores, percentiles, IQ-scores) was not available in source
+			- '1'	= Data sufficiant for SD (raw-scores, percentiles, IQ-scores) was available in source
+		- Var: [Special calc.?]
+			- '0'	= Data for SD was taken directly from source (or by simple calculations)
+			- '1'	= Data for SD was taken from additional and more complex calculations (in Table: [CAL])
+		- Var: [From RS/SS?]
+			- '0'	= Data for SD was not raw- or scaled-scores (WIS)  
+			- '1'	= Data for SD was raw-scores (RPM, WIS) or scaled-scores (WIS) 
+		- Var: [From P?]
+			- '0'	= Data for SD was not calculated from scores at percentiles
+			- '1'	= Data for SD was calculated from scores at percentiles
+		- Var: [From IQ?]
+			- '0'	= Data for SD was not IQ-scores
+			- '1'	= Data for SD was IQ-scores
+		- Var: [SD (raw-score)]
+			- SD as raw-score of a record in one test
+		- Var: [SD (IQ-scores)]
+			- SD as IQ-score of a record in one test taken from the source or calculated from raw-scores, scaled scores or/and percentiles
+		- Var: [IQ-SD]
+			- Summary of [SD (IQ-scores)] and [SD (IQ-scores)]
+			- If [SD (IQ-scores)] is available	-> [IQ-SD]	= [SD (IQ-scores)]
+			- If only [SD (raw-score)] is available	-> [IQ-SD]	= [SD (IQ-scores)] calculated from [SD (IQ-scores)]
+	- Macro-Var: [References]
+		- Var: [Short]
+			- Short form source/reference
+			- Name of file of source/reference if available as digital copy
+		- Var: [Full]
+			- Full name of source/reference according to APA citation style (APA, 2010; 6th edition)
+		- Var: [Found?]
+			- 'N'	= no digital copy of source/reference have been found
+			- 'Y'	= a digital copy of source/reference have been found
+	 Macro-Var: [Notes]
+		- Var: [DB]
+			- Notes from Becker
+		- Var: [L&V]
+			- Notes from Lynn & Vanhanen
+- Table: [SEL]
+	- General:
+		- Column A to AW: Direct copy of [REC]
+		- Column AX to CH: Filter mechanism
+		- Works as a filter only
+	- Connected tables:
+		- Downward:	[SET];[REC]
+		- Upward:	[NAT]
+- Table: [NAT]
+	- General:
+		- IQs on the level of nations
+		- Additional variables associated with IQ
+	- Connected tables:
+		- Downward:	[SEL]; [GEO]; [FEC]
+		- Upward:	[INF]; [FAV]; [STAT(NAT)]
+	- Colour code:
+		- Black: recalculated national data
+		- Red: non-recalculated national data based on original data from Lynn and Vanhanen
+	- Macro-Var: [Identification]
+		- Var: [ISO 3166-1 ALPHA-3]
+			- Official country-code (three characters) according to ISO 3166-1 ALPHA-3
+		- Var: [Country name]
+			- Country name within the NIQ-DATASET
+	- Macro-Var: [Demographics]
+		- Var: [Total pop.]
+			- Total country population according to last state of CIA (2017)
+	- Macro-Var: [Method]
+		- Var: [PMT]
+			- 'Y'	= scores from psychometric measurements available and included
+			- 'N'	= scores from psychometric measurements not available or not included
+		- Var: [Std reest.?]
+			- 'Y'	= All weighted NIQs calculated across all samples regardless of their (ethnical) composition
+			- 'N'	= All weighted NIQs calculated across all samples under consideration of their (ethnical) composition by formulas
+				- For BRA: (Normal + Blacks * 0.076 + Asian * 0.011 + brown * 0.431 + Whites * 0.477) / 2
+					- Population shares: Black=7.60%; Asian=1.10%; Mulatto=43.10%; Whites=47.70% (CIA, 2017)
+				- For CAN: (Normal + Amerindian&NA * 0.042) / 1.042
+					- Population shares: Amerindian&NA=4.20%
+				- For KAZ: (Kazakh *0.631 + Uzbek * 0.029 + Russian * 0.237) / 0.897
+					- Population shares: Kazakh=63.10%; Uzbek=2.90%; Russian=23.70% (CIA, 2017)
+					- Result extrapolated to full population (/0.897)
+				- For MEX: (Normal + Whites * 0.10 + Native * 0.28 + Mestizo * 0.62) / 2
+					- Population shares: Whites=10.00%; Native=28.00%; Mestizo=62.00% (CIA, 2017)
+				- For SRB: (Normal + Bosniaks * 0.02 + Serbs * 0.833 + Roma * 0.021 + Christian * 0.906 + Muslim * 0.094
+					- Population shares: Bosniaks=2.00%; Serbs=83.30%; Roma=2.10%; Christian=90.60%; Muslim=9.40% (CIA, 2017)
+					- Result scaled down to full population (/ (1 + 0.02 + 0.833 + 0.021 + 0.906 + 0.094))
+				- For USA: Normal + White * 0.724 + Black * 0.126 + Hispanic * 0.163 + Amerindian&NA * 0.009 + Asian * 0.048
+					- Population shares: Whites=72.40%; Blacks=12.60%; Hispanics=16.30%; Amerindian=0.9%; Asian=4.8% (CIA, 2017)
+					- Result scaled down to full population (/ (1 + 0.724 + 0.126 + 0.163 + 0.09 + 0.048))
+				- For ZAF: Normal + Blacks * 0.802 + Whites * 0.084 + Colored * 0.088 + Indian/Asian * 0.025) / 2
+					- Population shares: African=80.20%; White=8.40%; Colored=8.80%; Indian/Asian=2.50% (CIA, 2017)
+					- "Colored" is a term used in South Africa, including on the national census, for persons of mixed race ancestry (CIA, 2017)
+	- Macro-Var: [Sample]
+		- Var: [Lowest age]
+			- Age of the youngest individual or mean age of the youngest sub-sample within all samples used for a nation
+		- Var: [Highest age]
+			- Age of the oldest individual or mean age of the oldest sub-sample within all samples used for a nation
+		- Var: [Mean age]
+			- Mean age of all samples used for a nation
+		- Var: [N (ind.)]
+			- Sum of individuals from all samples used for a nation
+		- Var: [Full rating mean]
+			- Mean [Full rating] of all samples used for a nation
+		- Var: [Full rating cumul.]
+			- Cumulated [Full rating] of all samples used for a nation
+		- Var: [Full rating SD]
+			- Standard deviation of [Full rating] of all samples used for a nation
+			- Only if [N spl.] > 2
+		- Var: [QN-Factor mean]
+			- Mean [QN-Factor] of all samples used for a nation
+	- Macro-Var: [NIQs]
+		- Var: [SAS]/[SAS (SD)]
+			- National school assessment results (M; SD) on IQ-scale (M=100.00; SD=15.00)
+			- GBR means and standard deviations used for standardizations
+			- PISAIQ:
+				- PISA2000
+					- PISA2000SCI:		M=532.00; SD= 98.00	OECD/UNESCO-UIS (2003, Annex B1, Table 3.2)
+					- PISA2000READ:		M=523.00; SD=100.00	OECD/UNESCO-UIS (2003, Annex B1, Table 2.3a)
+					- PISA2000MATH:		M=529.00; SD= 92.00	OECD/UNESCO-UIS (2003, Annex B1, Table 3.1)
+					- PISA2000total:	M=528.00; SD= 96.73	self calculated; SD=pooled
+				- PISA2003
+					- "for the United Kingdom does not meet the PISA response rate standards and mean scores for the United Kingdom should therefore not be compared with those in PISA 2000"	OECD (2004, p.30)
+					- mean GBR data from 2000 and 2006 used
+					- Results not used as country scores, only for standardization
+					- PISA2003SCI:		M=523.50; SD=102.60	self calculated; SD=pooled
+					- PISA2003READ:		M=509.00; SD=101.01	self calculated; SD=pooled
+					- PISA2003MATH:		M=512.00; SD= 90.51	self calculated; SD=pooled
+					- PISA2003total:	M=514.83; SD= 98.19	self calculated; SD=pooled
+				- PISA2006
+					- PISA2006SCI:		M=515.00; SD=107.00	OECD (2007, Table 2.1c)
+					- PISA2006READ:		M=495.00; SD=102.00	OECD (2007, Table 6.1c)
+					- PISA2006MATH: 	M=495.00; SD= 89.00	OECD (2007, Table 6.2c)
+					- PISA2006total:	M=501.67; SD= 99.62	self calculated; SD=pooled
+				- PISA2009
+					- PISA2009SCI:		M=514.00; SD= 99.00	OECD (2010, Annex B1, Table I.3.6)
+					- PISA2009READ:		M=494.00; SD= 95.00	OECD (2010, Annex B1, Table I.2.3)
+					- PISA2009MATH: 	M=492.00; SD= 87.00	OECD (2010, Annex B1, Table I.3.3)
+					- PISA2009total:	M=500.33; SD= 93.80	self calculated; SD=pooled
+				- PISA2012
+					- PISA2012SCI:		M=514.13; SD= 99.77	OECD (2015)
+					- PISA2012READ:		M=499.32; SD= 97.35	OECD (2015)
+					- PISA2012MATH: 	M=493.92; SD= 94.16	OECD (2015)
+					- PISA2012total:	M=502.46; SD= 97.12	self calculated; SD=pooled
+				- PISA2015
+					- PISA2015SCI:		M=509.22; SD= 99.65	OECD (2016, Annex B1, Table I.2.3)
+					- PISA2015READ:		M=497.97; SD= 96.69	OECD (2016, Annex B1, Table I.4.3)
+					- PISA2015MATH: 	M=492.48; SD= 92.56	OECD (2016, Annex B1, Table I.5.3)
+					- PISA2015total:	M=499.89; SD= 96.34	self calculated; SD=pooled
+				- PISA2018
+					- PISA2018SCI:		M=503.93; SD= 99.00	OECD (2019; Table I.1); Sizmur et al. (2019, Table C1.1)
+					- PISA2018READ:		M=504.67; SD=100.00	OECD (2019; Table I.1); Sizmur et al. (2019, Table B1.1)
+					- PISA2018MATH: 	M=501.77; SD= 93.00	OECD (2019; Table I.1); Sizmur et al. (2019, Table D1.1)
+					- PISA2018total:	M=503.46; SD= 97.33	self calculated; SD=pooled
+			- TIMSSIQ:
+				- TIMSS1995
+					- TIMSS1995G4MATH:	M=516.50; SD= 90.01	Mullis et al. (1997; Table C.3; means from England and Scotland; SD=pooled)
+					- TIMSS1995G8MATH:	M=502.00; SD= 90.05	Beaton et al. (1997b; Table E.3; means from England and Scotland; SD=pooled)
+					- TIMSS1995G4SCI:	M=543.50; SD= 94.51	Martin et al. (1997; Table C.3; means from England and Scotland; SD=pooled)
+					- TIMSS1995G8SCI:	M=534.50; SD=103.04	Beaton et al. (1997a; Table E.3; means from England and Scotland; SD=pooled)
+					- TIMSS1995total:	M=524.13; SD= 94.55	self calculated; SD=pooled
+				- TIMSS1999
+					- TIMSS1999G8MATH:	M=496.00; SD= 83.00	Mullis et al. (2000, Exhibit D.2)
+					- TIMSS1999G8SCI:	M=538.00; SD= 91.00	Martin et al. (2000, Exhibit D.2)
+					- TIMSS1999total:	M=517.00; SD= 87.09	self calculated; SD=pooled
+				- TIMSS2003
+					- TIMSS2003G4MATH:	M=531.00; SD= 87.00	Mullis et al. (2004, Exhibit D.2)
+					- TIMSS2003G8MATH:	M=498.00; SD= 77.00	Mullis et al. (2004, Exhibit D.2)
+					- TIMSS2003G4SCI:	M=540.00; SD= 83.00	Martin et al. (2004, Exhibit D.2)
+					- TIMSS2003G8SCI:	M=544.00; SD= 77.00	Martin et al. (2004, Exhibit D.2)
+					- TIMSS2003total:	M=528.25; SD= 81.11	self calculated; SD=pooled
+				- TIMSS2007
+					- TIMSS2007G4MATH:	M=541.00; SD= 86.00	Mullis, Martin & Foy (2008, Exhibit D.2)
+					- TIMSS2007G8MATH:	M=513.00; SD= 84.00	Mullis, Martin & Foy (2008, Exhibit D.2)
+					- TIMSS2007G4SCI:	M=542.00; SD= 80.00	Martin, Mullis & Foy (2008, Exhibit D.2)
+					- TIMSS2007G8SCI:	M=542.00; SD= 85.00	Martin, Mullis & Foy (2008, Exhibit D.2)
+					- TIMSS2007total:	M=534.50; SD= 83.78	self calculated; SD=pooled
+				- TIMSS2011
+					- TIMSS2011G4MATH:	M=542.00; SD= 89.00	Mullis et al. (2012a, Appendix G.3)
+					- TIMSS2011G8MATH:	M=507.00; SD= 85.00	Mullis et al. (2012a, Appendix G.4)
+					- TIMSS2011G4SCI:	M=529.00; SD= 82.00	Martin et al. (2012, Appendix G.3)
+					- TIMSS2011G8SCI:	M=533.00; SD= 85.00	Martin et al. (2012, Appendix G.4)
+					- TIMSS2011total:	M=527.75; SD= 85.29	self calculated; SD=pooled
+				- TIMSS2015
+					- TIMSS2015G4MATH:	M=546.00; SD= 84.00	Mullis et al. (2016a, Table G3)
+					- TIMSS2015G8MATH:	M=518.00; SD= 80.00	Mullis et al. (2016a, Table G4)
+					- TIMSS2015G4SCI:	M=536.00; SD= 70.00	Mullis et al. (2016b, Table G3)
+					- TIMSS2015G8SCI:	M=537.00; SD= 81.00	Mullis et al. (2016b, Table G4)
+					- TIMSS2015total:	M=534.25; SD= 78.67	self calculated; SD=pooled
+			- PIRLSIQ
+				- PIRLS2001
+					- PIRLS2001total:	M=540.50; SD= 85.51	Mullis et al. (2003; Exhibit B.2; means from England and Scotland; SD=pooled)
+				- PIRLS2006
+					- PIRLS2006total:	M=533.00; SD= 83.57	Mullis et al. (2007; Exhibit C.2, means from England and Scotland; SD=pooled)
+				- PIRLS2011
+					- PIRLS2011total:	M=552.00; SD= 82.00	Mullis et al. (2012b; Appendix F.2)
+				- PIRLS2016
+					- PIRLS2016total:	M=559.00; SD= 79.00	Mullis et al. (2017, Appendix F.2)
+			- [SAS] is mean from mean [PISA-SASIQ], mean [TIMSS-SASIQ] and mean [PIRLS-SASIQ]
+		- Var: [UW]
+			- National IQ-scores
+			- Means of [REC/IQ (cor.)] from all samples used for a nation
+			- No weightings performed
+			- No adjustments for population composition (see: [Std reest.?])
+		- Var: [UW (SD)]
+			- Standard deviation of national IQ-scores
+			- Mean standard deviation of [REC/IQ-SD]
+			- No weightings performed
+			- No adjustments for population composition (see: [Std reest.?])
+		- Var: [NW]
+			- National IQ-scores
+			- Means of [REC/IQ (cor.] from all samples used for a nation weighted by [REC/N (ind.)]
+			- If [Std reest.?] = 'N' -> calculation according to informatoion in [NAT/Std reest.?]
+		- Var: [QNW]
+			- National IQ-scores
+			- Means of [REC/IQ (cor.)] from all samples  used for a nation weighted by [REC/QN-Factor]
+			- Weighted for ethnical composition if [Standard reest.?]='N'
+		- Var: [QNW+SAS]
+			- National IQ-scores
+			- Means of [QNW] and [SAS]
+		- Var: [QNW+SAS+GEO]
+			- National IQ-scores
+			- Means of [QNW], [SAS] and [GEO/Neighbourhood IQ]
+		- Var: [N spl.]:
+			- Number of samples used for a nation
+		- Var: [Lowest NIQ]
+			- Lowest [IQ (cor.)] from all samples used for a nation
+		- Var: [Highest NIQ]
+			- Highest [IQ (cor.)] from all samples used for a nation
+		- Var: [L&V02]
+			- National IQ-scores
+			- Mean psychometric national IQ-scores given by Lynn and Vanhanen (2002)
+		- Var: [L&V02+GEO]
+			- National IQ-scores
+			- Mean psychometric national IQ-scores completed by geographic means given by Lynn and Vanhanen (2002)
+		- Var: [L&V12]
+			- National IQ-scores
+			- Mean psychometric national IQ-scores given by Lynn and Vanhanen (2012)
+		- Var: [L&V12+GEO]
+			- National IQ-scores
+			- Mean psychometric national IQ-scores completed by geographic means given by Lynn and Vanhanen (2012)
+		- Var: [L&V12 N (spl.)]
+			- Number of samples used for a nation by Lynn and Vanhanen (2012)
+		- Var: [IQ(L&V12)-NIQ]
+			- Formula: [NIQ(L&V12)-NIQ(QNW+SAS+GEO)] = [IQ(L&V12)-NIQ]
+		- Var: [|IQ(L&V12)-NIQ|]
+			- Formula: [|NIQ(L&V12)-NIQ(QNW+SAS+GEO)|] = [|IQ(L&V12)-NIQ|]
+		- VAR: [R]
+			- National IQ-scores from Prof. Dr. Heiner Rindermann, calculated from L&V02 and school assessment studies (PISA; TIMSS; PIRLS)
+			- See "Appendix I Data" in Becker & Rindermann (2016)
+	- Macro-Var: ['Testname' single rec./'1';'2';'3';...]
+		- Single [IQ (cor.)] from named test only, seperated for each country
+	- Macro-Var: "Single test means"
+		- Mean [IQ (cor.)] from named test only, seperated for each country
+	- Macro-Var: [Anthropometry]
+		- Var: [Cranial Capacity-I]														Beals, Smith & Dodd (1984, Fig. 3)
+			- Def.:		Average cranial capacity (brain size) of population in pre-colonial times
+			- Standard:	cm³
+			- Ori: grad.:	<1175.00; 1200.00-1249.00; 1250.00-1299.00; 1300.00-1349.00; 1350.00-1399.00; 1400.00-1449.00; >1475.00
+			- Used. grad.:	CCG-1=1200.00; CCG-2=1225.00; CCG-3=1275.00; CCG-4=1325.00; CCG-5=1375.00; CCG-6=1425.00; CCG-7=1450.00
+			- Method:	1. Map of the world with current borderlines overlaid to the map of Beals, Smith & Dodd
+					2. Percentage of each cranial capacity gradient on total national visually determined
+					3. Number of cranial capacity gradient multiplicated with percentage from 2. for each nation
+					Example:	Russia
+						- CCG-5, 6 and 7 present
+						- Share of SCG-5 = 10.00%; Share of SCG-6 = 30.00%; Share of SCG-7 = 60.00%
+						- [Cranial Capacity-I] = 0.10 × 1375.00(CCG-5) + 0.30 x 1425.00(CCG-6) + 0.60 × 1475.00(SCG-7) = 1450.00
+		- Var: [Cranial Capacity-II]														Beals, Smith & Dodd (1984, Fig. 3)
+			- Def.:		Average cranial capacity (brain size) of population in pre-colonial times corrected for pop. density
+			- Standard:	cm³
+			- Ori: grad.:	<1175.00; 1200.00-1249.00; 1250.00-1299.00; 1300.00-1349.00; 1350.00-1399.00; 1400.00-1449.00; >1475.00
+			- Used. grad.:	CCG-1=1200.00; CCG-2=1225.00; CCG-3=1275.00; CCG-4=1325.00; CCG-5=1375.00; CCG-6=1425.00; CCG-7=1450.00
+			- Method:	1. Score from [Cranial Capacity-I] used
+					2. Value for correction estimated by need of correction
+						- If darker areas have higher density:		'up' 	= +50.00
+						- If brighter areas have higher density:	'down' 	= -50.00
+						- If population equally distributed:		'no'	=   0.00
+					3. [Cranial Capacity-I] corrected by value from 2.
+					4. Value from 3. corrected to range of scale
+						- If < 1.00 -> 1.00
+						- If > 8.00 -> 8.00
+					Example:	Russia
+						- Population center in area of Cranial Capacity gradient 5
+						- [Cranial Capacity-II] = 1450.00[Cranial Capacity-I] - 50.00 = 1400.00
+		- Var: [Cranial Capacity-III]														Beals, Smith & Dodd (1984, Fig. 3))
+			- Def.:		Average cranial capacity (brain size) of population in post-colonial times corrected for pop. density
+			- Standard:	cm³
+			- Ori: grad.:	<1175.00; 1200.00-1249.00; 1250.00-1299.00; 1300.00-1349.00; 1350.00-1399.00; 1400.00-1449.00; >1475.00
+			- Used. grad.:	CCG-1=1200.00; CCG-2=1225.00; CCG-3=1275.00; CCG-4=1325.00; CCG-5=1375.00; CCG-6=1425.00; CCG-7=1450.00
+			- Method:	1. Score from [Cranial Capacity-II] used
+					2. National population data from CIA (2017) used to estimate need of correction for colonial replacement of native populations
+					3. If outcome of 2. was positive (replacement), sub-populations from CIA (2017) summarized in main ethnicities with matching CCG
+						- Whites			= 1400.00
+						- Hispanics			= 1400.00
+						- Chinese			= 1450.00
+						- Oceanians			= 1400.00
+						- Amerindians-North		= 1425.00
+						- Mixed/ Mestizo/ Mulato	= 1350.00
+						- Amerindians-South/Meso	= 1300.00
+						- Aborigines			= 1225.00
+						- (East)Indians			= 1275.00
+						- Blacks			= 1300.00
+					4. Number of cranial color gradient multiplicated with percentage of etnicitiy from 3. on todays total population for each nation
+					5. Up- or downward correction of results from 4. to 100.00% of population
+					Example:	Brazil
+						- [Cranial Capacity-II] = 1287.5000 (mostly amerindian)
+						- Todays population shares: 
+							- Whites: 			= 47.70%		
+							- Chinese: 			=  1.10%			
+							- Mixed/ Mestizo/ Mulato	= 43.10%
+							- Amerindians-South/Meso	=  0.40%
+							- Blacks			=  7.60%
+							- Sum				= 99.00%
+						- Sum-product of todays population shares and main ethnicity CCGs from 3. = 1369.60
+						- Upward correction from 99.00% to 100.00% of total population
+						- [Cranial Capacity-III] = 1370.97
+		- Var: [Body height 1896 (cm)]														NCD Risk Factor Collaboration (2017c)
+			- Def.: 	Mean height at age 18 in cm in 1896
+			- Standard:	cm
+			- Method:	Mean from males and females
+		- Var: [Body height 1996 (cm)]														NCD Risk Factor Collaboration (2017c)
+			- Def.: 	Mean height at age 18 in cm in 1996
+			- Standard:	cm
+			- Method:	Mean from males and females
+		- Var: [Body height mean 1896-1996 (cm)]												NCD Risk Factor Collaboration (2017c)
+			- Def.: 	Mean height at age 18 across time in cm based on annual data from 1896 to 1996
+			- Standard:	cm
+			- Method:	Annual mean
+		- Var: [Body height change 1896-1996 (cm)]												NCD Risk Factor Collaboration (2017c)
+			- Def.: 	Changes in mean height at age 18 in cm between 1896 to 1996
+			- Standard:	cm
+			- Method:	[Body height 1996 (cm)] -  [Body height 1896 (cm)]
+		- Var: [Body height change 1896-1996 (%)]												NCD Risk Factor Collaboration (2017c)
+			- Def.: 	Differences in mean height at age 18 in % between 1896 to 1996
+			- Standard:	%
+			- Method:	[Body height 1996 (cm)] /  [Body height 1896 (cm)] * 100
+		- Var: [BMI in children and adolescents 1975 (BMI)]											NCD Risk Factor Collaboration (2017b)
+			- Def.: 	Mean BMI of children and adolescents in 1975
+			- Standard:	BMI-score
+			- Method:	Mean from males and females
+		- Var: [BMI in children and adolescents 2016 (BMI)]											NCD Risk Factor Collaboration (2017b)
+			- Def.: 	Mean BMI of children and adolescents in 2016
+			- Standard:	BMI-score
+			- Method:	Mean from males and females
+		- Var: [Mean BMI in children and adolescents 1975-2016 (BMI)]										NCD Risk Factor Collaboration (2017b)
+			- Def.: 	Mean BMI of children and adolescents across time based on annual data from 1975 to 2016
+			- Standard:	BMI-score
+			- Method:	Annual mean
+		- Var: [BMI change in children and adolescents 1975-2016 (BMI)]										NCD Risk Factor Collaboration (2017b)
+			- Def.: 	Changes in mean BMI of children and adolescents between 1975 to 2016
+			- Standard:	BMI-score
+			- Method:	[BMI in children and adolescents 2016 (BMI)] - [BMI in children and adolescents 1975 (BMI)]
+		- Var: [BMI change in children and adolescents 1975-2016 (%)]										NCD Risk Factor Collaboration (2017b)
+			- Def.: 	Changes in mean BMI of children and adolescents between 1975 to 2016
+			- Standard:	BMI-score
+			- Method:	[BMI in children and adolescents 2016 (BMI)] / [BMI in children and adolescents 1975 (BMI)] * 100
+		- Var: [BMI in adults 1975 (BMI)]													NCD Risk Factor Collaboration (2017a)
+			- Def.: 	Mean BMI of adults in 1975
+			- Standard:	BMI-score
+			- Method:	Mean from males and females
+		- Var: [BMI in adults 2016 (BMI)]													NCD Risk Factor Collaboration (2017a)
+			- Def.: 	Mean BMI of adults in 2016
+			- Standard:	BMI-score
+			- Method:	Mean from males and females
+		- Var: [Mean BMI in adults 1975-2016 (BMI)]												NCD Risk Factor Collaboration (2017a)
+			- Def.: 	Mean BMI of adults across time based on annual data from 1975 to 2016
+			- Standard:	BMI-score
+			- Method:	Annual mean
+		- Var: [BMI change in adults 1975-2016 (BMI)]												NCD Risk Factor Collaboration (2017a)
+			- Def.: 	Changes in mean BMI of adults between 1975 to 2016
+			- Standard:	BMI-score
+			- Method:	[BMI in adults 2016 (BMI)] - [BMI in adulta 1975 (BMI)]
+		- Var: [BMI change in adults 1975-2016 (%)]												NCD Risk Factor Collaboration (2017a)
+			- Def.: 	Changes in mean BMI of adults between 1975 to 2016
+			- Standard:	BMI-score
+			- Method:	[BMI in adults 2016 (BMI)] / [BMI in adults 1975 (BMI)] * 100
+		- Var: [Penis length]															Lynn (2013, Table 2)
+			- Def.:		Average lenght of penises in (male) population
+			- Standard:	cm
+			- Method:	Taken unaltered
+		- Var: [Skin color-I]															Biasutti (1967, Fig. 6)
+			- Def.:		Average skin color of population in pre-colonial times
+			- Standard:	Skin color gradient (SCG)
+			- Range:	1-8
+			- Direction:	Higher SCG rep. darker skin color
+			- Method:	1. Map of the world with current borderlines pverlaid to the map of Biasutti
+					2. Percentage of each skin color gradient on total national visually determined
+					3. Number of skin color gradient (1-8) multiplicated with percentage from 2. for each nation
+					Example:	Russia
+						- SCG-1 and SCG-2 present
+						- Share of SCG-1 = 10%; Share of SCG-2 = 90%
+						- [Skin color-I] = 0.10 × 1.00(SCG-1) + 0.90 × 2.00(SCG-2) = 1.90
+		- Var: [Skin color-II]															Biasutti (1967, Fig. 6)
+			- Def.:		Average skin color of population in pre-colonial times corrected for pop. density
+			- Standard:	Skin color gradient (SCG)
+			- Range:	1-8
+			- Direction:	Higher SCG rep. darker skin color
+			- Method:	1. Score from [Skin color-I] used
+					2. Value for correction estimated by need of correction
+						- If darker areas have higher density:		'up' 	= +1.00
+						- If brighter areas have higher density:	'down' 	= -1.00
+						- If population equally distributed:		'no'	=  0.00
+					3. [Skin color-I] corrected by value from 2.
+					4. Value from 3. corrected to range of scale
+						- If < 1.00 -> 1.00
+						- If > 8.00 -> 8.00
+					Example:	Russia
+						- Population center in area of skin color gradient 1
+						- [Skin color-II] = 1.90[Skin color-I] - 1 = 0.90 = 1.00
+		- Var: [Skin color-III]															Biasutti (1967, Fig. 6)
+			- Def.:		Average skin color of population in post-colonial times corrected for pop. density
+			- Standard:	Skin color gradient (SCG)
+			- Range:	1-8
+			- Direction:	Higher SCG rep. darker skin color
+			- Method:	1. Score from [Skin color-II] used
+					2. National population data from CIA (2017) used to estimate need of correction for colonial replacement of native populations
+					3. If outcome of 2. was positive (replacement), sub-populations from CIA (2017) summarized in main ethnicities with matching SCG
+						- Whites			= 1.50
+						- Hispanics			= 2.00
+						- Chinese			= 2.00
+						- Oceanians			= 2.50
+						- Amerindians-North		= 3.00
+						- Mixed/ Mestizo/ Mulato	= 3.50
+						- Amerindians-South/Meso	= 4.00
+						- Aborigines			= 5.80
+						- (East)Indians			= 7.00
+						- Blacks			= 7.00
+					4. Number of skin color gradient (1-8) multiplicated with percentage of etnicitiy from 3. on todays total population for each nation
+					5. Up- or downward correction of results from 4. to 100.00% of population
+					Example:	Brazil
+						- [Skin color-II] = 3.50 (mostly amerindian)
+						- Todays population shares: 
+							- Whites: 			= 47.70%		
+							- Chinese: 			=  1.10%			
+							- Mixed/ Mestizo/ Mulato	= 43.10%
+							- Amerindians-South/Meso	=  0.40%
+							- Blacks			=  7.60%
+							- Sum				= 99.00%
+						- Sum-product of todays population shares and main ethnicity SCGs from 3. = 2.79
+						- Upward correction from 99.00% to 100.00% of total population (+0.003)
+						- [Skin color-III] = 2.80
+	- Macro-Var: [Culture]
+		- Var: [Ethnic Heterogeneity]														Vanhanen (2012, Tab. 4.1)
+			- Def.:		Inverted percentage of the largest ethnic group
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Ethnic Conflicts (mean)]													Vanhanen (2012, Tab. 4.1)
+			- Def.:		Relative significance of ethnic conflicts
+			- Range:	1-5
+			- Method:	Taken unaltered
+		- Var: [Ethnic Conflicts (residual)]													Vanhanen (2012, Tab. 4.1)
+			- Def.:		Residuals from regression analysis between [Ethnic Heterogeneity] and [Ethnic Conflicts (mean)]
+			- Method:	Taken unaltered
+		- Var: [Ethnic Conflicts (fittet)]													Vanhanen (2012, Tab. 4.1)
+			- Def.:		[Ethnic Conflicts (mean)] - [Ethnic Conflicts (residual)]
+			- Range:	1-5
+			- Method:	Taken unaltered
+		- Var: [WCE-"Religion" (2018)]														Barrett, Kurian & Johnson (2001) 
+			- Def.:		Summed percentage of a specific religion on total population
+			- Standard:	%
+			- Method:	Calculated from data from 2000 and etrapolated data for 2015 by "Score2000+(Score2025-Score2000)*0.72"
+		- Var: [CIA-"Religion"]															CIA (2017, Index: "Religions")
+			- Def.:		Summed percentage of Christians on total population
+			- Standard:	%
+			- Method:	Taken unaltered
+	- Macro-Var: [Demographics]
+		- Var: [Total pop. (current)]														CIA (2017, Index: "Population")
+			- Def.:		N of indivduals within the area of a nation in 2016 or 2017
+			- Method:	Taken unaltered
+		- Var: [Total pop. (1AD)] - [Total pop. (2013AD)]											Maddison Project (2013, horizontal-file_02-2010.xls, sheet: "population")
+			- Def.:		N/1000 of indivduals within the area of a nation in a certain year
+			- Method:	Taken unaltered
+		- Var: [Annual pop. growth to prev. (1000AD)] - [Annual pop. growth to prev. (2013AD)]							Maddison Project (2013, horizontal-file_02-2010.xls, sheet: "population")
+			- Def.:		Annual percentage growth rate of a national population in a certain year
+			- Standard:	%
+			- Method:	1. Numbers from [Total pop. (XAD)] used
+					2. [Annual pop. growth to prev.] = ([Total pop. (XAD)] of the previous year / [Total pop. (XAD)] of a year - 1) / N(years) of time difference
+		- Var: [Median age (2003)] - [Median age (2007)]										CIA (2017, Index: "Median age")
+			- Def.:		Median of summarized age distribution of a population
+			- Standard:	Lifeyears
+			- Method:	Taken unaltered
+		- Var: [Birth rate (Births/1,0000 pop.) (2000)] - [Birth rate (Births/1,0000 pop.) (2017)]						CIA (2017, Index: "Birth rate")
+			- Def.:		"average annual number of births during a year per 1,000 persons in the population at midyear"
+			- Standard:	Birth/1000c
+			- Method:	Taken unaltered
+		- Var: [Total Fertility Rate (2000)] - [Total Fertility Rate (2017)]									CIA (2017, Index: "Total fertility rate")
+			- Def.:		"average number of children that would be born per woman if all women lived to the end of their childbearing years and bore children according to a given fertility rate at each age"
+			- Standard:	level of fertility
+			- Method:	Taken unaltered
+		- Var: [Net Migration Rate (Migrant(s)/1,000 Population)]										CIA (2017, Index: "Net migration rate")
+			- Def.:		"difference between the number of persons entering and leaving a country during the year per 1,000 persons"
+			- Standard:	(NImmigrant-NEmigrant)/1000c
+			- Method:	Taken unaltered
+		- Var: [Int. migrant stock 2013]													United Nations, Department of Economic and Social Affairs (2013, Tab. 1)
+			- Def.:		"International migrant stock at mid-year (both sexes)"
+			- Standard:	Individuals
+			- Method:	Taken unaltered
+		- Var: [Int. migrant stock 2013 (%)]													United Nations, Department of Economic and Social Affairs (2013, Tab. 3)
+			- Def.:		"International migrant stock as a percentage of the total population (both sexes)"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Int. migrant stock female share 2013 (%)]											United Nations, Department of Economic and Social Affairs (2013, Tab. 4)
+			- Def.:		"Female migrants as a percentage of the international migrant stock"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Int. migrant stock 2013 (ann. change)]												United Nations, Department of Economic and Social Affairs (2013, Tab. 5)
+			- Def.:		"Annual rate of change of the migrant stock (both sexes) (2010-2013)"
+			- Standard:	Annual rate of change
+			- Method:	Taken unaltered
+		- Var: [Est. refugee stock 2013]													United Nations, Department of Economic and Social Affairs (2013, Tab. 6)
+			- Def.:		"Estimated refugee stock at mid-year (both sexes)"
+			- Standard:	Individuals
+			- Method:	Taken unaltered
+		- Var: [Urban population(2017)]														CIA (2017, Index: "Urbanization")
+			- Def.:		"percentage of the total population living in urban areas"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Rate of urbanization: 3.77% annual rate of change (2015-20 est.)]								CIA (2017, Index: "Urbanization")
+			- Def.:		"projected average rate of change of the size of the urban population over the given period of time"
+			- Standard:	rate of change
+			- Method:	Taken unaltered
+	- Macro-Var: [Economics]
+		- Var: [GDP/c (1AD)] - 	[GDP/c (2008AD)]												Maddison Project (2013, horizontal-file_02-2010.xls, sheet: "PerCapita GDP")
+			- Def.:		Mean per capita income of a nation in a certain year
+			- Standard:	1990 International Geary-Khamis dollars
+			- Method:	Taken unaltered
+		- Var: [GDP/c (2016-2018AD)]														CIA (2019, Index: "GDP/c")
+			- Def.:		Mean per capita income of a nation in a certain year
+			- Standard:	1990 International Geary-Khamis dollars
+			- Method:	Taken unaltered
+		- Var: [Annual pop. growth to prev. (1AD)] - [Annual pop. growth to prev. (2008AD)]							Maddison Project (2013, horizontal-file_02-2010.xls, sheet: "population")
+			- Def.:		Annual percentage growth rate of a national population in a certain year
+			- Standard:	%
+			- Method:	1. Numbers from [Total pop. (XAD)] used
+					2. [Annual GDP/C growth to prev.] = ([GDP/c (XAD)] of the previous year / [GDP/c (XAD)] of a year - 1) / N(years) of time difference
+		- Var: [INDUSTRIAL PRODUCTION GROWTH RATE(%)]				CIA (2017, Index: "industrial production growth rate")
+			- Def.:		"annual percentage increase in industrial production"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [GDP - COMPOSITION, BY SECTOR OF ORIGIN(agriculture %)]		CIA (2017, Index: "GDP - composition, by sector of origin")
+			- Def.:		"percentage contribution of agriculture to total GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [GDP - COMPOSITION, BY SECTOR OF ORIGIN(industry %)]		CIA (2017, Index: "GDP - composition, by sector of origin")
+			- Def.:		"percentage contribution of industry to total GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [GDP - COMPOSITION, BY SECTOR OF ORIGIN(services %)]		CIA (2017, Index: "GDP - composition, by sector of origin")
+			- Def.:		"percentage contribution of services to total GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [GDP - COMPOSITION, BY END USE(exports %)]			CIA (2017, Index: "GDP - composition, by end use")
+			- Def.:		"percentage contribution to total GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [GDP - COMPOSITION, BY END USE(imports %)]			CIA (2017, Index: "GDP - composition, by end use")
+			- Def.:		"percentage contribution to total GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [BUDGET SURPLUS (+) OR DEFICIT (-)(% OF GDP)]			CIA (2017, Index: "Budget surplus (+) or deficit (-)")
+			- Def.:		"difference between national government revenues and expenditures, expressed as a percent of GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [PUBLIC DEBT(% OF GDP)]						CIA (2017, Index: "Public debt")
+			- Def.:		"cumulative total of all government borrowings less repayments that are denominated in a country's home currency"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [INFLATION RATE (CONSUMER PRICES)(%)]				CIA (2017, Index: "Inflation rate (consumer prices)")
+			- Def.:		"annual percent change in consumer prices compared with the previous year's consumer price"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [UNEMPLOYMENT, YOUTH AGES 15-24(%)]				CIA (2017, Index: "Unemployment rate")
+			- Def.:		"percent of the total labor force ages 15-24 unemployed during a specified year"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [UNEMPLOYMENT RATE(%)]						CIA (2017, Index: "Unemployment rate")
+			- Def.:		"percent of the labor force that is without jobs"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Total dependency ratio]														CIA (2017, Index: "Dependency ratios")
+			- Def.:		% of total population that are likely to be economically "dependent" on the support of others
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Youth dependency ratio]														CIA (2017, Index: "Dependency ratios")
+			- Def.:		% of youth population that are likely to be economically "dependent" on the support of others
+			- Standard:	%
+			- Method:	Taken unaltered	
+		- Var: [Elderly dependency ratio]													CIA (2017, Index: "Dependency ratios")
+			- Def.:		% of elderly population that are likely to be economically "dependent" on the support of others
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Potential support ratio]													CIA (2017, Index: "Dependency ratios")
+			- Def.:		% of working-age population (ages 15-64) one elderly population (ages 65+)
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Child labor - children ages 5 - 14 (2013)] - [Child labor - children ages 5 - 14 (2017)]					CIA (2017, Index: "Child labor - children ages 5 - 14")
+			- Def.:		% of children working (ages 5-14)
+			- Standard:	%
+			- Method:	Taken unaltered
+	- Macro-Var: [Education]
+		- Var: [SASIQ]																	
+			- Def.:		Mean PISA-, TIMSS- and PIRLS-scores from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: [SASIQ-SD]																	
+			- Def.:		Mean PISA-, TIMSS- and PIRLS-SD from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ-SD]
+		- Var: [PISAIQ 2000-2018]
+			- Def.:		Mean PISA-scores from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: [PISAIQ-SD 2000-2018]
+			- Def.:		Mean PISA-SD from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: all PISA-variables:
+			- Standard:	PISA-scores
+			- Sources:
+				- OECD/UNESCO-UIS (2003)
+				- OECD (2004)
+				- OECD (2007)
+				- OECD (2010)
+				- OECD (2015)
+				- OECD (2016)
+				- OECD (2019)
+		- Var: [PISA (2000-2018)-Total M]													
+			- Def.:		Mean achivement in PISA (2000-2018)-Science, PISA (2000-2018)-Reading and PISA (2000-2018)-Math
+			- Method:	Mean from PISA-Science, -Reading and -Math
+		- Var: [PISA (2000-2018)-Science M];[PISA (2000-2018)-Reading M];[PISA (2000-2018)-Math M]						
+			- Def.:		Mean achivements in PISA (2000-2015)-Science, PISA (2000-2015)-Reading and PISA (2000-2015)-Math
+			- Method:	Taken unaltered
+		- Var: [PISA (2000-2018)-Science 5th];[PISA (2000-2018)-Reading 5th];[PISA (2000-2018)-Math 5th]					
+			- Def.:		Lower 5% achivements in PISA (2000-2018)-Science, PISA (2000-2018)-Reading and PISA (2000-2018)-Math
+			- Method:	Taken unaltered
+		- Var: [PISA (2000-2018)-Science 95th];[PISA (2000-2018)-Reading 95th];[PISA (2000-2018)-Math 95th]					
+			- Def.:		Upper 5% achivements in PISA (2000-2018)-Science, PISA (2000-2018)-Reading and PISA (2000-2018)-Math
+			- Method:	Taken unaltered
+		- Var: TIMSSIQ1995-2015]
+			- Def.:		Mean TIMSS-scores from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: [TIMSSIQ-SD 1995-2015]
+			- Def.:		Mean TIMSS-SD from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: all TIMSS (1995-2015)-variables:
+			- Standard:	TIMSS-scores
+			- Sources:
+				- Martin et al. (1997)
+				- Mullis et al. (1997)
+				- Beaton et al. (1997b)
+				- Mullis et al. (2000)
+				- Martin et al. (2000)
+				- Mullis et al. (2004)
+				- Martin et al. (2004)
+				- Mullis, Martin & Foy (2008)
+				- Martin, Mullis & Foy (2008)
+				- Mullis et al. (2012a)
+				- Martin et al. (2012)
+				- Mullis et al. (2016a)
+				- Mullis et al. (2016b)
+		- Var: [TIMSS (1995-2015)-Total M]														
+			- Def.:		Mean achivement in TIMSS (1995-2015)-Science and TIMSS (1995-2015)-Math for 4th and 8th graders
+			- Method:	Mean from TIMSS-Science and -Math for 4th and 8th graders													
+		- Var: [TIMSS (1995-2015)-Math 4thG M];[TIMSS (1995-2015)-Science 4thG M];[TIMSS (1995-2015)-Math 8thG M];[TIMSS (1995-2015)-Science 8thG M]
+			- Def.:		Mean achivements in TIMSS (1995-2015)-Science and TIMSS (1995-2015)-Math of 4th and 8th graders
+			- Method:	Mean
+		- Var: [TIMSS (1995-2015)-Math 4thG 5th];[TIMSS (1995-2015)-Science 4thG 5th];[TIMSS (1995-2015)-Math 8thG 5th];[TIMSS (1995-2015)-Science 8thG 5th]
+			- Def.:		Lower 5% achivements in TIMSS (1995-2015)-Science and TIMSS (1995-2015)-Math of 4th and 8th graders
+			- Method:	Mean
+		- Var: [TIMSS (1995-2015)-Math 4thG 95th];[TIMSS (1995-2015)-Science 4thG 95th];[TIMSS (1995-2015)-Math 8thG 95th];[TIMSS (1995-2015)-Science 8thG 55th]
+			- Def.:		Upper 5% achivements in TIMSS (1995-2015)-Science and TIMSS (1995-2015)-Math of 4th and 8th graders
+			- Method:	Mean
+		- Var: [TIMSS (1995-2015)-Total SD]													
+			- Def.:		Achivement SD in TIMSS (1995-2015)-Total
+			- Method:	Calculated as mean of SD calculated from scores at 5th and 95th P from TIMSS (1995-2015)
+		- Var: [TIMSS (2015)-Teachers form. educ.]												Mullis et al. (2016a, Exhibit 8.1, 8.2)	
+			- Def.:		Mean of percentage of 4th and 8th grade students in math and science which teacher completed postgraduate University Degree
+			- Standard:	%
+			- Method:	Mean
+		- Var: [TIMSS (2015)-School Discipline													Mullis et al. (2016a, Exhibit 7.1, 7.2)
+			- Def.:		School discipline problems in 4th and 8th graders reported by principals
+			- Standard:	Scaled Scores
+			- Direction:	Higher score rep. higher discipline
+			- Method:	Mean
+		- Var: [TIMSS (2015)-Native-Immi.-Gap]													Wendt et al. (2016; Fig. 11.1; 11.2)
+			- Def.:		Mean difference in achivements between 4th graders with no and one immigrant parents and one and two immigrant parents in Math and Science
+			- Standard:	TIMSS-scores
+			- Method:	Mean															
+		- Var: [PIRLSIQ2001-2016]
+			- Def.:		Mean PIRLS-scores from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: [PIRLSIQ-SD 2001-2016]
+			- Def.:		Mean PIRLS-SD from all available years in IQ
+			- Standard:	IQ
+			- Method:	See: [NAT/National IQs/SASIQ]
+		- Var: all PIRLS-variables:
+			- Standard:	PIRLS-scores
+			- Sources:
+				- Mullis et al. (2003)
+				- Mullis et al. (2007)
+				- Mullis et al. (2012b)
+				- Mullis et al. (2017)													
+		- Var: [PIRLS (2001-2016)-M]
+			- Def.:		Mean achivements in PIRLS (2001-2016)
+			- Method:	Mean achivements in PIRLS (2001-2016)
+		- Var: [PIRLS (2001-2016)-5th]
+			- Def.:		Lower 5% achivements in PIRLS (2001-2016)
+			- Method:	Mean
+		- Var: [PIRLS (2001-2016) 95th]
+			- Def.:		Upper 5% achivements in PIRLS (2001-2016)
+			- Method:	Mean
+		- Var: [TIMSS (1995-2015)-Total SD]													
+			- Def.:		Achivement SD in PIRLS (2001-2016)
+			- Method:	Calculated as mean of SD calculated from scores at 5th and 95th P from PIRLS (2001-2016)
+		- Var: [Percent Above Math Benchmark (400 on TIMSS Scale)]												Patel & Sandefur (2020)
+			- Def.:		Percent above math benchmark
+			- Standard:	Rosetta score
+			- Method: 	Taken unaltered
+		- Var: [Percent Above Reading Benchmark (400 on PIRLS Scale)]												Patel & Sandefur (2020)
+			- Def.:		Percent above reading benchmark
+			- Standard:	Rosetta score
+			- Method: 	Taken unaltered
+		- Var: [Median Math Score (TIMSS Scale, 4th Grade)]													Patel & Sandefur (2020)
+			- Def.:		Median math score
+			- Standard:	Rosetta score
+			- Method: 	Taken unaltered
+		- Var: [Median Reading Score (PIRLS Scale, 4th Grade]													Patel & Sandefur (2020)
+			- Def.:		Median reading score
+			- Standard:	Rosetta score
+			- Method: 	Taken unaltered
+		- Var: [SCHOOL LIFE EXPECTANCY (PRIMARY TO TERTIARY EDUCATION)(YEARS)]									CIA (2017, Index: "School life expectancy (primary to tertiary education)")
+			- Def.:		"total number of years of schooling (primary to tertiary) that a child can expect to receive"
+			- Standard:	Years
+			- Method:	Taken unaltered
+		- Var: [EDUCATION EXPENDITURES(% OF GDP)]												CIA (2017, Index: "Education expenditures")
+			- Def.:		"public expenditure on education as a percent of GDP"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Educational attainment (0-18 years) (1990)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Educational attainment
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Educational attainment (0-18 years) (2016)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Educational attainment
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Educational attainment (0-18 years) (1990 & 2016)]										Lim et al. (2018, Fig. 2)
+			- Def.:		Educational attainment
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Learning (0-100) (1990)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	Learing score
+			- Method: 	Taken unaltered
+		- Var: [Learning (0-100) (2016)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	Learing score
+			- Method: 	Taken unaltered
+		- Var: [Learning (0-100) (1990 & 2016)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	Learing score
+			- Method: 	Taken unaltered
+		- Var: [Harmonized Learning Outcomes]													Angrist et al. (2021)
+			- Def.:		Harmonized learning outcomes
+			- Standard:	HLO-scores
+			- Method: 	Taken unaltered
+	- Macro-Var: [Genetics]
+		- Var: [1KGP-PSEA L2018 TA)]														Lee et al. (in press)
+			- Def.:		Polygenic Scores (PGS) from all SNPs to explain variation in educational attainment
+			- Standard:	Polygenetic score
+			- Direction:	Higher PGS represent higher frequency of SNPs in population
+			- Method:	BGD = Bengali Bangladesh
+					BRB = Afr.Car.Barbados
+					CHN = Chinese Dai * 0.916 + (Chinese, Bejing+Chinese, South)*0.084
+					COL = Colombian
+					FIN = Finland
+					GMB = Gambian
+					IND = Mean of Gujarati Indian, Tx and Indian Telegu, UK
+					ITA = Toscani, Italy
+					JPN = Japan
+					KEN = Luhya, Kenya
+					MEX = Mexican in L.A.
+					NGA = Mean of Esan, Nigeria and Yoruba, Nigeria
+					PAK = Punjabi, Pakistan
+					PER = Peruvian, Lima
+					PRI = Puerto Rican
+					SLE = Mende, Sierra Leone
+					ESP = Iberian, Spain
+					LKA = Sri Lankan, UK
+					GBR = British, GB
+					USA = Utah Whites*0.724 + US Blacks * 0.126 + Mexican in L.A. * 0.163 + CHN * 0.048)/(0.724 + 0.126 + 0.163 + 0.048)
+					VNM = Vietnam
+		- Var: [1KGP-PSEA P2015 TA)]														Piffer (2015, Tab. 2)
+			- Def.:		Polygenic Scores (PGS) from all SNPs to explain variation in educational attainment recalcuated
+			- Standard:	Polygenetic score
+			- Direction:	Higher PGS represent higher frequency of SNPs in population
+			- Method:	See: [1KGP-PSEA L2018 TA)]
+		- Var: [1KGP-PSEA P2015 T9)]														Piffer (2015, Tab. 2)
+			- Def.:		Polygenic Scores (PGS) from the top-9 SNPs to explain variation in educational attainment recalcuated
+			- Standard:	Polygenetic score
+			- Direction:	Higher PGS represent higher frequency of SNPs in population
+			- Method:	See: [1KGP-PSEA L2018 TA)]
+		- Var: [1KGP-PSEA P2015 T4)]														Piffer (2015, Tab. 2)
+			- Def.:		Polygenic Scores (PGS) from the top-4 SNPs to explain variation in educational attainment recalcuated
+			- Standard:	Polygenetic score
+			- Direction:	Higher PGS represent higher frequency of SNPs in population
+			- Method:	See: [1KGP-PSEA L2018 TA)]
+		- Var: [Gen.Dist.f.KEN)]														Becker & Rindermann (2016, private dataset)
+			- Def.:		Genetic distance of a countries population from the population of Kenya, calculated by Y-chromosomal haplogroup frequencies
+			- Standard:	Mean genetic distance calculated from five Roger's Distance, Prevosti Distance, Cavalli-Sforza & Edward's Chord Distance and Nei's Distance
+			- Direction:	Higher score represent higher genetic distance
+			- Method:	Taken unaltered
+		- Var: [y-HG-Freq. A,BT,B,C,DE,D,E,F,G,H,I,J,K,L,NO,N,O,P,Q,R,T]									Cherson (2012, online raw data)
+			- Def.:		Frequencies of y-chromosomal haplogroups by summed up sub-haplogroups
+			- Standard:	%
+			- Method:	Taken unaltered (only frequencies > 0.00 used)
+		- Var: [y-HG-Freq. HGSP,HGSN]														Cherson (2012, online raw data)
+			- Def.:		Summed frequencies of y-chromosomal haplogroups with positive (HGSP) or negative (HGSN) association to cognitive ability according to Rindermann, Woodley & Stratford (2012, Tab. 1)
+			- Standard:	%
+			- Method:	- HGSP = Sum of D; I; N; O; R;
+					- HGNP = Sum of A; B; E; Q; T; 
+					- (only frequencies > 0.00 used)
+	- Macro-Var: [Geography]
+		- Var: [Mean latitude]															CIA (2017, Index: "Geographic coordinates")
+			- Def.:		Latitude for the centroid or center point of a national territory
+			- Standard:	Degrees and minutes
+			- Method:	Taken unaltered
+		- Var: [Mean longitude]															CIA (2017, Index: "Geographic coordinates")
+			- Def.:		Longitude for the centroid or center point of a national territory
+			- Standard:	Degrees and minutes
+			- Method:	Taken unaltered
+		- Var: [Total land borderline (km)]
+			- Def.:		Lenght of borderline to all neighbourhood countries connected by land						CIA (2017; Index: "Land boundaries")
+			- Standard:	km
+			- Method:	Taken unaltered
+		- Var: [Maritime?]
+			- Def.:		Is a countrie's area fully covered by water?									CIA (2017; Index: "Land boundaries")
+			- Standard:	Binary
+				- If 'Y' = country is an island
+				- If 'N' = country is not an island
+			- Method:	Taken unaltered
+	- Macro-Var: [Health]
+		- Var: [Expected years lived (0-45 years) (1990)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Expected years lived (0-45 years)
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Expected years lived (0-45 years) (2016)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Expected years lived (0-45 years)
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Expected years lived (0-45 years) (1990 & 2016)]										Lim et al. (2018, Fig. 2)
+			- Def.:		Expected years lived (0-45 years)
+			- Standard:	years
+			- Method: 	Taken unaltered
+		- Var: [Functional health status (0-100) (1990)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	%
+			- Method: 	Taken unaltered
+		- Var: [Functional health status (0-100) (2016)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	%
+			- Method: 	Taken unaltered
+		- Var: [Functional health status (0-100) (1990 & 2016)]											Lim et al. (2018, Fig. 2)
+			- Def.:		Prevalence of seven health conditions
+			- Standard:	%
+			- Method: 	Taken unaltered
+		- Var: [Preval. of growth ret. (child.<5y; year)]											von Grebmer et al. (2017, Appendix C)
+			- Def.:		Spread of growth retardation in children under five years
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [HIV/AIDS - ADULT PREVALENCE RATE(%)]												CIA (2017; Index: "HIV/AIDS - deaths")
+			- Def.:		"percentage of adults (aged 15-49) living with HIV/AIDS"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [HIV/AIDS - DEATHS]														CIA (2017; Index: "HIV/AIDS - deaths")
+			- Def.:		"number of adults and children who died of AIDS during a given calendar year"
+			- Standard:	Individuals
+			- Method:	Taken unaltered
+		- Var: [HIV/AIDS - DEATHS / 1000capita]													CIA (2017; Index: "HIV/AIDS - deaths")
+			- Def.:		"number of adults and children who died of AIDS during a given calendar year" per 1000 capita
+			- Standard:	Individuals/1000capita
+			- Method:	[HIV/AIDS - DEATHS] / [Total pop. (current)] * 100
+		- Var: [Death rate (child.<5y; years)]													von Grebmer et al. (2017, Appendix C)
+			- Def.:		Mortality rate in children under five years
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Maternal mortality lifetime risk (2015, lower bound/point estimate/upper bound]							WHO et al. (2015)
+			- Def.:		Life time risk of maternal mortality at lower and upper bound of range (80%UI) and as mean
+			- Standard:	1 in x
+			- Method:	Taken unaltered
+		- Var: [Maternal mortality cases (2015, lower bound/point estimate/upper bound]								WHO et al. (2015)
+			- Def.:		Total number of cases of maternal deaths at lower and upper bound of range (80%UI) and as mean
+			- Standard:	N
+			- Method:	Taken unaltered
+		- Var: [Maternal mortality cases (2015, lower bound/point estimate/upper bound]								WHO et al. (2015)
+			- Def.:		Maternal mortality rate at lower and upper bound of range (80%UI) and as mean
+			- Standard:	N per 100,000c
+			- Method:	Taken unaltered
+		- Var: [Mother's mean age at first birth (2013)] - [Mother's mean age at first birth (2017)]						CIA (2017; Index: "Mother's mean age at first birth")
+			- Def.:		"(average) age of mothers at the birth of their first child"
+			- Standard:	years
+			- Method:	Taken unaltered	
+		- Var: [Consanguinity (%)]														Bittles (2001); Tadmouri et al. 2009; Woodley (2009)
+			- Def.:		"union between couples who are related as second cousins or closer"
+			- Standard:	%
+			- Method:	Taken unaltered
+	- Macro-Var: [Human Development]
+		- Var: [HDI (1990)] - [HDI (2017)]  							 						United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"A composite index measuring average achievement in three basic dimensions of human development—a long and healthy life, knowledge and a decent standard of living."
+			- Standard:	HDI-score
+			- Range:	0.00 - 1.00
+			- Direction:	Higher scores represent higher human development
+			- Method:	Taken unaltered
+		- Var: [Average annual HDI growth  (1990-2015)] 								 			United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"A smoothed annualized growth of the HDI in a given period, calculated as the annual compound growth rate."
+			- Standard:	HDI-score
+			- Range:	0.00 - 1.00
+			- Direction:	Higher scores represent higher human development
+			- Method:	Taken unaltered
+		- Var: [Inequality-adjusted HDI (2010)] - [Inequality-adjusted HDI (2017)]								 United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"HDI value adjusted for inequalities in the three basic dimensions of human development."
+			- Standard:	HDI-score
+			- Range:	0.00 - 1.00
+			- Direction:	Higher scores represent higher human development
+			- Method:	Taken unaltered
+		- Var: [Coefficient of human inequality (2015; HDR)] 								 			United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"Average inequality in three basic dimensions of human development."
+			- Standard:	Specific
+			- Direction:	Higher scores represent higher inequality
+			- Method:	Taken unaltered
+		- Var: [Gender Development Index (2015)] 								 				United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"Ratio of female to male HDI values."
+			- Standard:	HDI female / HDI male
+			- Direction:	positive scores represent higher HDI in females, negative in males
+			- Method:	Taken unaltered
+		- Var: [Human Development Index - Female (2015)] 								 			United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"A composite index measuring average achievement in three basic dimensions of human development—a long and healthy life, knowledge and a decent standard of living."
+			- Standard:	HDI-score
+			- Range:	0.00 - 1.00
+			- Direction:	Higher scores represent higher human development
+			- Method:	Taken unaltered
+		- Var: [Human Development Index - Female (2015)] 								 			United Nations development Programme (http://hdr.undp.org/en/composite/HDI)
+			- Def.:		"A composite index measuring average achievement in three basic dimensions of human development—a long and healthy life, knowledge and a decent standard of living."
+			- Standard:	HDI-score
+			- Range:	0.00 - 1.00
+			- Direction:	Higher scores represent higher human development
+			- Method:	Taken unaltered
+		- Var: [Index of Global Inequality (mean)]												Vanhanen (2014, Tab. 5.1)
+			- Def.:		Global variation in human conditions according to income, tertiary education, childhood-mortality rate, life expectancy, improved sanitation facilities, democratization
+			- Standard:	IGI-scores 
+			- Method: 	Taken unaltered
+		- Var: [Index of Global Inequality (residual)]												Vanhanen (2014, Tab. 5.1)
+			- Def.:		Residuals from regression analysis between [Index of Global Inequality (mean)] and national IQ (from source)
+			- Standard:	Residuals
+			- Method: 	Taken unaltered
+		- Var: [Index of Global Inequality (fittet)]												Vanhanen (2014, Tab. 5.1)
+			- Def.:		[Index of Global Inequality (mean)] - [Index of Global Inequality (residual)]
+			- Standard:	IGI-scores
+			- Method: 	Taken unaltered	
+		- Var: [Human Capital (1990)]														Lim et al. (2018, Fig. 2)
+			- Def.:		Level of education and health in a population
+			- Standard:	HC-score
+			- Method: 	Taken unaltered
+		- Var: [Human Capital (2016)]														Lim et al. (2018, Fig. 2)
+			- Def.:		Level of education and health in a population
+			- Standard:	HC-score
+			- Method: 	Taken unaltered
+		- Var: [Human Capital (1990 & 2016)]													Lim et al. (2018, Fig. 2)
+			- Def.:		Level of education and health in a population
+			- Standard:	HC-score
+			- Method: 	Taken unaltered
+	- Macro-Var: [Infrastructure]
+		- Var: [DRINKING WATER SOURCE (improved % OF POPULATION)]				CIA (2017, Index: "Drinking water source")
+			- Def.:		"access to improved drinking water sources available to segments of the population of a country"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [DRINKING WATER SOURCE (unimproved % OF POPULATION)]				CIA (2017, Index: "Drinking water source")
+			- Def.:		"access to unimproved drinking water sources available to segments of the population of a country"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [ELECTRICITY - CONSUMPTION(KWH)]							CIA (2017, Index: "Electricity - consumption")
+			- Def.:		"total electricity generated annually plus imports and minus exports"
+			- Standard:	KWH
+			- Method:	Taken unaltered
+		- Var: [ELECTRICITY - CONSUMPTION(KWH)/c]						CIA (2017, Index: "Electricity - consumption")
+			- Def.:		"total electricity generated annually plus imports and minus exports" per capita
+			- Standard:	KWH/c
+			- Method:	[ELECTRICITY - CONSUMPTION(KWH)] / [Total pop. (current)]
+		- Var: [ELECTRICITY - FROM FOSSIL FUELS(% OF TOTAL INSTALLED CAPACITY)]			CIA (2017, Index: "Electricity - from fossil fuels")
+			- Def.:		"capacity of plants that generate electricity by burning fossil fuels ... as a share of the country's total generating capacity"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [ELECTRICITY - FROM OTHER RENEWABLE SOURCES(% OF TOTAL INSTALLED CAPACITY)]	CIA (2017, Index: "Electricity - from other renewable sources")
+			- Def.:		"capacity of plants that generate electricity by renewable energy sources other than hydroelectric  ... as a share of the country's total generating capacity"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [SANITATION FACILITY ACCESS (improved %)]					CIA (2017, Index: "Sanitation facility access")
+			- Def.:		"access to improved sanitation facilities available to segments of the population of a country"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [SANITATION FACILITY ACCESS (unimproved %)]					CIA (2017, Index: "Sanitation facility access")
+			- Def.:		"access to unimproved sanitation facilities available to segments of the population of a country"
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Physicians density /1000c]							CIA (2017, Index: "Physicians density")
+			- Def.:		"number of medical doctors (physicians), including generalist and specialist medical practitioners, per 1,000 of the population"
+			- Standard:	N per 1000 capita
+			- Method:	Taken unaltered
+		- Var: [Hospital beds/1,000 population (2014)]						CIA (2017, Index: "Hospital bed density")
+			- Def.:		"number of hospital beds per 1,000 people"
+			- Standard:	N per capita
+			- Method:	Taken unaltered
+	- Macro-Var: [Intelligence]
+		- Var: [NIQ (QNW) V1.3];[NIQ (QNW) V1.3.1];[NIQ (QNW) V1.3.2];[NIQ (QNW) V1.3.3];[NIQ (QNW) V1.3.4]
+			- Def.:		NIQ(QNW) from older versuons of this dataset												
+		- Var: [FSIQ-FLynn-Effect];[CIQ-FLynn-Effect];[FIQ-FLynn-Effect];[SIQ-FLynn-Effect]							Pietschnig & Voracek (2015, Table S2)
+			- Def.:		Mean annual changes in Fullscale-, Crystallized-, Fluid- and Spatial-IQ
+			- Standard:	IQ
+			- Method:	Taken unaltered
+		- Var: [Neighbourhood-IQ]
+			- See: 		Table: [GEO]
+	- Macro-Var: [Nutrition]
+		- Var: [Dietary energy consumption (year)]												Food and Agriculture Organization of the United States (2014, Index: "Dietary energy consumption")
+			- Def.:		Dietary energy consumption
+			- Standard:	cal/person/day
+			- Method:	Taken unaltered
+		- Var: [Dietary protein consumption Protein (year)]											Food and Agriculture Organization of the United States (2014, Index: "Dietary protein consumption")
+			- Def.:		Dietary protein consumption
+			- Standard:	G/person/day
+			- Method:	Taken unaltered
+		- Var: [Dietary fat consumption (year)]													Food and Agriculture Organization of the United States (2014, Index: "Dietary fat consumption")
+			- Def.:		Dietary fat consumption
+			- Standard:	G/person/day
+			- Method:	Taken unaltered
+		- Var: [WHI-Scores (year)]														von Grebmer et al. (2017, Table 2.1)
+			- Def.:		Total hunger-score, includes mortality rate of children under five years, spread of wasting in children, spreading of growth retardation in children and roportion of malnourished individuals
+			- Standard:	WHH-scores
+			- Direction:	Higher scores represent higher prevalence of hunger and hunger consequences
+			- Method:	Taken unaltered
+		- Var: [Share of malnourished people (year)]												von Grebmer et al. (2017, Appendix C)
+			- Def.:		Share of malnourished people in total population
+			- Standard:	%
+ 			- Method:	Taken unaltered
+		- Var: [Preval. of wasting (child.<5y; year)]												von Grebmer et al. (2017, Appendix C)
+			- Def.:		Prevalence of wasting in children under five yars
+			- Standard:	%
+ 			- Method:	Taken unaltered
+		- Var: [OBESITY - ADULT PREVALENCE RATE(%)]												CIA (2017, Index: "Obesity - adult prevalence rate")
+			- Def.:		"percent of a country's population considered to be obese"
+			- Standard:	%
+ 			- Method:	Taken unaltered
+	- Macro-Var: [Politics]
+		- Var: [PRIO 1810-2000]															Vanhanen & PRIO (2000)
+			- Def.:		Measurement of democracy by participation level and degree of competition
+			- Standard:	VDI-score
+			- Method:	Taken unaltered
+		- Var: [BTI 2018 - Status]														Bertelsmann Stiftung (2018)
+			- Def.:		"The Status Index ranks the countries according to their quality of democracy and market economy as of January 31, 2015."
+			- Standard:	BTI-score
+			- Method:	Taken unaltered
+		- Var: [BTI 2018 - Democracy]														Bertelsmann Stiftung (2018)
+			- Def.:		Index from stateness, political participation, rule of law, institutional stability, and political and social integration
+			- Standard:	BTI-score
+			- Method:	Taken unaltered
+		- Var: [BTI 2018 - Market Economy]													Bertelsmann Stiftung (2018)
+			- Def.:		Index from socioeconomic level, market organization, currency and price stability, provate proberty, welfare regime, economic performance, and suistanability
+			- Standard:	BTI-score
+			- Method:	Taken unaltered
+		- Var: [BTI 2018 - Governance]														Bertelsmann Stiftung (2018)
+ 			- Def.:		Index from steering capability, resource efficiancy, consensus-building, international cooperation
+			- Standard:	BTI-score
+			- Method:	Taken unaltered
+		- Var: [ROL 2012-2019]															World Justice Project (2019)
+ 			- Def.:		"The Index measures how the rule of law is experienced and perceived by the general public worldwide based on more than 120,000 household and 3,800 expert surveys."
+			- Standard:	ROL-score
+			- Method:	Mean of [ROL 2012] - [ROL 2019] (two-years span double weighted)
+		- Var: [ROL 2012] - [ROL 2019]														World Justice Project (2019)
+ 			- Def.:		"The Index measures how the rule of law is experienced and perceived by the general public worldwide based on more than 120,000 household and 3,800 expert surveys."
+			- Standard:	ROL-score
+			- Method:	Taken unaltered
+		- Var: [FSI total (2006-2017)]														The Found For Peace (2017)
+			- Def.:		Summed score from indicators: 
+						- "Security Apparatus"
+						- "Factionalized Elites"
+						- "Group Grievance"
+						- "Economy"
+						- "Economic Inequality"
+						- "Human Flight and Brain Drain"
+						- "State Legitimacy"
+						- "Public Services"
+						- "Human Rights"
+						- "Demographic Pressures"
+						- "Refugees and IDPs"
+						- "External Intervention"
+			- Standard:	Sum of 10 x (1.00-10.00)
+			- Method:	Mean (2006-2017)
+		- Var: [FSI total (year)]														The Found For Peace (2017)
+			- Def.:		Summed score from indicators: see: [FSI total (2006-2017)]
+			- Standard:	Sum of 10 x (1.00-10.00)
+			- Method:	Taken unaltered
+		- Var: [Economic Freedom total score (2017)]												The Heritage Foundation (2017)
+			- Def.:		Mean score from indicators:
+						- "Property Rights"
+						- "Judical Effectiveness"
+						- "Government Integrity"
+						- "Tax Burden"
+						- "Gov't Spending"
+						- "Fiscal Health"
+						- "Business Freedom"
+						- "Labor Freedom"
+						- "Monetary Freedom"
+						- "Trade Freedom"
+						- "Investment Freedom"
+						- "Financial Freedom"
+			- Standard:	EF-scores
+			- Method:	Mean
+		- Var: [Economic Freedom single indicators (2017)]											The Heritage Foundation (2017)
+			- Def.:		Single indicators: see: [Economic Freedom total score (2017)]
+			- Standard:	EF-scores
+			- Method:	Mean
+	- Macro-Var: [Psychology]
+		- Var: [BIG5-M]																Schmitt et al. (2007)
+			- Def.:		Mean score from five BIG5-dimensions of personality traits
+			- Standard:	BIG5-scores
+			- Method:	Mean
+		- Var: [BIG5-Extraversion];[BIG5-Agreeableness];[BIG5-Conscientiousness];[BIG5-Neuroticism];[BIG5-Openness]				Schmitt et al. (2007)
+			- Def.:		- Extraversion: 	"which one is active, assertive, talkative, and so forth"
+					- Agreeableness: 	"whether one is generous, gentle, kind, etc."
+					- Conscientiousness: 	"whether one is dutiful, organized, reliable, etc."
+					- Neuroticism: 		"which one is anxious, depressed, irritable, and so forth"
+					- Openness: 		"whether one is creative, imaginative, introspective, etc."
+			- Standard:	BIG5-scores
+			- Method:	Taken unaltered
+		- Var: [Honesty 1 (Cohn et al.)]													Cohn et al. (2019)
+			- Def.:		Probability of returning wallets without money
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Honesty 2 (Cohn et al.)]													Cohn et al. (2019)
+			- Def.:		Probability of returning wallets with money
+			- Standard:	%
+			- Method:	Taken unaltered
+		- Var: [Honesty (Gächter & Schulz)]													Gächter & Schulz (2016)
+			- Def.:		Results from "die-in-a-cup task"
+			- Standard:	%
+			- Method:	Taken unaltered
+- Table: [CAL]
+	- Used for additional and more complex calculations, if [REC/Method/Special calc.?] = 'Y'
+	- Connected tables:
+		- Downward:	none
+		- Upward:	[REC]
+	- Colour code:
+		- Yellow:	Data used for calculation
+		- Blue:		Data used to display in [REC] or [EXC]
+- Table: [GEO]
+	- General:
+		- Working table to estimate IQs for neighbourhood countries
+		- Results used to complete missing psychometric data in [M(NIQ-QNFW&SASCOR+)]
+	- Connected tables:
+			- Downward:	[NAT]
+			- Upward:	[NAT]
+	- Colour code:
+		- Blue:		Maritime (island) countries
+	- Method:
+		1. Took borderlines [BS] in km of neighbourhood countries connected by land				CIA (2017; Index: "Land boundaries")
+			- Only the max. three neighbourhood countries with biggest [BS] selected
+		2. Took [QNW+SAS] from table [NAT] for each selected neighbourhood country
+		3. Calculated [Neighbourhood IQ] as mean from [QNW+SAS]*[BS] of each selected country, divided by sum of [BS] of all selected counties
+		4. [Neighbourhood IQ] of cations with no neighbourhood countries connected by land calculated as simple mean from the max. three closest countries with psychometric data
+	- Macro-Var: [Identification]
+		- Var: [ISO 3166-1 ALPHA-3]
+			- Official country-code (three characters) according to ISO 3166-1 ALPHA-3
+		- Var: [Country name]
+			- Country name within the NIQ-DATASET
+	- Macro-Var: [Method]
+		- Var: [Reest.?]
+			- 'N'	= Non-recalculated national data from L&V
+			- 'Y'	= Recalculated national data by DB
+	- Macro-Var: [Total Borders]
+		- Var: [km]
+			- Lenght of borderline to all neighbourhood countries connected by land				CIA (2017; Index: "Land boundaries")
+			- 'M' 	= Maritime counrties (islands) without neighbourhood countries connected by land	CIA (2017; Index: "Land boundaries")
+	- Macro-Var: [Neighbourhood country 1/2/3]
+		- Var: [Name of neighbourhood country]
+			- Country name within the NIQ-DATASET 
+		- Var: [QNW+SAS]
+			- See Table: [NAT]
+		- Var: [BS]
+			- Borderline in km of neighbourhood country connected by land
+		- Var: [BS (filtered)]
+			- Borderline in km of neighbourhood country connected by land, filtered for cases with sufficient data
+		- Var: [(QNW+SAS)*BS (filtered)]
+			- First step of calculation
+	- Macro-Var: [Neighbourhood countries 1,2 & 3]
+		- Var: [Summed BS]
+			- Sume of borderline in km of neighbourhood country connected by land, filtered for cases with sufficient data
+		- Var: [Summed(QNW+SAS)*BS (filtered)]
+			- Sume of results from first step of calculation
+		- Var: [Neighbourhood IQ]
+			- [Summed (QNW+SAS)*BS (filtered)] / [Summed BS]
+			- Used to complete missing psychometric data in [QNW+SAS+GEO]
+- Table: [NORM]
+	- General:
+		- Conversion-formulas for RPM-raw-scores to IQ-scores or RPM-raw-scores to other RPM-raw-scores
+		- Degrees of polynomial formulas at the most third-degree (higher degrees caused strong errors and therefore not used)
+		- Criterion of validity of formulas:
+			- r between y-values in norm tables and y-values calculated by formulas >.99
+			- Difference between means of y-values in norm tables and y-values calculated by formulas = 0.00
+	- Macro-Var: [Identification]
+		- Var: [Test]
+			- Tests where the respective formula is used
+		- Var [Ref.]
+			- Source and table/page within the source from which data was taken for formula determination and validation
+			- Sources are: 
+				- Raven (1981, Tab.RS1.10)
+				- Raven (2000, Tab.B1)
+				- Raven (2008a, Tab.A.1)
+				- Raven (2008b, Tab.A.1)
+				- Raven, Raven & Court (1998, Tab.APM6)
+				- Raven, Raven & Court (1998, Tab.APM14)
+				- Raven, Raven & Court (1998, Tab.APM34)
+				- Raven, Raven & Court (1999, Tab.9)
+				- Raven, Raven & Court (2006, Tab.8)   
+				- Raven, Raven & Court (2006, Tab.26)
+	- Macro-Var: [Application]
+		- Var: [Conv.]
+			- Type of conversion
+				- 'RS->RS'	=	Conversion of raw-scores from one test into raw-scores of another test
+						=	Conversion of raw-scores from a selection of a test's subscales into full-scale raw-scores (FS)
+				- 'RS->IQ'	=	Conversion of raw-scores from one test into IQ-scores (M=100.00; SD=15.00)
+		- Var: [Age]
+			- Age-group where the respective formula is used
+		- Var: [Formula (gen.)]
+			- Determined formula (general form)
+		- Var: [Formula (opt.)]
+			- Determined formula (form optimated for use)
+		- Var: [Lower scope limit]
+			- Lower limite of raw-score range a formula is reliable applicable
+		- Var: [Upper scope limit]
+			- Upper limite of raw-score range a formula is reliable applicable
+	- Macro-Var: [Calc. Y-values]
+		- Results calculated by determined formula where Var-line is x and lines below are y
+	- Macro-Var: [Val.]
+		- Var: [r]
+			- r between y-values in norm tables and y-values calculated by formulas
+			- Value must be at least .99
+		- Var: [M]
+			- Difference between means of y-values in norm tables and y-values calculated by formulas
+			- Value must be 0.00
+	- Macro-Var: [Give. Y-values]
+		- Results given by sources where Var-line is x and lines below are y
+- Table: [FEC]
+	- General
+		- FLynn-Effect estimations for country, test and years
+		- Used by [REC/Method/Test time adjust.]
+		- Data from Pietschnig & Voracek (2015, Tab. S2)
+			- To each year between 1901 and 2020, the associated summed FE-change (IQ) has been assigned considering country, test and domain
+		- Use of [FEC] by [REC/Method/Test time adjust.]
+			- Step1: 	Searching for the corresponding line by checking accordance of [FEC/Index] and [REC/Testing/Domain] plus [REC/Testing/Country of standardization]
+			- Step2:	Searching for summed FE-change in the year corresponding to [REC/Testing/Year (standard.)]
+			- Step3:	Searching for summed FE-change in the year corresponding to [REC/Testing/Year (measure.)]
+			- Step4:	Calculation: Value found by Step2 minus value found by Step3
+	- Var: [Country]
+		- Name of country in [REC/Testing/Test (calc.)]
+	- Var: [Domain]
+		- Domain of test in [REC/Testing/Domain]
+	- Var: [Index]
+		- Combination of [Country] [Domain]	
+		- This variable is used by [REC/Method/Test time adjust.] to find the data in [FEC] applicable for FE-correction
+	- Var: [Number of Year]
+		- This variable is used by [REC/Method/Test time adjust.] to find the data in [FEC] applicable for FE-correction
+- Table: [STAT(REC)]
+	- Form for the calculation of descriptive and correlation statistics
+	- Level is records
+- Table: [STAT(NAT)]
+	- Form for the calculation of descriptive and correlation statistics
+	- Level is nations
+		- Colour code:
+			- Yellow: fields to insert query
+- Table: [REF]
+	- List of names of references from the original dataset from Lynn & Vanhanen
+	- Var: [Found]
+		- 'N'	= In possession as a digital copy
+		- 'Y'	= Not in possession as a digital copy
+- Table: [CNC]
+	- Collection of cross-national correlates of IQ from different sources
+		- Bold lines are correlations, summarized by category of variable
+		- Thin lines are correlations, directly drawn from the source or by calculations (see [Notes]) 
+	- Macro-Var: [Variable]
+		- Var: [ID]
+			- Placeholder
+		- Var: [Category]
+			- Category of the variable correlated with national IQs, equivalent to categories used in [NAT]
+		- Var: [Name]
+			- Name of the variable correlated with national IQs, according to source but unified and specified
+		- Var: [Year]
+			- Year represented by the data of the non-IQ variable
+		- Var: [Trans]
+			- Name of the applied transformation of the variable
+				- 'abs'	= absolute value
+				- 'log'	= logarithm
+				- 'squ'	= squared
+				- 'z'	= z-transformed
+	- Macro-Var: [Nations]
+		- Var: [Selection]
+			- Information about selection of countries
+		- Var: [N]
+			- Number of countries used in source
+		- Var: [k]
+			- Number of sources by category
+	- Macro-Var: [Correlations]
+		- Var: [r]
+			- Correlation reported by source and variable
+		- Var: [Fisher's Z]
+			- Mean of all z-transformed correlations by source for each category
+		- Var: [p]
+			- Significance of each correlation or mean correlation
+	- Macro-Var: [Sources]
+		- Var: [Short]
+			- Short form of source
+		- Var: [Full]
+			- Full name of source according to APA citation style (APA, 2010; 6th edition)
+		- Var: [Found?]
+			- 'N'	= no digital copy of source/reference have been found
+			- 'Y'	= a digital copy of source/reference have been found
+		- Var: [Checked?]
+			- 'Y'	= successfully checked for correctness
+			- 'N'	= not successfully checked for correctness
+	- Macro-Var: [Notes]
+		- Var: [DB]
+			- Notes from Becker
+____________________________________________________________________________________________________
+
+TEST-LIST (DETAILED) 
+
+- Cattell Cultural Fair Tests						CFT
+	- CFT1								CFT
+		- Standardizations:					USA(1950)	Cattell (1950)
+									USA(1966)	Cattell (1966)
+									DEU(1976)	Weiß & Osterland (1980, p.38); Weiß & Osterland (1997, p.35)
+									DEU(1995)	Weiß & Osterland (1980, p.38); Weiß & Osterland (1997, p.35)
+	- CFT1-R							CFT
+		- Standardizations:					DEU(2010)	Weiß & Osterland (2013, p.42)
+	- CFT2								CFT
+		- Standardizations:					USA(1960)	Cattell (1960)
+									DEU(1968)	Weiß (1987, p.68)
+									DEU(1972)	Weiss (1972); Weiß (1987, p.66); Weiß (2006, p.68)
+									USA(1972)	Cattell (1973)
+	- CFT20								CFT
+		- Standardizations:					DEU(1977)	Weiß (1987, p.46); Weiß (2006, p.68)
+	- CFT20-R							CFT
+		- Standardizations:					DEU(2003)	Weiß (2006)
+	- CFT3								CFT
+		- Standardizations:					USA(1961)	Cattell (1961)
+									DEU(1967)	Weiss (1971); Weiß (1980, p.25)
+									USA(1972)	Cattell (1973)
+- Kaufman Assessment Battery for Children				KABC
+	- KABC 1st Edition						KABC
+		- Standardizations:					USA(1981)	Kaufman & Kaufman (1983)
+	- KABS 2nd Edition						KABC-II
+		- Standardizations:					USA(2004)	Kaufman & Kaufman (2004)
+- Mini-Mental State Examination						MMSE
+	- Standardization:						USA(1991)	Ganguli et al.(1991); Lynn (2007)
+- Naglieri Non-verbal Ability Test					NNAT
+	- Standardization:						USA(1996)	Naglieri (1997); Rojahn & Naglieri (2006)
+									USA(2003)	Naglieri (2003)
+- Otis-Lennon School Ability Test					OLSAT
+	- Standardizations:						USA(1979)	Otis & Lennon (1979)
+- Raven's Progressive Matrices						RPM
+	- Standard Progressive Matrices					SPM
+		- Standardizations:					GBR(1938)	Raven (1941)
+									USA(1986)	Raven, Raven & Court (1999, Tab.16)
+									GBR(1979)	Raven (1981, Tab.RS1.10); Raven, Raven & Court (1999, Tab.9); Raven (2000, Tab.B1)
+									DEU(1998-1999)	Raven, Raven & Court (1999, Tab.17)
+		- Items:						60
+		- Sub-tests (items):					A(12); B(12); C(12); D(12); E(12)
+	- Standard Progressive Matrices Plus				SPM+
+		- Standardizations: 					GBR(2007)	Raven (2008b, Tab.A.1)
+		- Items:						60
+		- Sub-tests (items):					A(12); B(12); C(12); D(12); E(12)
+	- Coloured Progressive Matrices					CPM
+		- Standardizations: 					GBR(1947)	Raven (1965); Green & Ewert (1955)
+									DEU(1999)	Raven, Raven & Court (2006)
+									GBR(2007)	Raven (2008a, Tab.A.1); Raven, Raven & Court (2006, Tab.8, Tab.26)
+		- Items:						36
+		- Sub-tests (items):					A(12); Ab(12); B(12)
+	- Advanced Progressive Matrices					APM
+		- Standardizations: 					GBR(1985)	Raven, Raven & Court (1985)
+									GBR(1992)	Raven, Raven & Court (1998, Tab.APM6, Tab.APM14, Tab.APM34)
+		- Items:						72
+		- Sub-tests (items):					Set-I(12); Set-II(36)
+	- Advanced Progressive Matrices Short				APM-
+		- Standardizations:					DEU(2012)	Rindermann, Stiegmaier & Meisenberg (2014)
+		- Items:						12
+	- Chinese Raven's Test						CRT-C2
+		- Standardizations:					CHN(1997)	Wang & Qian (1997)
+- Snijders-Oomen Nonverbal intelligence test (SON-R 5½-17)		SON-R
+	- Standardizations:						NLD(1998)	Tellegen & Laros (2004)
+- Stanford-Binet Intelligence Scale					SBIS
+	- Standardizations:						USA(1916)	Terman (1916); Becker (2003)
+									USA(1937)	Terman & Merrill (1937); Becker (2003)
+									USA(1960)	Terman & Merrill (1960); Becker (2003)
+									USA(1972)	Terman & Merrill (1972); Becker (2003)
+									USA(1986)	Thorndike, Hagen & Sattler (1986); Becker (2003)
+									USA(2003)	Roid (2003); Becker (2003)
+- Wechsler Intelligence Scales 						WIS
+	- Wechsler Preschool and Primary Scale of Intelligence		WPPSI
+		- Standardizations:					USA(1964)	Wechsler (1967); Lynn (2015)
+	- Wechsler Preschool and Primary Scale of Intelligence - Rev	WPPSI-R
+		- Standardizations:					USA(1989)	Wechsler (1989)
+	- Wechsler Preschool and Primary Scale of Intelligence - III 	WPPSI-III
+		- Standardizations:					USA(2002)	Wechsler (2002)
+									DEU(2011)	Wechsler (2014)
+	- Wechsler Intelligence Scale for Children			WISC
+		- Standardizations:					USA(1947)	Wechsler (1949)
+									FRA(1954)	Frydman & Lynn (1989)
+	- Escala de Inteligencia Wechsler para Ninos			WISC
+		- Standardizations:					USA(1947)	Roca (1955)
+		- Notes:
+			-> No new standardization, only adaption to Hispanic children	Roca (1955)
+	- Wechsler Intelligence Scale for Children - Revisited		WISC-R
+		- Standardizations:					USA(1972)	Wechsler (1974)
+									ISR(1976)	Lieblich, Ben-Shakhar & Ninio (1976); Lieblich & Kugelmas (1981)
+									DEU(1983)	Tewes (1985)
+									NLD(1986)	Van Haassen et al. (1986); Polderman et al. (2006); Born & Lynn (1994)
+									NLD(2006)	Van Haassen et al. (2006); Polderman et al. (2006)
+
+	- Escala de Inteligencia Wechsler para Ninos - Revisada		WISC-R
+		- Standardizations:					USA(1974)	Wechsler (1974)
+		- Notes:
+			-> No new standardization, only adaption to Hispanic children	Wechsler (1974)
+	- Wechsler Intelligence Scale for Children - III		WISC-III
+		- Standardizations:					USA(1989)	Wechsler (1991a)
+									GBR(1991)	Wechsler (1991b)	
+	- Wechsler Intelligence Scale for Children - IV			WISC-IV
+		- Standardizations:					USA(2003)	Wechsler (2003)
+									GBR(2004)	Wechsler (2004)
+									DEU(2006)	Petermann & Petermann (2014, p.27)
+	- Wechsler Intelligence Scale for Children - IV Spanish		WISC-IV
+		- Standardizations:					USA(2005)*	Wechsler (2005b)	*US-Hispanics	
+		- Additional correction:				-6.46		(see: Notes)	
+		- Notes:
+			-> Standardization on US-Hispanics (mostly Mexican)
+			-> Correction necessary for differences between whole and Hispanic US-population:
+				- 90.24(IQ-MEX)-96.70(IQUSA)=-6.46
+	- Wechsler Adult Intelligence Scale				WAIS
+		- Standardizations:					USA(1955)	Wechsler (1955)
+									NLD(1970)	Stinissen et al. (1970)
+	- Escala de Inteligencia Wechsler para Adultos			WAIS
+		- Standardizations:					PRI(1965)	Green & Martínez (1967, p.12)
+		- Notes:
+			-> Normsample-mean: 77.20 = 83.1 (Malloy, 2014, USA(1955)-norms) - 3.40 (FE-cor.) - 2.50 (Country-cor.)
+	- Wechsler Adult Intelligence Scale - Revisited			WAIS-R
+		- Standardizations:					USA(1976-1980)	Wechsler (1981); Tewes (1994, p.12)
+									GBR(1981)	The Psychological Corporation (1981, 1986)		
+									DEU(1988)	Tewes (1994, p.13)
+									NLD(1997)	Wechsler (1997b); Hoekstra, Bartels & Boomsma (2007)
+	- Escala de Inteligencia Wechsler para Adultos - Revisada	WAIS-R
+		- Standardizations:					USA(1976-1980)	Wechsler (1981); Tewes (1994, p.12)
+		- Notes:
+			-> No new standardization, only adaption to Hispanic children	Wechsler (1981); Tewes (1994, p.12)
+	- Wechsler Adult Intelligence Scale - III			WAIS-III
+		- Standardizations:					USA(1995)	The Psychological Corporation (1997a,b); Wechsler (1997a); Kaufman & Lichtenberger (1999)
+									CAN(1997)	Wechsler (2001); Lange et al. (2005)
+									DEU(2006)	von Aster, Neubauer & Horn (2006)
+									FIN(2007)	Wechsler (2005a); Roivainen (2010)
+		- Notes:
+			-> Results of missing sub-tests estimated by means of given sub-tests
+			-> "Symbol Search" excluded if IQ should be estimated (von Aster, Neubauer & Horn, 2006, p. 12)
+	- Wechsler Adult Intelligence Scale - IV 			WAIS-IV
+		- Standardizations:					USA(2008)	Wechsler (2008)
+									GBR(2009)	Wechsler (2010)
+									DEU(2012)	Petermann (2016, p.49)
+	
+	- Wechsler Abbreviated Scale of Intelligence 			WASI
+		- Standardizations:					USA(1999)	Wechsler (1999)
+	- Wechsler Abbreviated Scale of Intelligence-II			WASI-II
+		- Standardizations:					USA(2011)	Wechsler (2011a)
+____________________________________________________________________________________________________
+
+SOURCES/REFERENCES
+
+- Angrist, N., Djankov, S., Goldberg, P. K., & Patrinos, H. A. (2021). Measuring human capital using global learning data. Nature. https://doi.org/10.1038/s41586-021-03323-7
+- APA (2010). Publication Manual of The American psychological Association. Washington, DC: American Psychological Association.
+- Barrett, D., Kurian, G., & Johnson, T. M. (2001). World Christian Encyclopedia: A comparative survey of churches and religions in the modern world - Volume 2, 2nd edition. Oxford: Oxford University Press Inc.
+- Beals, K. L., Smith, C. L., and Dodd, St. M. (1984). Brain Size, Cranial Morphology, Climate, and Time Machines. Current Anthropology, 25, 301-330.
+- Beaton, A. E., Martin, M. O., Mullis, I. V. S., Gonzalez, E. J., Smith, T. A., & Kelly, D. A. (1997a). Science Achievement in the Middle School Years: IEA's Third International Mathematics and Science Study. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Beaton, A. E., Mullis, I. V. S., Martin, M. O., Gonzalez, E. J., Kelly, D. A., &  Smith, T. A. (1997b). Mathematics Achievement in the Middle School Years: IEA's Third International Mathematics and Science Study. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Becker, K. A. (2003). History of the Stanford-Binet intelligence scales: Content and psychometrics. (Stanford-Binet Intelligence Scales, Fifth Edition Assessment Service Bulletin No. 1). Itasca, IL: Riverside Publishing.
+- Becker, D., & Rindermann, H. (2016). The relationship between cross-national genetic distances and IQ-differences. Personality and Individual Differences, 98, 300-310. doi:10.1016/j.paid.2016.03.050
+- Bertelsmann Stiftung (2018). Bertelsmann Stiftung’s Transformation Index (BTI). Retrieved from: https://www.bti-project.org/en/home/
+- Biasutti, R. (1967). Le Razze E I Populi Della Terra. Torino: Tipografia Torinese S.p.A..
+- Bittles, A.H., (2001). Consanguinity/endogamy resource. Retrieved from http://www.consang.net
+- Born, M., & Lynn, R. (1994). Sex Differences on the Dutch WISC-R: a comparison with the USA and Scotland. Educational Psychology, 14, 249-254.
+- Cattell, R. B. (1950). Cultural Fair (or Free) Intelligence Test (A Measure of "g") Skala 1. Handbook for the Individual or Group. Champaign, Illinois, USA:  Institute for Personality and Ability Testing.
+- Cattell, R. B. (1960). Culture free intelligence test, Scale 2. Champaign, Illinois, USA:  Institute for Personality and Ability Testing.
+- Cattell, R. B. (1961). Culture free intelligence test, Scale 3. Champaign, Illinois, USA:  Institute for Personality and Ability Testing.
+- Cattell, R. B. (1966). Handbook for the Cultural Fair Intelligence Test, Scale 1. Champaign, Illinois, USA:  Institute for Personality and Ability Testing.
+- Cattell, R. B. (1973). Measuring intelligence with the Culture Fair Tests; Manual for Scales 2 and 3. Champaign, Illinois, USA:  Institute for Personality and Ability Testing.
+- Cherson, A. D. (2012). Atlas of Genetic Genealogy. Greencore Environmental Information Services. From: http://atlas.xyvy.info.
+- CIA (2017). The World Fact Book. From: https://www.cia.gov/library/publications/the-world-factbook/
+- CIA (2019). The World Fact Book. From: https://www.cia.gov/library/publications/the-world-factbook/
+- Cohn, A., Maréchal, M. A., Tannenbaum, D., & Zünd, Ch. L. (2019). Civic honesty around the globe. Science, 365(6448), 70-73. doi:10.1126/science.aau8712
+- Flynn, J. R. (1984). The mean IQ of Americans: Massive gains 1932 to 1978. Psychological Bulletin, 95, 29-51. doi:10.1037/0033-2909.95.1.29
+- Frydman, M., & Lynn, R. (1989). The intelligence of Korean children adopted in Belgium. Personality and Individual Differences, 10, 1323-1325.
+- Food and Agriculture Organization of the United States (FAO) (2014). Indicators from Household Surveys (gender, area, socioeconomics). From: http://www.fao.org/faostat/en/#data/HS
+- Green, M. W., & Ewert, J. C. (1955). Normative Data on Progressive Matrices (1947). Journal of Consulting Psychology, 19, 139-142.
+- Green, R. F., & Martínez, J. N. (1967). Standardization of a Spanish language adult intelligence scale. Final Report. Washington, DC, USA: US Department of Health, Education & Welfare.
+- Gächter, S., & Schulz, J. F. (2016). Intrinsic honesty and the prevalence of rule violations across societies. Nature, 531, 496-499. doi:10.1038/nature17160
+- Ganguli, M., Ratcliff, G., Huff, F. J., Belle, S., Kancel, M. J., Fischer, L., Seaberg, E. C., & Kuller, L. H. (1991). Effects of gender, age, and education on cognitive tests in a rural elderly community: norms from the Monongahela sample. Neuroepidemiology, 10, 42-52. doi:10.1159/000110246
+- Hoekstra, R. A., Bartels, M., & Boomsma, D. I. (2007). Longitudinal genetic study of verbal and nonverbal IQ from early childhood to young adulthood. Learning and Individual Differences, 17, 97-114.
+- International Organization for Standardization (ISO). From: https://www.iso.org/obp/ui/#search
+- Kaufman, A. S., & Kaufman, N. L. (1983). Kaufman Assessment Battery for Children. Circle Pines, MN: American Guidance Service.
+- Kaufman, A. S., & Kaufman, N. L. (2004). Kaufman Assessment Battery for Children Second Edition. Circle Pines, MN: American Guidance Service.
+- Kaufman, A. S., & Lichtenberg, E. O. (1999). Essentials of WAIS-III Assesssment. New York, Chichester, Weinheim, Brisbane, Singapore, Toronto: John Wiley & Sons. Inc.
+- Lange, R. T., Schoenberg, M. R., Woodward, T. S., & Brickell, T. A. (2005). Development of the WAIS-III estimate of premorbid ability for Canadians (EPAC). Archives of Clinical Neuropsychology, 20, 1009-1024.
+- Lee, J. J., Wedow, R., Okbay, A., Kong, E., Maghzian, O., Zacher, M., … & Cesarini, D. (2018). Gene discovery and polygenic prediction from a 1.1-million-person GWAS of educational attainment. Nature Genetics, 50, 1112-1121. doi:10.1038/s41588-018-0147-3
+- Lieblich, A., Ben-Shakhar, N., & Ninio, A. (1976). WISC-R Hebrew Manual. Jerusalem: Psychological Corporation and The Israeli Ministry of Education.
+- Lieblich, A., & Kugelmas, S. (1981). Patterns of intellectual ability of Arab school children in Israel. Intelligence, 5, 311-320.
+- Lim, St. S., Updike, R. L., Kaldjian, K. S., Barber, R. M., Cowling, K., York, H., Friedman, J., Xu, R., Whisnant, J. L., Taylor, H. J., Leever, A. T., Roman, Y., Bryant, M. F., Dieleman, J., Gakidou, E., & Murray Ch. J. L. (2018). Measuring human capital: a systematic analysis of 195 countries and territories, 1990–2016. Lancet, 392, 1217–1234. http://dx.doi.org/10.1016/S0140-6736(18)31941-X
+- Lynn, R. (2007). A Study of the IQ in Bangladesh. Mankind Quarterly, 48, 117-121.
+- Lynn, R. (1982). IQ in Japan and the United States shows a growing disparity. Nature, 297, 222-223. doi:10.1038/297222a0
+- Lynn, R. (2013). Rushton’s r–K life history theory of race differences in penis length and circumference examined in 113 populations. Personality and Individual Differences, 55, 261-266. doi:10.1016/j.paid.2012.02.016
+- Lynn, R. (2015). Selective emigration, Roman Catholicism and the decline of intelligence in Ireland. Mankind Quarterly, 55, 242-253.
+- Lynn, R. & Vanhanen, T. (2002). IQ and the wealth of nations. Westport: Praeger.
+- Lynn, R. & Vanhanen, T. (2012). Intelligence: A Unifying Construct for the Social Sciences. London: Ulster Institute for Social Research.
+- Maddison Project (2013). New Maddison project database [horizontal-file_02-2010.xls]. Retrieved from http://www.ggdc.net/maddison/maddison-project/home.htm.
+- Malloy, J. (2014). HVGIQ: Puerto Rico. At: http://humanvarieties.org/2014/03/13/hvgiq-puerto-rico-2/
+- Martin, M. O., Mullis, I. V. S., Beaton, A. E., Gonzalez, E. J., Smith, T. A., & Kelly, D. A. (1997). Science Achievement in the Primary School Years: IEA's Third International Mathematics and Science Study. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Martin, M. O., Mullis, I. V. S., Gonzalez, E. J., Gregory, K. D., Smith, T. A., Chrostowski, S. J., Garden, R. A., & O'Connor, K. M. (2000). TIMSS 1999 International Science Report - Findings from IEA's Repeat of the Third International Mathematics and Science Study at the Eighth Grade. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Martin, M. O., Mullis, I. V. S., Gonzalez, E. J., & Chrostowski, S. J. (2004). Findings From IEA’s Trends in International Mathematics and Science Study at the Fourth and Eighth Grades. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Martin, M. O., Mullis, I. V. S., & Foy, P. (2008). TIMSS 2007 International Science Report: Findings from IEA’s Trends in International Mathematics and Science Study at the Fourth and Eighth Grades. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Martin, M. O., Mullis, I. V. S., Foy, P., & Stanco, G. M. (2012). TIMSS 2011 International Results in Science. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Beaton, A. E., Gonzalez, E. J., Kelly, D. A., & Smith, T. A. (1997). Mathematics Achievement in the Primary School Years: IEA's Third International Mathematics and Science Study. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Gonzalez, E. J., Gregory, K. D., Garden, R. A., O'Connor, K. M., Chrostowski, S. J., & Smith, T. A. (2000). TIMSS 1999 International Mathematics Report - Findings from IEA's Repeat of the Third International Mathematics and Science Study at the Eighth Grade. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Gonzalez, E. J., & Chrostowski, S. J. (2004). Findings From IEA’s Trends in International Mathematics and Science Study at the Fourth and Eighth Grades. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., & Foy, P. (2008). TIMSS 2007 International Mathematics Report: Findings from IEA’s Trends in International Mathematics and Science Study at the Fourth and Eighth Grades. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Arora, A. (2012a). TIMSS 2011 International Results in Mathematics. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Gonzalez, E. J., & Kennedy, A. M. (2003). PIRLS 2001 International Report: IEA’s Study of Reading Literacy Achievement in Primary Schools. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Kennedy, A. M., & Foy, P. (2007). IEA's Progress in International Reading Literacy Study in Primary School in 40 Countries. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Drucker, K. T. (2012b). PIRLS 2011 International Results in Reading. Chestnut Hill, MA: TIMSS & PIRLS International Study Center, Boston College.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M (2016a). TIMSS 2015 - International Results in Mathematics. Fourth Grade Mathematics. Bosten: IEA.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M (2016b). TIMSS 2015 - International Results in Mathematics. Fourth Grade Science. Bosten: IEA.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M (2016c). TIMSS 2015 - International Results in Mathematics. Eight Grade Mathematics. Bosten: IEA.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M (2016d). TIMSS 2015 - International Results in Mathematics. Eight Grade Science. Bosten: IEA.
+- Mullis, I. V. S., Martin, M. O., Foy, P., & Hooper, M. (2017). PIRLS 2016 International Results in Reading. Retrieved from: http://timssandpirls.bc.edu/pirls2016/international-results/
+- Naglieri, J. A. (1997). Naglieri Nonverbal Ability Test. San Antonio, TX: Harcourt Brace.
+- Naglieri, J. A. (2003). Naglieri Nonverbal Ability Test—Individual administration manual. San Antonio, TX: Harcourt Assessment.
+- NCD Risk Factor Collaboration (2017a). ADULT BODY-MASS INDEX Evolution of BMI over time. Retrieved from: http://www.ncdrisc.org/data-downloads-adiposity.html
+- NCD Risk Factor Collaboration (2017b). CHILD & ADOLESCENT BODY-MASS INDEX Evolution of BMI over time. Retrieved from: http://www.ncdrisc.org/data-downloads-adiposity-ado.html
+- NCD Risk Factor Collaboration (2017c). HEIGHT - Evolution of adult height over time. Retrieved from: http://www.ncdrisc.org/data-downloads-height.html
+- OECD (2004). Learning for Tomorrow’s World First Results from PISA 2003. Paris: OECD-Publishing.
+- OECD (2007). PISA 2006 results. Retrieved from: http://www.oecd.org/education/school/programmeforinternationalstudentassessmentpisa/pisa2006results.htm
+- OECD (2010). PISA 2009 Results: What Students Know and Can Do – Student Performance in Reading, Mathematics and Science (Volume I). Paris: OECD-Publishing. doi:10.1787/9789264091450-en
+- OECD (2015). Note on PISA 2012 data for the United Kingdom. Retrieved from: https://www.oecd.org/pisa/keyfindings/PISA%202012%20UK%20revised%20scores_for%20web_May15.xlsx
+- OECD (2016). PISA 2015 Results (Volume I): Excellence and Equity in Education. Paris: OECD-Publishing.
+- OECD (2019). Aizmur, J., Ager, R., Bradshaw, J., Classick, R., Galvis, M., Packer,J., Thomas, D., & Wheater, R. (2019). Achievement of 15-year-olds in England: PISA 2018 results. Retrieved from: https://www.gov.uk/government/publications/pisa-2018-national-report-for-england
+- OECD/UNESCO-UIS (2003). PISA 2000 results. Retrieved from: http://www.oecd.org/education/school/programmeforinternationalstudentassessmentpisa/33690591.pdf
+- Otis, A. S., & Lennon (1979). Otis-Lennon School Ability Test: Elementary Form R. New York: Psychological Corp.
+- Patel, D., & Sandefur, J. (2020). A Rosetta Stone for Human Capital. https://www.cgdev.org/publication/rosetta-stone-human-capital
+- Petermann, F. (2016). WAlS-IV - Wechsler Adult Intelligence Scale - Fourth Edition - Deutschsprachige Adaptation nach David Wechsler, Manual 1 - Grundlagen, Testauswertung und Interpretation, Übersetzung und Adaptation der WAIS-IV von David Wechsler. Frankfurt am Main: Pearson Assessment.
+- Petermann, F., & Petermann, U. (2014). Wechsler Intelligence Scale for Children - Fourth Edition, Manual 1 - Grundlagen, Testauswertung und Interpretation, Übersetzung und Adaptation der WISC-IV von David Wechsler. Frankfurt am Main: Pearson Assessment.
+- Pietschnig, J., & Voracek, M. (2015). One Century of Global IQ Gains: A Formal Meta-Analysis of the Flynn Effect (1909–2013). Perspectives on Psychological Science, 10, 282-306. doi:10.1177/1745691615577701
+- Piffer, D. (2015). A review of intelligence GWAS hits: Their relationship to country IQ and the issue of spatial autocorrelation. Intelligence, 53, 43–50. doi:10.1016/j.intell.2015.08.008
+- Polderman, T. J. C., Gosso, M. F., Posthuma, D., van Beijsterveldt, T. C. E. M., Heutnik, P., Verhulst, F. C., & Boomsma, D. I. (2006). A longitudinal twin study on IQ, executive functioning, and attention problems during childhood and early adolescence. Acta Neurologica Belgica, 106, 191-207.
+- Raven, J. C. (1941). Standardization of Progressive Matrices 1938. British Journal of Medical Psychology, 19, 137-150.
+- Raven, J. C. (1965). Psychological Principles Appropriate to Social and Clinical Problems: Guide to Using the Coloured Progressive Matrices. London, 1965.
+- Raven, J. (1981). Irish and British Standardisations. Oxford: Oxford Psychologist Press.
+- Raven, J. (2000). The Raven’s Progressive Matrices: Change and Stability over Culture and Time. Cognitive Psychology, 41, 1-48.
+- Raven, J. (2008a). Coloured Progressive Matrices and Crichton Vocabulary Scale. London: Pearson. 
+- Raven, J. (2008b). Standard Progressive Matrices and Mill Hill Vocabulary Scale. London: Pearson. 
+- Raven, J., Raven, J. C., & Court, J. H. (1985). Manual for Raven's Progressive Matrices and Vocabulary Scales. London: H.K. Lewis & Co.Ltd..
+- Raven, J., Raven, J. C., & Court, J. H. (1998). Manual for Raven's Progressive Matrices and Vocabulary Scales. Oxford: Oxford Psychologist Press.
+- Raven, J., Raven, J. C., & Court, J. H. (1999). Manual zu Raven's Progressive Matrices und Vocabulary Scales. Frankfurt: Swets & Zeitlinger B. V..
+- Raven, J., Raven, J. C., & Court, J. H. (2006). Manual zu Raven's Progressive Matrices und Vocabulary Scales. Frankfurt: harcourt Test Services.
+- Rojahn, J., & Naglieri, J. A. (2006). Developmental gender differences on the Naglieri Nonverbal Ability Test in a nationally normed sample of 5–17 year olds. Intelligence, 34, 253-260. doi:10.1016/j.intell.2005.09.004
+- Rindermann, H., Stiegmaier, E.-M., & Meisenberg, G. (2014). Cognitive ability of preschool, primary and secondary school children in Costa Rica. Journal of Biosocial Science, 46, 1-30. doi:10.1017/S0021932014000066
+- Rindermann, H., Woodley, M. A., & Stratford, J. (2012). Haplogroups as evolutionary markers of cognitive ability. Intelligence, 40, 362-375. doi:10.1016/j.intell.2012.04.002
+- Roca, P. (1955). Problems of adapting intelligence scales from one culture to another. Department of Education, Commonwealth of Puerto Rico. 
+- Roid, G. H. (2003). Stanford-Binet Intelligence Scales, Fifth Edition. Itasca, IL: Riverside Publishing.
+- Roivainen, E. (2010). European and American WAIS 111 norms: Cross-national differences in performance subtest scores. Intelligence, 38, 187-192.
+- Schmitt, D. P., Allik, J., McCrae, R. R., & Benet-Martínez, V. (2008). The Geographic Distribution of Big Five Personality Traits: Patterns and Profiles of Human Self-Description Across 56 Nations. Journal of Cross-Cultural Psychology, 38, 173-212. doi:10.1177/0022022106297299
+- Stinissen, J., Willems, P. J., Coetsier, P., & Hulsman, W. L. L. (1970). Manual for the Dutch translated and adapted version of the Wechsler Adult Intelligence Scale (WAIS). Lissi: Swets & Zeitlinger B.V..
+- Tadmouri, Gh. O., Nair, P., Obeid, T., Al Ali, M. T., Al Khaja, N., & Hamamy, H. A. (2009). Consanguinity and reproductive health among Arabs. Reproductive Health, 6, 17. doi:10.1186/1742-4755-6-17
+- Tellegen, P. J., Winkel, M., Wijnberg-Williams, B. J., & Laros, J. A. (1998). Snijders-Oomen Nonverbal Intelligence Test, SON -R 2½-7, Manual & Research Report. Lisse: Swets & Zeitlinger.
+- Terman, L. M. (1916). The measurement of intelligence: An explanation of and a complete guide for the use of the Stanford revision and extension of the Binet-Simon Intelligence Scale. Boston: Houghton Mifflin.
+- Terman, L. M., & Merrill, M. A. (1937). Measuring intelligence. Boston: Houghton Mifflin.
+- Terman, L. M., & Merrill, M. A. (1960). Stanford-Binet Intelligence Scale: Manual for the Third Revision Form L-M. Boston: Houghton Mifflin.
+- Terman, L. M., & Merrill, M. A. (1973). Stanford-Binet Intelligence Scale: Manual for the Third Revision Form L-M (1972 Norm Tables by R. L. Thorndike). Boston: Houghton Mifflin.
+- Tewes, U. (1985). HAWIK-R - Hamburg-Wechsler Intelligenztest für Kinder - Revision 1983. Handbuch und Testanweisung. 2. korrigierte Auflage. Bern, Stuttgart, Toronto: Verlag Hans Huber.
+- Tewes, U. (1994). HAWIE-R - Hamburg-Wechsler Intelligenztest für Erwachsene - Revision 1991. Handbuch und Testanweisung. 3. korrigierte Auflage. Bern, Gottingen, Toronto, Seattle: Verlag Hans Huber.
+- The Found For Peace (2017). Fragile Statea Index. From: http://fundforpeace.org/fsi/excel/
+- The Heritage Foundation (2017). 2017 Index of Economic Freedom. From: https://www.heritage.org/index/download
+- The Psychological Corporation (1997a). WAIS-III and WMS-III technical manual. San Antonio, TX: Author.
+- The Psychological Corporation (1997b). WAIS-III: Administration and scoring manual: Wechsler adult intelligence scale-third edition. San Antonio, TX: Author.
+- The Psychological Corporation (1981, 1986). WAIS-R - A British Supplement to the Manual of The Wechsler Adult Intelligence Scale - Revised. Incorporating British Amendments to the Test Administration Section. Oxford: NFER-NELSON Publishing.
+- Thorndike, R. L., Hagen, E. P., & Sattler, J. M. (1986). Stanford-Binet Intelligence Scale: Fourth Edition. Itasca, IL: Riverside Publishing.
+- United Nations, Department of Economic and Social Affairs (2013). Trends in International Migrant Stock: The 2013 revision (United Nations database, POP/DB/MIG/Stock/Rev.2013). Retrieved from: https://esa.un.org/unmigration/TIMSA2013/Data/subsheets/
+- United Nations Development Programme (2017). Human Development Reports. From: http://hdr.undp.org/en/composite/HDI4
+- van Haassen, P. P., De Bruijn, E. E., Pijl, Y. J., Poortinga, Y. H., Lutje-Spelberg, H. C., Vander Steene, G., et al. (1986). Wechsler Intelligence Scale for Children-Revised, Dutch Version. Lisse: Swets & Zetlinger B.V..
+- van Haassen, P. P., De Bruijn, E. E., Pijl, Y. J., Poortinga, Y. H., Lutje-Spelberg, H. C., Vander Steene, G., et al. (2006). Wechsler Intelligence Scale for Children—revised, Dutch version. Lisse: Swets & Zetlinger B.V..
+- Vanhanen, T. (2012). Ethnic Conflicts - Their Biological Roots in Ethnic Nepotism. London: Ulster Institute for Social Research.
+- Vanhanen, T. (2014). Global Inequality As a Consequence of Human Diversity - A New Theory Tested by Empirical Evidence. London: Ulster Institute for Social Research.
+- Vanhanen, T., & International Peace Research Institute, Oslo (PRIO) (2000). Retrieved from: https://www.prio.org/Data/Governance/Vanhanens-index-of-democracy/
+- von Aster, M., Neubauer, A., & Horn, R. (2006). Wechsler Intelligenztest für Erwachsene WIE: Manual, Übersetzung und Adaption der WAIS-III von David Wechsler. Frankfurt am Main: Harcourt Test Services.
+- von Grebmer, K., Bernstein, J., Brown, T., Prasai, N., Yohannes, Y., Towey, Foley, O. C., ... & Hossain, N. (2017). Welthunger-Index - Wie Ungleichheit Hunger schafft. Washington, DC / Bonn / Dublin: Welthungerhilfe / International Food Policy research Institute / Concern Worldwide.
+- Wang, D., & Qian, M. (1997). The Combined Raven's Test for Children (CRT-C2) (2nd ed.). Tianjin: Tianjin Institute of Endocrine in Chinese.
+- Wechsler, D. (1947). Wechsler intelligence scale for children. New York: Psychological Corporation.
+- Wechsler, D. (1955). Wechsler adult intelligence scale (WAIS). New York: Psychological Corporation.
+- Wechsler, D. (1967). Manual for the Wechsler Preschool and Primary Scale of Intelligence. New York: Psychological Corporation.
+- Wechsler, D. (1974). Manual for the Wechsler Intelligence Scale for Children–Revised. San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (1981). Wechsler adult intelligence scale (WAIS-R). San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (1989). The Wechsler Preschool and Primary Scale of Intelligence-Revised . San Antonio, TX: The Psychological Corporation.
+- Wechsler, D. (1991a). Wechsler intelligence scale for children (3rd ed.). San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (1991b). Manual for theWechsler Intelligence scale for children. Third edition UK. London: The Psychological Corporation Europe.
+- Wechsler, D. (1997a). Wechsler adult intelligence scale (3rd ed.). San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (1997b). Wechsler Adult Intelligence Scale (3rd ed.), Dutch version. Lisse, The Netherlands: Swets & Zeitlinger B.V.
+- Wechsler, D. (1999). WASI: Wechsler abbreviated scale of intelligence. San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (2001). Wechsler Adult Intelligence Scale—third edition: Canadian Technical Manual. Totonto, ON: Harcourt Canada.
+- Wechsler, D. (2002). Wechsler preschool and primary scale of intelligence (3rd ed.). San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (2003). Wechsler intelligence scale for children (4th ed.). San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (2004). Wechsler intelligence scale for children - Fourth UK Edition (WISC-IV UK). London: Pearson Assessment.
+- Wechsler, D. (2008). Wechsler Adult Intelligence Scale-Fourth Edition (WAIS-IV). San Antonio, TX: Psychological Corporation.
+- Wechsler, D. (2005a). WAIS III Käsikirja. Helsinki: Psykologien kustannus OY.
+- Wechsler, D. (2005b). Wechsler Intelligence Scale for Children-Fourth Edition Spanish. San Antonio, TX: Harcourt Assessment.
+- Wechsler, D. (2010). Wechsler Adult Intelligence Scale - Fourth UK Edition (WAIS-IV UK). London: Pearson Assessment.
+- Wechsler, D. (2011a). Wechsler Abbreviated Scale of Intelligence–Second Edition (WASI-II). San Antonio, TX: NCS Pearson.
+- Wechsler, D. (2014). Wechsler Preschool and Primary Scale of Intelligence - III Deutsche Version. Ed. by F. Petermann. G. Ricken, A. Fritz, K. D. Schuck, U. Preuss. Frankfurt am Main: Pearson Assessment.
+- Weiss, R. H. (1971). Grundintelligenztest Skala 3 - CFT 3. Handanweisung für Durchführung, Auswertung und Interpretation. Braunschweig: Westermann.
+- Weiss, R. H. (1972). Grundintelligenztest Skala 2 - CFT 2. Handanweisung für Durchführung, Auswertung und Interpretation. Braunschweig: Westermann.
+- Weiß, R. (1980). Grundintelligenztest Skala 3 - CFT 3. Handanweisung für Durchführung, Auswertung und Interpretation. Braunschweig: Westermann.
+- Weiß, R. (1987). Grundintelligenztest Skala 2 - CFT 2. Handanweisung für Durchführung, Auswertung und Interpretation. Götting, Bern, Toronto, Seattle: Hogrefe.
+- Weiß, R. (2006). CFT 20-R Grundintelligenztest, Skala 2 Revision. Götting, Bern, Wien, Toronto, Seattle, Oxford, Prag: Hogrefe.
+- Weiß, R., & Osterland, J. (1980). Grundintelligenztest Skala 1 - CFT 1. Handanweisung für Durchführung, Auswertung und Interpretation. Braunschweig: Westermann.
+- Weiß, R., & Osterland, J. (1997). Grundintelligenztest Skala 1 - CFT 1. Handanweisung für Durchführung, Auswertung und Interpretation. Götting, Bern, Toronto, Seattle: Hogrefe.
+- Weiß, R., & Osterland, J. (2013). CFT 1-R Grundintelligenztest, Skala 1 Revision. Götting, Bern, Wien, Paris, Oxford, Prag, Toronto, Camebridge, MA, Amsterdam, Kopenhagen, Stockholm, Florenz: Hogrefe.
+- Weiss, L. G., Saklofske, D. H., Prifitera, A., & Holdnack, J. A. (2006). WISC-IV Advanced Clinical Interpretation. Oxford: Elsevier.
+- Wendt, H., Bos, W., Selter, Ch., Köller, O., Schwippert, K., & Kasper, D. (Ed.) (2016). TIMSS 2015 - Mathematische und naturwissenschaftliche Kompetenzen von Grundschulkindern in Deutschland im internationalen Vergleich. Münster, New York: Waxmann.
+- WHO, UNICEF, UNFPA, World Bank Group & United Nations Population Division (2015). Trends in maternal mortality: 1990 to 2015 Estimates by WHO, UNICEF, UNFPA, World Bank Group and the United Nations Population Division. From: http://www.who.int/reproductivehealth/publications/monitoring/maternal-mortality-2015/en/
+- Woodley, M. A. (2009). Inbreeding depression and IQ in a study of 72 countries. Intelligence, 37, 268-276. doi:10.1016/j.intell.2008.10.007
+- World Justice Project (2019). The rule of law index. Retrieved from: https://worldjusticeproject.org/our-work/wjp-rule-law-index
+____________________________________________________________________________________________________
+
+End
