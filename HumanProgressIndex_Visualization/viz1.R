@@ -25,7 +25,7 @@ hdiplot1 <- ggplot() +
     geom_hline(mapping = aes(yintercept = eys, key = country), data = final_data,
         showSelected = c("year", "country"), alpha = 0.3) +
 
-    geom_vline(mapping = aes(xintercept = year, key = year), data = final_data, size = 0.05,
+    geom_vline(mapping = aes(xintercept = year, key = year), data = final_data,
         showSelected = "year", alpha = 0.3) +
 
     geom_path(mapping = aes(x = year, y = eys, color = region, group = country, tooltip=country), 
@@ -43,7 +43,7 @@ life_expt <- ggplot() +
     geom_hline(mapping = aes(yintercept = le, key = country), data = final_data,
         showSelected = c("year", "country"), alpha = 0.3) +
 
-    geom_vline(mapping = aes(xintercept = year, key = year), data = final_data, size = 0.05,
+    geom_vline(mapping = aes(xintercept = year, key = year), data = final_data,
         showSelected = "year", alpha = 0.3) +
 
     geom_path(mapping = aes(x = year, y = le, color = region, group = country, tooltip=country), 
@@ -61,7 +61,7 @@ gniplot <- ggplot() +
     geom_hline(mapping = aes(yintercept = gni, key = country), data = final_data,
         showSelected = c("year", "country"), alpha = 0.3) +
 
-    geom_vline(mapping = aes(xintercept = year, key = year), data = final_data, size = 0.05,
+    geom_vline(mapping = aes(xintercept = year, key = year), data = final_data,
         showSelected = "year", alpha = 0.3) +
 
     geom_path(mapping = aes(x = year, y = gni, color = region, group = country, tooltip=country), 

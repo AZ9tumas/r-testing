@@ -1,0 +1,1612 @@
+{
+ "geoms": {
+ "geom1_hline_hdiplot": {
+ "geom": "hline",
+"classed": "geom1_hline_hdiplot",
+"aes": {
+ "yintercept": "eys",
+"key": "country",
+"showSelected1": "year",
+"showSelected2": "country" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"showSelected": [ "year", "country" ],
+"help_showSelected": [ "year", "country" ] 
+},
+"types": {
+ "yintercept": "numeric",
+"key": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [
+ "year" 
+],
+"nest_order": [
+ "showSelected2" 
+],
+"subset_order": [
+ "showSelected2" 
+],
+"chunks": {
+ "1990": 1,
+"1991": 2,
+"1992": 3,
+"1993": 4,
+"1994": 5,
+"1995": 6,
+"1996": 7,
+"1997": 8,
+"1998": 9,
+"1999": 10,
+"2000": 11,
+"2001": 12,
+"2002": 13,
+"2003": 14,
+"2004": 15,
+"2005": 16,
+"2006": 17,
+"2007": 18,
+"2008": 19,
+"2009": 20,
+"2010": 21,
+"2011": 22,
+"2012": 23,
+"2013": 24,
+"2014": 25,
+"2015": 26,
+"2016": 27,
+"2017": 28,
+"2018": 29,
+"2019": 30,
+"2020": 31,
+"2021": 32,
+"2022": 33 
+},
+"total": 33 
+},
+"geom2_vline_hdiplot": {
+ "geom": "vline",
+"classed": "geom2_vline_hdiplot",
+"aes": {
+ "xintercept": "year",
+"key": "year",
+"showSelected1": "year" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"showSelected": "year",
+"help_showSelected": "year" 
+},
+"types": {
+ "xintercept": "numeric",
+"key": "integer",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_path_hdiplot": {
+ "geom": "path",
+"classed": "geom3_path_hdiplot",
+"aes": {
+ "x": "year",
+"y": "eys",
+"colour": "region",
+"group": "country",
+"tooltip": "country",
+"clickSelects": "country",
+"showSelected1": "region" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"alpha":     0.65,
+"clickSelects": "country",
+"showSelected": "region",
+"help_clickSelects": "country",
+"help_showSelected": "region" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"tooltip": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_hdiplot": {
+ "geom": "point",
+"classed": "geom4_point_hdiplot",
+"aes": {
+ "x": "year",
+"y": "eys",
+"colour": "region",
+"group": "country",
+"fill": "region",
+"size": "pop",
+"tooltip": "country",
+"key": "country",
+"clickSelects": "country",
+"showSelected1": "year",
+"showSelected2": "country",
+"showSelected3": "region" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "year", "country", "region" ],
+"clickSelects": "country",
+"help_showSelected": [ "year", "country", "region" ],
+"help_clickSelects": "country" 
+},
+"types": {
+ "colour": "rgb",
+"fill": "rgb",
+"size": "numeric",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"tooltip": "character",
+"key": "character",
+"clickSelects": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"showSelected3": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "year" 
+],
+"nest_order": [
+ "showSelected2",
+"showSelected3" 
+],
+"subset_order": [
+ "showSelected2",
+"showSelected3" 
+],
+"columns": {
+ "common": [
+ "group",
+"clickSelects",
+"colour",
+"fill",
+"key",
+"showSelected2",
+"showSelected3",
+"tooltip" 
+] 
+},
+"chunks": {
+ "1990": 1,
+"1991": 2,
+"1992": 3,
+"1993": 4,
+"1994": 5,
+"1995": 6,
+"1996": 7,
+"1997": 8,
+"1998": 9,
+"1999": 10,
+"2000": 11,
+"2001": 12,
+"2002": 13,
+"2003": 14,
+"2004": 15,
+"2005": 16,
+"2006": 17,
+"2007": 18,
+"2008": 19,
+"2009": 20,
+"2010": 21,
+"2011": 22,
+"2012": 23,
+"2013": 24,
+"2014": 25,
+"2015": 26,
+"2016": 27,
+"2017": 28,
+"2018": 29,
+"2019": 30,
+"2020": 31,
+"2021": 32,
+"2022": 33 
+},
+"total": 33 
+},
+"geom5_hline_lifeexpt": {
+ "geom": "hline",
+"classed": "geom5_hline_lifeexpt",
+"aes": {
+ "yintercept": "le",
+"key": "country",
+"showSelected1": "year",
+"showSelected2": "country" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"showSelected": [ "year", "country" ],
+"help_showSelected": [ "year", "country" ] 
+},
+"types": {
+ "yintercept": "numeric",
+"key": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_vline_lifeexpt": {
+ "geom": "vline",
+"classed": "geom6_vline_lifeexpt",
+"aes": {
+ "xintercept": "year",
+"key": "year",
+"showSelected1": "year" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"showSelected": "year",
+"help_showSelected": "year" 
+},
+"types": {
+ "xintercept": "numeric",
+"key": "integer",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_path_lifeexpt": {
+ "geom": "path",
+"classed": "geom7_path_lifeexpt",
+"aes": {
+ "x": "year",
+"y": "le",
+"colour": "region",
+"group": "country",
+"tooltip": "country",
+"clickSelects": "country",
+"showSelected1": "region" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"alpha":     0.65,
+"clickSelects": "country",
+"showSelected": "region",
+"help_clickSelects": "country",
+"help_showSelected": "region" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"tooltip": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom8_point_lifeexpt": {
+ "geom": "point",
+"classed": "geom8_point_lifeexpt",
+"aes": {
+ "x": "year",
+"y": "le",
+"colour": "region",
+"group": "country",
+"fill": "region",
+"size": "pop",
+"tooltip": "country",
+"key": "country",
+"clickSelects": "country",
+"showSelected1": "year",
+"showSelected2": "country",
+"showSelected3": "region" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "year", "country", "region" ],
+"clickSelects": "country",
+"help_showSelected": [ "year", "country", "region" ],
+"help_clickSelects": "country" 
+},
+"types": {
+ "colour": "rgb",
+"fill": "rgb",
+"size": "numeric",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"tooltip": "character",
+"key": "character",
+"clickSelects": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"showSelected3": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "year" 
+],
+"nest_order": [
+ "showSelected2",
+"showSelected3" 
+],
+"subset_order": [
+ "showSelected2",
+"showSelected3" 
+],
+"columns": {
+ "common": [
+ "group",
+"clickSelects",
+"colour",
+"fill",
+"key",
+"showSelected2",
+"showSelected3",
+"tooltip" 
+] 
+},
+"chunks": {
+ "1990": 1,
+"1991": 2,
+"1992": 3,
+"1993": 4,
+"1994": 5,
+"1995": 6,
+"1996": 7,
+"1997": 8,
+"1998": 9,
+"1999": 10,
+"2000": 11,
+"2001": 12,
+"2002": 13,
+"2003": 14,
+"2004": 15,
+"2005": 16,
+"2006": 17,
+"2007": 18,
+"2008": 19,
+"2009": 20,
+"2010": 21,
+"2011": 22,
+"2012": 23,
+"2013": 24,
+"2014": 25,
+"2015": 26,
+"2016": 27,
+"2017": 28,
+"2018": 29,
+"2019": 30,
+"2020": 31,
+"2021": 32,
+"2022": 33 
+},
+"total": 33 
+},
+"geom9_hline_gniplot": {
+ "geom": "hline",
+"classed": "geom9_hline_gniplot",
+"aes": {
+ "yintercept": "gni",
+"key": "country",
+"showSelected1": "year",
+"showSelected2": "country" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"showSelected": [ "year", "country" ],
+"help_showSelected": [ "year", "country" ] 
+},
+"types": {
+ "yintercept": "numeric",
+"key": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [
+ "year" 
+],
+"nest_order": [
+ "showSelected2" 
+],
+"subset_order": [
+ "showSelected2" 
+],
+"chunks": {
+ "1990": 1,
+"1991": 2,
+"1992": 3,
+"1993": 4,
+"1994": 5,
+"1995": 6,
+"1996": 7,
+"1997": 8,
+"1998": 9,
+"1999": 10,
+"2000": 11,
+"2001": 12,
+"2002": 13,
+"2003": 14,
+"2004": 15,
+"2005": 16,
+"2006": 17,
+"2007": 18,
+"2008": 19,
+"2009": 20,
+"2010": 21,
+"2011": 22,
+"2012": 23,
+"2013": 24,
+"2014": 25,
+"2015": 26,
+"2016": 27,
+"2017": 28,
+"2018": 29,
+"2019": 30,
+"2020": 31,
+"2021": 32,
+"2022": 33 
+},
+"total": 33 
+},
+"geom10_vline_gniplot": {
+ "geom": "vline",
+"classed": "geom10_vline_gniplot",
+"aes": {
+ "xintercept": "year",
+"key": "year",
+"showSelected1": "year" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"showSelected": "year",
+"help_showSelected": "year" 
+},
+"types": {
+ "xintercept": "numeric",
+"key": "integer",
+"showSelected1": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom11_path_gniplot": {
+ "geom": "path",
+"classed": "geom11_path_gniplot",
+"aes": {
+ "x": "year",
+"y": "gni",
+"colour": "region",
+"group": "country",
+"tooltip": "country",
+"clickSelects": "country",
+"showSelected1": "region" 
+},
+"params": {
+ "lineend": "butt",
+"linejoin": "round",
+"linemitre":        1,
+"na.rm": false,
+"na.rm": false,
+"alpha":     0.65,
+"clickSelects": "country",
+"showSelected": "region",
+"help_clickSelects": "country",
+"help_showSelected": "region" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"tooltip": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"group" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom12_point_gniplot": {
+ "geom": "point",
+"classed": "geom12_point_gniplot",
+"aes": {
+ "x": "year",
+"y": "gni",
+"colour": "region",
+"group": "country",
+"fill": "region",
+"size": "pop",
+"tooltip": "country",
+"key": "country",
+"clickSelects": "country",
+"showSelected1": "year",
+"showSelected2": "country",
+"showSelected3": "region" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "year", "country", "region" ],
+"clickSelects": "country",
+"help_showSelected": [ "year", "country", "region" ],
+"help_clickSelects": "country" 
+},
+"types": {
+ "colour": "rgb",
+"fill": "rgb",
+"size": "numeric",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"tooltip": "character",
+"key": "character",
+"clickSelects": "character",
+"showSelected1": "integer",
+"showSelected2": "character",
+"showSelected3": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "year" 
+],
+"nest_order": [
+ "showSelected2",
+"showSelected3" 
+],
+"subset_order": [
+ "showSelected2",
+"showSelected3" 
+],
+"columns": {
+ "common": [
+ "group",
+"clickSelects",
+"colour",
+"fill",
+"key",
+"showSelected2",
+"showSelected3",
+"tooltip" 
+] 
+},
+"chunks": {
+ "1990": 1,
+"1991": 2,
+"1992": 3,
+"1993": 4,
+"1994": 5,
+"1995": 6,
+"1996": 7,
+"1997": 8,
+"1998": 9,
+"1999": 10,
+"2000": 11,
+"2001": 12,
+"2002": 13,
+"2003": 14,
+"2004": 15,
+"2005": 16,
+"2006": 17,
+"2007": 18,
+"2008": 19,
+"2009": 20,
+"2010": 21,
+"2011": 22,
+"2012": 23,
+"2013": 24,
+"2014": 25,
+"2015": 26,
+"2016": 27,
+"2017": 28,
+"2018": 29,
+"2019": 30,
+"2020": 31,
+"2021": 32,
+"2022": 33 
+},
+"total": 33 
+} 
+},
+"time": {
+ "variable": "year",
+"ms":     1000,
+"sequence": [ "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022" ] 
+},
+"duration": {
+ "year":     1000 
+},
+"selectors": {
+ "region": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "SA", "ECA", "AS", "LAC", "SSA", "EAP" ],
+"levels": [ "SA", "ECA", "AS", "LAC", "SSA", "EAP" ],
+"update": [
+ "geom3_path_hdiplot",
+"geom4_point_hdiplot",
+"geom7_path_lifeexpt",
+"geom8_point_lifeexpt",
+"geom11_path_gniplot",
+"geom12_point_gniplot" 
+] 
+},
+"year": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"chunks": "year",
+"selected": "1990",
+"levels": [ "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022" ],
+"update": [
+ "geom1_hline_hdiplot",
+"geom2_vline_hdiplot",
+"geom4_point_hdiplot",
+"geom5_hline_lifeexpt",
+"geom6_vline_lifeexpt",
+"geom8_point_lifeexpt",
+"geom9_hline_gniplot",
+"geom10_vline_gniplot",
+"geom12_point_gniplot" 
+],
+"duration":     1000 
+},
+"country": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "Afghanistan",
+"levels": [ "Afghanistan", "Albania", "Algeria", "Argentina", "Armenia", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belize", "Benin", "Bolivia (Plurinational State of)", "Botswana", "Brazil", "Brunei Darussalam", "Burundi", "Cambodia", "Cameroon", "Central African Republic", "Chile", "China", "Colombia", "Congo", "Congo (Democratic Republic of the)", "Costa Rica", "Côte d'Ivoire", "Cuba", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Eswatini (Kingdom of)", "Fiji", "Gabon", "Gambia", "Ghana", "Guatemala", "Guinea", "Guyana", "Haiti", "Honduras", "India", "Indonesia", "Iran (Islamic Republic of)", "Iraq", "Jamaica", "Jordan", "Kazakhstan", "Kenya", "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Lesotho", "Libya", "Malawi", "Malaysia", "Mali", "Mauritania", "Mauritius", "Mexico", "Moldova (Republic of)", "Mongolia", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nepal", "Nicaragua", "Niger", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Qatar", "Saint Lucia", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Sierra Leone", "Singapore", "South Africa", "Sri Lanka", "Sudan", "Syrian Arab Republic", "Tajikistan", "Tanzania (United Republic of)", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Türkiye", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "Uruguay", "Venezuela (Bolivarian Republic of)", "Viet Nam", "Yemen", "Zambia", "Zimbabwe", "Azerbaijan", "Belarus", "Djibouti", "Maldives", "North Macedonia", "Rwanda", "Samoa", "Serbia", "Angola", "Burkina Faso", "Liberia", "Madagascar", "Solomon Islands", "Bosnia and Herzegovina", "Cabo Verde", "Chad", "Comoros", "Dominica", "Equatorial Guinea", "Ethiopia", "Georgia", "Kiribati", "Micronesia (Federated States of)", "Oman", "Palau", "Saint Vincent and the Grenadines", "Seychelles", "Timor-Leste", "Uzbekistan", "Grenada", "Montenegro", "Nigeria", "Palestine, State of", "Suriname", "Eritrea", "Guinea-Bissau", "Lebanon", "Nauru", "Saint Kitts and Nevis", "Turkmenistan", "Vanuatu", "Antigua and Barbuda", "Bhutan", "South Sudan", "Marshall Islands", "Somalia" ],
+"update": [
+ "geom1_hline_hdiplot",
+"geom3_path_hdiplot",
+"geom4_point_hdiplot",
+"geom5_hline_lifeexpt",
+"geom7_path_lifeexpt",
+"geom8_point_lifeexpt",
+"geom9_hline_gniplot",
+"geom11_path_gniplot",
+"geom12_point_gniplot" 
+] 
+} 
+},
+"plots": {
+ "hdiplot": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "region": {
+ "guide": "legend",
+"geoms": [ "path", "point" ],
+"title": "region",
+"class": "region",
+"selector": "region",
+"is_discrete": true,
+"legend_type": [ "colour", "fill" ],
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#F8766D",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "AS",
+"pointcolour": "#F8766D",
+"pointfill": "#F8766D",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#B79F00",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "EAP",
+"pointcolour": "#B79F00",
+"pointfill": "#B79F00",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#00BA38",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "ECA",
+"pointcolour": "#00BA38",
+"pointfill": "#00BA38",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#00BFC4",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "LAC",
+"pointcolour": "#00BFC4",
+"pointfill": "#00BFC4",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#619CFF",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "SA",
+"pointcolour": "#619CFF",
+"pointfill": "#619CFF",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#F564E3",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "SSA",
+"pointcolour": "#F564E3",
+"pointfill": "#F564E3",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+} 
+] 
+},
+"pop": {
+ "guide": "legend",
+"geoms": "point",
+"title": "pop",
+"class": "pop",
+"selector": null,
+"is_discrete": false,
+"legend_type": "size",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointsize": 5.187221,
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1000" 
+},
+{
+ "pointsize": 3.960799,
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "500" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1990,
+    2000,
+    2010,
+    2020 
+] 
+],
+"y": [
+ [
+        5,
+      10,
+      15,
+      20 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020 
+] 
+],
+"y": [
+ [
+      2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5,
+      20 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     1990,
+    2000,
+    2010,
+    2020 
+],
+"xlab": [
+ "1990",
+"2000",
+"2010",
+"2020" 
+],
+"xrange": [   1988.4,   2023.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+        5,
+      10,
+      15,
+      20 
+],
+"ylab": [
+ "5",
+"10",
+"15",
+"20" 
+],
+"yrange": [ 1.054947, 20.57209 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Year",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Expected Years of Schooling",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1990",
+"2000",
+"2010",
+"2020" 
+],
+"ylabs": [
+ "5",
+"10",
+"15",
+"20" 
+],
+"title": "Expected Years of Schooling Plots",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_hline_hdiplot",
+"geom2_vline_hdiplot",
+"geom3_path_hdiplot",
+"geom4_point_hdiplot" 
+] 
+},
+"lifeexpt": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "region": {
+ "guide": "legend",
+"geoms": [ "path", "point" ],
+"title": "region",
+"class": "region",
+"selector": "region",
+"is_discrete": true,
+"legend_type": [ "colour", "fill" ],
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#F8766D",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "AS",
+"pointcolour": "#F8766D",
+"pointfill": "#F8766D",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#B79F00",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "EAP",
+"pointcolour": "#B79F00",
+"pointfill": "#B79F00",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#00BA38",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "ECA",
+"pointcolour": "#00BA38",
+"pointfill": "#00BA38",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#00BFC4",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "LAC",
+"pointcolour": "#00BFC4",
+"pointfill": "#00BFC4",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#619CFF",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "SA",
+"pointcolour": "#619CFF",
+"pointfill": "#619CFF",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#F564E3",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "SSA",
+"pointcolour": "#F564E3",
+"pointfill": "#F564E3",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+} 
+] 
+},
+"pop": {
+ "guide": "legend",
+"geoms": "point",
+"title": "pop",
+"class": "pop",
+"selector": null,
+"is_discrete": false,
+"legend_type": "size",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointsize": 5.187221,
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1000" 
+},
+{
+ "pointsize": 3.960799,
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "500" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1990,
+    2000,
+    2010,
+    2020 
+] 
+],
+"y": [
+ [
+       40,
+      50,
+      60,
+      70,
+      80 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020 
+] 
+],
+"y": [
+ [
+       35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     1990,
+    2000,
+    2010,
+    2020 
+],
+"xlab": [
+ "1990",
+"2000",
+"2010",
+"2020" 
+],
+"xrange": [   1988.4,   2023.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+       40,
+      50,
+      60,
+      70,
+      80 
+],
+"ylab": [
+ "40",
+"50",
+"60",
+"70",
+"80" 
+],
+"yrange": [  34.7536,  86.4844 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Year",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Life Expectancy",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1990",
+"2000",
+"2010",
+"2020" 
+],
+"ylabs": [
+ "40",
+"50",
+"60",
+"70",
+"80" 
+],
+"title": "Life Expectancy Plots",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom5_hline_lifeexpt",
+"geom6_vline_lifeexpt",
+"geom7_path_lifeexpt",
+"geom8_point_lifeexpt" 
+] 
+},
+"gniplot": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "region": {
+ "guide": "legend",
+"geoms": [ "path", "point" ],
+"title": "region",
+"class": "region",
+"selector": "region",
+"is_discrete": true,
+"legend_type": [ "colour", "fill" ],
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathcolour": "#F8766D",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "AS",
+"pointcolour": "#F8766D",
+"pointfill": "#F8766D",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#B79F00",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "EAP",
+"pointcolour": "#B79F00",
+"pointfill": "#B79F00",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#00BA38",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "ECA",
+"pointcolour": "#00BA38",
+"pointfill": "#00BA38",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#00BFC4",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "LAC",
+"pointcolour": "#00BFC4",
+"pointfill": "#00BFC4",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#619CFF",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "SA",
+"pointcolour": "#619CFF",
+"pointfill": "#619CFF",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+},
+{
+ "pathcolour": "#F564E3",
+"pathsize":      0.5,
+"pathlinetype":        1,
+"pathalpha":     0.65,
+"label": "SSA",
+"pointcolour": "#F564E3",
+"pointfill": "#F564E3",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5 
+} 
+] 
+},
+"pop": {
+ "guide": "legend",
+"geoms": "point",
+"title": "pop",
+"class": "pop",
+"selector": null,
+"is_discrete": false,
+"legend_type": "size",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointsize": 5.187221,
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "1000" 
+},
+{
+ "pointsize": 3.960799,
+"pointshape":       21,
+"pointcolour": "#000000",
+"pointstroke":      0.5,
+"label": "500" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1990,
+    2000,
+    2010,
+    2020 
+] 
+],
+"y": [
+ [
+        0,
+   25000,
+   50000,
+   75000,
+  100000 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020 
+] 
+],
+"y": [
+ [
+        0,
+   12500,
+   25000,
+   37500,
+   50000,
+   62500,
+   75000,
+   87500,
+  100000 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     1990,
+    2000,
+    2010,
+    2020 
+],
+"xlab": [
+ "1990",
+"2000",
+"2010",
+"2020" 
+],
+"xrange": [   1988.4,   2023.6 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+   25000,
+   50000,
+   75000,
+  100000 
+],
+"ylab": [
+ "0",
+"25000",
+"50000",
+"75000",
+"100000" 
+],
+"yrange": [ -4763.505, 109178.6 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Year",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Gross National Income",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1990",
+"2000",
+"2010",
+"2020" 
+],
+"ylabs": [
+ "0",
+"25000",
+"50000",
+"75000",
+"100000" 
+],
+"title": "Gross National Income Plots",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom9_hline_gniplot",
+"geom10_vline_gniplot",
+"geom11_path_gniplot",
+"geom12_point_gniplot" 
+] 
+} 
+} 
+}
