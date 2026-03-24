@@ -39,6 +39,6 @@ animint2dir(list(
   duration = list(frame = 250),
   time = list(variable="year", ms=1000),
   title = "Life Expectancy vs Fertility Rate"
-), out.dir = "test")
+), out.dir = "test_visualization")
 
 # Add geoms that show the selected year: a geom_text() on the scatterplot
