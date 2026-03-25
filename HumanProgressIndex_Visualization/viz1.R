@@ -35,6 +35,9 @@ hdiplot1 <- ggplot() +
                 color = region, group = country, fill = region,
                 size = pop, tooltip=country, key = country), 
         data = final_data, showSelected = c("year", "country"), clickSelects="country") +
+    
+    geom_text(mapping = aes(x = year, y = eys, label=country, key=country), data=final_data,
+        showSelected = c("year", "country"), clickSelects="country") +
 
     labs(x = "Year", y = "Expected Years of Schooling", title = "Expected Years of Schooling Plots")
 
@@ -53,6 +56,10 @@ life_expt <- ggplot() +
                 color = region, group = country, fill = region,
                 size = pop, tooltip=country, key = country), 
         data = final_data, showSelected = c("year", "country"), clickSelects="country") +
+    
+    geom_text(mapping = aes(x = year, y = le, label=country, key=country), data=final_data,
+        showSelected = c("year", "country"), clickSelects="country") +
+
 
     labs(x = "Year", y = "Life Expectancy", title = "Life Expectancy Plots")
 
@@ -72,13 +79,17 @@ gniplot <- ggplot() +
                 size = pop, tooltip=country, key = country), 
         data = final_data, showSelected = c("year", "country"), clickSelects="country") +
 
+    geom_text(mapping = aes(x = year, y = gni, label=country, key=country), data=final_data,
+        showSelected = c("year", "country"), clickSelects="country") +
+
     labs(x = "Year", y = "Gross National Income", title = "Gross National Income Plots")
 
-
-animint2dir(list(
+viz <- list(
     hdiplot = hdiplot1,
     lifeexpt = life_expt,
     gniplot = gniplot,
     duration = list(year = 1000),
     time = list(variable="year", ms=1000)
-), out.dir = "hdi_visualization")
+)
+
+animint2dir(viz, out.dir = "hdi_visualization")
