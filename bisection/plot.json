@@ -1,8 +1,36 @@
 {
  "geoms": {
- "geom1_path_source": {
+ "geom1_text_source": {
+ "geom": "text",
+"classed": "geom1_text_source",
+"aes": {
+ "x": "x",
+"y": "y" 
+},
+"params": {
+ "na.rm": false,
+"parse": true,
+"na.rm": false,
+"label": "f(x) == x^3 + x^2 - 2*x + 2",
+"size":       14,
+"colour": "#2E3440" 
+},
+"types": {
+ "y": "numeric",
+"x": "numeric",
+"PANEL": "integer",
+"group": "character",
+"label": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_path_source": {
  "geom": "path",
-"classed": "geom1_path_source",
+"classed": "geom2_path_source",
 "aes": {
  "x": "x",
 "y": "y" 
@@ -27,9 +55,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom2_vline_source": {
+"geom3_vline_source": {
  "geom": "vline",
-"classed": "geom2_vline_source",
+"classed": "geom3_vline_source",
 "aes": {
  "xintercept": "c",
 "showSelected1": "itr" 
@@ -58,9 +86,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom3_text_source": {
+"geom4_text_source": {
  "geom": "text",
-"classed": "geom3_text_source",
+"classed": "geom4_text_source",
 "aes": {
  "x": "c",
 "y": "0",
@@ -96,9 +124,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom4_vline_source": {
+"geom5_vline_source": {
  "geom": "vline",
-"classed": "geom4_vline_source",
+"classed": "geom5_vline_source",
 "aes": {
  "xintercept": "a",
 "showSelected1": "itr" 
@@ -127,9 +155,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom5_vline_source": {
+"geom6_vline_source": {
  "geom": "vline",
-"classed": "geom5_vline_source",
+"classed": "geom6_vline_source",
 "aes": {
  "xintercept": "b",
 "showSelected1": "itr" 
@@ -158,9 +186,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom6_path_errorplot": {
+"geom7_path_errorplot": {
  "geom": "path",
-"classed": "geom6_path_errorplot",
+"classed": "geom7_path_errorplot",
 "aes": {
  "x": "itr",
 "y": "err" 
@@ -184,9 +212,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_point_errorplot": {
+"geom8_point_errorplot": {
  "geom": "point",
-"classed": "geom7_point_errorplot",
+"classed": "geom8_point_errorplot",
 "aes": {
  "x": "itr",
 "y": "err" 
@@ -207,9 +235,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom8_vline_errorplot": {
+"geom9_vline_errorplot": {
  "geom": "vline",
-"classed": "geom8_vline_errorplot",
+"classed": "geom9_vline_errorplot",
 "aes": {
  "xintercept": "itr",
 "showSelected1": "itr" 
@@ -243,9 +271,6 @@
 "ms":     1000,
 "sequence": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ] 
 },
-"duration": {
- "itr":      250 
-},
 "selectors": {
  "itr": {
  "is.variable.value": false,
@@ -254,13 +279,12 @@
 "selected": "1",
 "levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ],
 "update": [
- "geom2_vline_source",
-"geom3_text_source",
-"geom4_vline_source",
+ "geom3_vline_source",
+"geom4_text_source",
 "geom5_vline_source",
-"geom8_vline_errorplot" 
-],
-"duration":      250 
+"geom6_vline_source",
+"geom9_vline_errorplot" 
+] 
 } 
 },
 "plots": {
@@ -405,7 +429,7 @@
 "xsize": "11.2pt",
 "xangle":        0,
 "xanchor": "middle",
-"ytitle": "y",
+"ytitle": "f(x)",
 "strip_text_ysize": "14pt",
 "ysize": "11.2pt",
 "yangle":        0,
@@ -424,7 +448,7 @@
 "2",
 "4" 
 ],
-"title": "Bisection Root Finding method",
+"title": "Bisection Root Finding Method",
 "title_size": "16.8pt",
 "options": {
  "width":      400,
@@ -436,11 +460,12 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom1_path_source",
-"geom2_vline_source",
-"geom3_text_source",
-"geom4_vline_source",
-"geom5_vline_source" 
+ "geom1_text_source",
+"geom2_path_source",
+"geom3_vline_source",
+"geom4_text_source",
+"geom5_vline_source",
+"geom6_vline_source" 
 ] 
 },
 "errorplot": {
@@ -497,11 +522,11 @@
 ],
 "y": [
  [
-       12,
-      14,
-      16,
-      18,
-      20 
+        0,
+       1,
+       2,
+       3,
+       4 
 ] 
 ] 
 } 
@@ -525,16 +550,15 @@
 ],
 "y": [
  [
-       12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21 
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4 
 ] 
 ] 
 } 
@@ -554,20 +578,20 @@
 "xline": false,
 "xticks": true,
 "y": [
-       12,
-      14,
-      16,
-      18,
-      20 
+        0,
+       1,
+       2,
+       3,
+       4 
 ],
 "ylab": [
- "12",
-"14",
-"16",
-"18",
-"20" 
+ "0",
+"1",
+"2",
+"3",
+"4" 
 ],
-"yrange": [ 11.79297, 21.84766 ],
+"yrange": [ -0.1970815, 4.144615 ],
 "yline": false,
 "yticks": true 
 },
@@ -587,11 +611,11 @@
 "12" 
 ],
 "ylabs": [
- "12",
-"14",
-"16",
-"18",
-"20" 
+ "0",
+"1",
+"2",
+"3",
+"4" 
 ],
 "title": "Error analysis",
 "title_size": "16.8pt",
@@ -605,9 +629,9 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom6_path_errorplot",
-"geom7_point_errorplot",
-"geom8_vline_errorplot" 
+ "geom7_path_errorplot",
+"geom8_point_errorplot",
+"geom9_vline_errorplot" 
 ] 
 } 
 },

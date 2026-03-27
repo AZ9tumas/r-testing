@@ -3,7 +3,7 @@ library(ggplot2)
 library(animint2)
 
 f <- function(x) x ** 3 + x ** 2 - 2 * x + 2
-errf <- function(x) (x - (2)) ** 2
+errf <- function(x) abs(f(x))
 lowerlim <- -3
 upperlim <- 0
 n_iterations <- 15
@@ -54,7 +54,10 @@ plotdf <- data.frame(
 
 # The actual plotting
 plot <- ggplot() +
-  labs(title = "Bisection Root Finding method", x = "x", y = "y") + 
+  labs(title = "Bisection Root Finding Method", x = "x", y = "f(x)") + 
+  annotate("text", x = 0.8, y = 4.5,
+           label = "f(x) == x^3 + x^2 - 2*x + 2",
+           parse = TRUE, size = 14, color = "#2e3440") +
   geom_path(mapping = aes(x = x, y = y), 
              data = plotdf, color = "#2e3440") + 
   
@@ -94,11 +97,21 @@ viz <- animint(
   title = "Bisection Method Animation",
   source = plot,
   errorplot = err.plot,
-  duration = list(itr = 250),
+  #duration = list(itr = 250),
   time = list(variable="itr", ms=1000)
 )
 
-animint2dir(viz, out.dir = "bisection_test", open.browser = TRUE)
+animint2dir(viz, out.dir = "bisection", open.browser = TRUE)
 
 #animint2pages(viz, out.dir = "bisection_test", github_repo = "bisection_test")
-
+animint2::animint2pages(
+  list(
+    viz = plot,
+    errorviz = err.plot,
+    #duration = list(itr = 250),
+    time = list(variable = "itr", ms = 1000),
+    title = "Bisection Method Animation",
+    source = "https://github.com/AZ9tumas/bisection-method-animation"
+  ),
+  github_repo = "bisection-method-animation"
+)
