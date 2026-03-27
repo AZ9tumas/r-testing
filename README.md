@@ -31,6 +31,11 @@ This file contains the links to my completed tests for the **Animated interactiv
 - Source code repo: <https://github.com/AZ9tumas/r-testing/blob/main/galton_example2_code/galton2.R>
 - Ports of animation examples wiki entry: <https://github.com/tdhock/animint/wiki/Ports-of-animation-examples>
 
+## Medium - Hard Test
+
+- Gallery Link: <https://az9tumas.github.io/animint-gallery>
+- Source Code Repo: <https://github.com/AZ9tumas/animint-gallery/blob/gh-pages/index.Rmd>
+
 ## Notes
 > Show an example of an error that you see when animint2 is loaded/attached at the same time as standard ggplot2.
 
