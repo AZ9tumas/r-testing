@@ -104,10 +104,21 @@ viz <- animint(
   title = "Buffon's Needle",
   source = plot,
   errplot = err_plot,
-  duration = list(frame = 250),
+  #duration = list(frame = 250),
   time = list(variable="itr", ms=100)
 )
 
 
 animint2dir(viz, out.dir = "buffons", open.browser = TRUE)
 
+animint2::animint2pages(
+  list(
+    source = plot,
+    errplot = err_plot,
+    #duration = list(itr = 250),
+    time = list(variable = "itr", ms = 100),
+    title = "Buffon's Needle Animation",
+    source = "https://github.com/AZ9tumas/buffons-animation"
+  ),
+  github_repo = "buffons-animation"
+)
