@@ -83,12 +83,21 @@ plot <- ggplot() +
   # themes
   theme_linedraw(base_size = 14)
 
+itr_df <- data.frame(itr = 1:n_iterations)
 
 err.plot <- ggplot() + 
   labs(title = "Error analysis", y = "Error range", x = "Iteration") +
+  annotate("text", x = 11.5, y = 3.5,
+           label = "err(x) = abs(f(c))",
+           parse = TRUE, size = 15.5, color = "#2e3440") +
   geom_path(mapping = aes(x = itr, y = err), data = errdf) + 
-  geom_point(mapping = aes(x = itr, y = err), data = errdf) + 
-  geom_vline(mapping = aes(xintercept = itr), data = errdf, showSelected = 'itr', alpha = 0.35) + 
+  geom_point(mapping = aes(x = itr, y = err), data = errdf, clickSelects = 'itr') + 
+
+  geom_vline(mapping = aes(xintercept = itr), data = errdf, 
+    showSelected = 'itr', alpha = 1, color = "lightblue") + 
+
+  # vertical lines for the err plot
+  geom_vline(mapping = aes(xintercept = itr), data = itr_df, clickSelects = 'itr', alpha = 0.65) + 
   # theming
   theme_linedraw(base_size = 14)
 

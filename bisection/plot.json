@@ -186,9 +186,37 @@
 "chunks": 1,
 "total": 1 
 },
-"geom7_path_errorplot": {
+"geom7_text_errorplot": {
+ "geom": "text",
+"classed": "geom7_text_errorplot",
+"aes": {
+ "x": "x",
+"y": "y" 
+},
+"params": {
+ "na.rm": false,
+"parse": true,
+"na.rm": false,
+"label": "err(x) = abs(f(c))",
+"size":     15.5,
+"colour": "#2E3440" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"PANEL": "integer",
+"group": "character",
+"label": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom8_path_errorplot": {
  "geom": "path",
-"classed": "geom7_path_errorplot",
+"classed": "geom8_path_errorplot",
 "aes": {
  "x": "itr",
 "y": "err" 
@@ -212,20 +240,24 @@
 "chunks": 1,
 "total": 1 
 },
-"geom8_point_errorplot": {
+"geom9_point_errorplot": {
  "geom": "point",
-"classed": "geom8_point_errorplot",
+"classed": "geom9_point_errorplot",
 "aes": {
  "x": "itr",
-"y": "err" 
+"y": "err",
+"clickSelects": "itr" 
 },
 "params": {
  "na.rm": false,
-"na.rm": false 
+"na.rm": false,
+"clickSelects": "itr",
+"help_clickSelects": "itr" 
 },
 "types": {
  "x": "numeric",
 "y": "numeric",
+"clickSelects": "integer",
 "PANEL": "integer",
 "group": "character" 
 },
@@ -235,9 +267,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom9_vline_errorplot": {
+"geom10_vline_errorplot": {
  "geom": "vline",
-"classed": "geom9_vline_errorplot",
+"classed": "geom10_vline_errorplot",
 "aes": {
  "xintercept": "itr",
 "showSelected1": "itr" 
@@ -245,7 +277,8 @@
 "params": {
  "na.rm": false,
 "na.rm": false,
-"alpha":     0.35,
+"alpha":        1,
+"colour": "#ADD8E6",
 "showSelected": "itr",
 "help_showSelected": "itr" 
 },
@@ -264,6 +297,32 @@
 ],
 "chunks": 1,
 "total": 1 
+},
+"geom11_vline_errorplot": {
+ "geom": "vline",
+"classed": "geom11_vline_errorplot",
+"aes": {
+ "xintercept": "itr",
+"clickSelects": "itr" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":     0.65,
+"clickSelects": "itr",
+"help_clickSelects": "itr" 
+},
+"types": {
+ "xintercept": "numeric",
+"clickSelects": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
 } 
 },
 "time": {
@@ -276,6 +335,7 @@
  "is.variable.value": false,
 "type": "single",
 "showSelected": true,
+"clickSelects": true,
 "selected": "1",
 "levels": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ],
 "update": [
@@ -283,7 +343,9 @@
 "geom4_text_source",
 "geom5_vline_source",
 "geom6_vline_source",
-"geom9_vline_errorplot" 
+"geom9_point_errorplot",
+"geom10_vline_errorplot",
+"geom11_vline_errorplot" 
 ] 
 } 
 },
@@ -629,9 +691,11 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom7_path_errorplot",
-"geom8_point_errorplot",
-"geom9_vline_errorplot" 
+ "geom7_text_errorplot",
+"geom8_path_errorplot",
+"geom9_point_errorplot",
+"geom10_vline_errorplot",
+"geom11_vline_errorplot" 
 ] 
 } 
 },
