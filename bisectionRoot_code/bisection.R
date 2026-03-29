@@ -57,24 +57,24 @@ plot <- ggplot() +
   labs(title = "Bisection Root Finding Method", x = "x", y = "f(x)") + 
   annotate("text", x = 0.8, y = 4.5,
            label = "f(x) == x^3 + x^2 - 2*x + 2",
-           parse = TRUE, size = 14, color = "#2e3440") +
+           parse = TRUE, size = 14, color = "#4c566a") +
   geom_path(mapping = aes(x = x, y = y), 
-             data = plotdf, color = "#2e3440") + 
+             data = plotdf, color = "#3b4252", size = 1.3) + 
   
-  # the green
+  # midpoint line (teal)
   geom_vline(mapping = aes(xintercept = c), 
-             data = df, linewidth = 0.5, color = "green", showSelected = 'itr') +
+             data = df, linewidth = 0.8, color = "#2aa198", showSelected = 'itr') +
   
-  # text
+  # midpoint label
   geom_text(mapping = aes(x = c, y = 0, label = sprintf("c = %.2f", c)), 
             data = df, fontface = "bold", size = 12,
-            color = "#2d5a27", showSelected = 'itr') + 
+            color = "#1a6e5a", showSelected = 'itr') + 
   
-  # the red lines
+  # boundary lines (warm coral)
   geom_vline(mapping = aes(xintercept = a), 
-             data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') + 
+             data = df, linetype = "dashed", color = "#d08770", showSelected = 'itr') + 
   geom_vline(mapping = aes(xintercept = b), 
-             data = df, linetype = "dashed", color = "#bf616a", showSelected = 'itr') +
+             data = df, linetype = "dashed", color = "#d08770", showSelected = 'itr') +
   
   # limits
   scale_y_continuous(limits = c(-2, 5)) +
@@ -86,18 +86,20 @@ plot <- ggplot() +
 itr_df <- data.frame(itr = 1:n_iterations)
 
 err.plot <- ggplot() + 
-  labs(title = "Error analysis", y = "Error range", x = "Iteration") +
+  labs(title = "Error Analysis", y = "Error range", x = "Iteration") +
   annotate("text", x = 11.5, y = 3.5,
            label = "err(x) = abs(f(c))",
-           parse = TRUE, size = 15.5, color = "#2e3440") +
-  geom_path(mapping = aes(x = itr, y = err), data = errdf) + 
-  geom_point(mapping = aes(x = itr, y = err), data = errdf, clickSelects = 'itr') + 
+           parse = TRUE, size = 15.5, color = "#4c566a") +
+  geom_path(mapping = aes(x = itr, y = err), data = errdf,
+            color = "#5e81ac", size = 1.1) + 
+  geom_point(mapping = aes(x = itr, y = err), data = errdf,
+             color = "#5e81ac", fill = "#88c0d0", size = 3, clickSelects = 'itr') + 
 
   geom_vline(mapping = aes(xintercept = itr), data = errdf, 
-    showSelected = 'itr', alpha = 1, color = "lightblue") + 
+    showSelected = 'itr', alpha = 0.8, color = "#88c0d0") + 
 
   # vertical lines for the err plot
-  geom_vline(mapping = aes(xintercept = itr), data = itr_df, clickSelects = 'itr', alpha = 0.65) + 
+  geom_vline(mapping = aes(xintercept = itr), data = itr_df, clickSelects = 'itr', alpha = 0.4) + 
   # theming
   theme_linedraw(base_size = 14)
 
