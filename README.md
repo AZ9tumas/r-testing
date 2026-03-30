@@ -36,6 +36,10 @@ This file contains the links to my completed tests for the **Animated interactiv
 - Gallery Link: <https://az9tumas.github.io/animint-gallery>
 - Source Code Repo: <https://github.com/AZ9tumas/animint-gallery/blob/gh-pages/index.Rmd>
 
+## Hard - Test
+- Youtube Link: <https://youtu.be/d9LNywrZfSo>
+- PR Link: <https://github.com/animint/animint2/pull/317>
+
 ## Notes
 > Show an example of an error that you see when animint2 is loaded/attached at the same time as standard ggplot2.
 
