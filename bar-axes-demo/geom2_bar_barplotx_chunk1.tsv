@@ -1,0 +1,13 @@
+colour	clickSelects	showSelected1	ymin	ymax	xmin	xmax
+#F8766D	few	few	0	10	14.1	15.9
+#F8766D	few	few	0	20	17.1	18.9
+#F8766D	few	few	0	30	20.1	21.9
+#619CFF	medium	medium	0	50	4.1	5.9
+#619CFF	medium	medium	0	100	6.1	7.9
+#619CFF	medium	medium	0	150	8.1	9.9
+#619CFF	medium	medium	0	200	10.1	11.9
+#00BA38	many	many	0	5	0.1	1.9
+#00BA38	many	many	0	15	2.1	3.9
+#00BA38	many	many	0	25	4.1	5.9
+#00BA38	many	many	0	35	6.1	7.9
+#00BA38	many	many	0	45	8.1	9.9

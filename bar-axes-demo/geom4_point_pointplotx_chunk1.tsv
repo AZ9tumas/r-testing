@@ -1,0 +1,13 @@
+colour	x	y	clickSelects	showSelected1	fill
+#F8766D	15	10	few	few	#F8766D
+#F8766D	18	20	few	few	#F8766D
+#F8766D	21	30	few	few	#F8766D
+#619CFF	5	50	medium	medium	#619CFF
+#619CFF	7	100	medium	medium	#619CFF
+#619CFF	9	150	medium	medium	#619CFF
+#619CFF	11	200	medium	medium	#619CFF
+#00BA38	1	5	many	many	#00BA38
+#00BA38	3	15	many	many	#00BA38
+#00BA38	5	25	many	many	#00BA38
+#00BA38	7	35	many	many	#00BA38
+#00BA38	9	45	many	many	#00BA38
