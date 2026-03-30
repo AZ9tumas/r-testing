@@ -39,9 +39,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom2_bar_barplotx": {
+"geom2_bar_barploty": {
  "geom": "rect",
-"classed": "geom2_bar_barplotx",
+"classed": "geom2_bar_barploty",
 "aes": {
  "x": "x",
 "y": "y",
@@ -116,9 +116,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom4_point_pointplotx": {
+"geom4_point_pointploty": {
  "geom": "point",
-"classed": "geom4_point_pointplotx",
+"classed": "geom4_point_pointploty",
 "aes": {
  "x": "x",
 "y": "y",
@@ -166,9 +166,9 @@
 "levels": [ "few", "medium", "many" ],
 "update": [
  "geom1_bar_barplot",
-"geom2_bar_barplotx",
+"geom2_bar_barploty",
 "geom3_point_pointplot",
-"geom4_point_pointplotx" 
+"geom4_point_pointploty" 
 ] 
 } 
 },
@@ -378,7 +378,7 @@
  "geom1_bar_barplot" 
 ] 
 },
-"barplotx": {
+"barploty": {
  "panel_margin_lines":     0.25,
 "legend": {
  "set": {
@@ -568,7 +568,7 @@
 "150",
 "200" 
 ],
-"title": "X axis updates",
+"title": "Y axis updates",
 "title_size": "13.2pt",
 "options": {
  "width":      400,
@@ -581,12 +581,12 @@
 "last_in_row": null 
 },
 "axis_domains": {
- "x": {
+ "y": {
  "selectors": "set" 
 } 
 },
 "geoms": [
- "geom2_bar_barplotx" 
+ "geom2_bar_barploty" 
 ] 
 },
 "pointplot": {
@@ -793,7 +793,7 @@
  "geom3_point_pointplot" 
 ] 
 },
-"pointplotx": {
+"pointploty": {
  "panel_margin_lines":     0.25,
 "legend": {
  "set": {
@@ -982,12 +982,12 @@
 "150",
 "200" 
 ],
-"title": "X axis updates",
+"title": "Y axis updates",
 "title_size": "13.2pt",
 "options": {
  "width":      400,
 "height":      400,
-"update_axes": "x" 
+"update_axes": "y" 
 },
 "span": {
  "rowspan": null,
@@ -995,25 +995,25 @@
 "last_in_row": null 
 },
 "axis_domains": {
- "x": {
+ "y": {
  "selectors": "set",
 "domains": {
- "1.few": [     14.7,     21.3 ],
-"1.many": [      0.6,      9.4 ],
-"1.medium": [      4.7,     11.3 ] 
+ "1.few": [        9,       31 ],
+"1.many": [        3,       47 ],
+"1.medium": [     42.5,    207.5 ] 
 },
 "grids": {
  "1.few": [
- [       15,       16,       17,       18,       19,       20,       21 ],
-[     15.5,     16.5,     17.5,     18.5,     19.5,     20.5 ] 
+ [ 10, 14, 18, 22, 26, 30 ],
+[ 12, 16, 20, 24, 28 ] 
 ],
 "1.many": [
- [        1,        3,        5,        7,        9 ],
-[        2,        4,        6,        8 ] 
+ [        5,       15,       25,       35,       45 ],
+[       10,       20,       30,       40 ] 
 ],
 "1.medium": [
- [        5,        6,        7,        8,        9,       10,       11 ],
-[      5.5,      6.5,      7.5,      8.5,      9.5,     10.5 ] 
+ [ 60, 100, 140, 180 ],
+[ 80, 120, 160, 200 ] 
 ] 
 },
 "curr_select": {
@@ -1022,7 +1022,7 @@
 } 
 },
 "geoms": [
- "geom4_point_pointplotx" 
+ "geom4_point_pointploty" 
 ] 
 } 
 } 

@@ -18,12 +18,14 @@ point <- ggplot() +
         showSelected = "set", clickSelects = "set",
         data = common.data)
 
-animint2dir(list(
+viz <- list(
     barplot = bar + labs(title = "No axis updates"),
-    barplotx = bar + theme_animint(update_axes = "x") + labs(title = "X axis updates"),
+    barploty = bar + theme_animint(update_axes = "y") + labs(title = "Y axis updates"),
 
     pointplot = point + labs(title = "No axis updates"),
-    pointplotx = point + theme_animint(update_axes = "x") + labs(title = "X axis updates"),
+    pointploty = point + theme_animint(update_axes = "y") + labs(title = "Y axis updates"),
 
     selector.types = list(set = "single")
-), out.dir = "bar-axes-demo", open.browser = TRUE)
+)
+
+animint2dir(viz, out.dir = "bar-axes-demo", open.browser = TRUE)
